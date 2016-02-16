@@ -57,7 +57,8 @@
                                 'type'=>'POST',
                                 'data'=>array('bidang_id'=>'js:this.value'),
                                 'url'=>Yii::app()->createUrl('peminjaman_pl/getDropdownSeksi'), //url to call.
-                                'update'=>'#'.CHTML::activeId($model,'seksi_id'),
+                                'success'=>'update_seksi_user',
+                                //'update'=>'#'.CHTML::activeId($model,'seksi_id'),
                             ),
                     )); ?>    
             </div>
@@ -66,7 +67,7 @@
                 <?php echo $form->dropDownList(
                         $model,
                         'seksi_id',
-                        array(),
+                        CHtml::listData(Seksi::model()->findAll('bidang_id=:bidang_id', array(':bidang_id'=>$model->bidang_id)),'id', 'nama_seksi'),
                         array(
                             'class'=>'form-control',
                             'prompt'=>'Pilih Seksi...',
@@ -74,13 +75,18 @@
                                 'type'=>'POST',
                                 'data'=>array('seksi_id'=>'js:this.value'),
                                 'url'=>Yii::app()->createUrl('peminjaman_pl/getDropdownPeminjam'), //url to call.
+                                //'success'=>'update_seksi_user',
                                 'update'=>'#'.CHTML::activeId($model,'user_id'),
                             ),
                         )); ?>    
             </div>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'user_id'); ?>
-                <?php echo $form->dropDownList($model,'user_id',array(),array('class'=>'form-control','prompt'=>'Pilih Nama Peminjam...')); ?>    
+                <?php echo $form->dropDownList(
+                        $model,
+                        'user_id',
+                        CHtml::listData(User::model()->findAll('seksi_id=:seksi_id', array(':seksi_id'=>$model->seksi_id)),'id', 'nama'),
+                        array('class'=>'form-control','prompt'=>'Pilih Nama Peminjam...')); ?>    
             </div>
             <div class="form-group">
                 <?php echo $form->checkBox($model,'duplikasi'); ?> Buat duplikasi baru
@@ -114,6 +120,14 @@ $cs = Yii::app()->clientScript;
 $cs->scriptMap=array('jquery.js'=>false);
 $cs->registerCssFile(Yii::app()->baseUrl."/public/plugins/datepicker/datepicker3.css");
 $cs->registerScriptFile(Yii::app()->baseUrl."/public/plugins/datepicker/bootstrap-datepicker.js",CClientScript::POS_END);
+$cs->registerScript("sukses","
+    function update_seksi_user(data)
+    {
+        $('#".CHtml::activeId($model,'seksi_id')."').html(data);
+        $('#".CHtml::activeId($model,'user_id')."').html('');
+    }
+", CClientScript::POS_END);
+
 $cs->registerScript("duplikasi","
     jQuery('body').on('click','#".CHtml::activeId($model,'duplikasi')."',function(){
         $('#tgl_targetkembali_container').toggle();

@@ -107,9 +107,13 @@ class Peminjaman_plController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+                
+                $model->bidang_id = $model->user->seksi->bidang_id;
+                $model->seksi_id = $model->user->seksi_id;
 		$this->render('update',array(
 			'model'=>$model,
+                        'bidangs'=>  Bidang::model()->findAll(),
+                        'pl_data'=>  PlData::model()->findByPk($model->pl_data_id)
 		));
 	}
 
