@@ -313,7 +313,7 @@ CREATE TABLE `permohonan_data_nonbps` (
   CONSTRAINT `Relationship58` FOREIGN KEY (`operator_id`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `Relationship59` FOREIGN KEY (`status_id`) REFERENCES `status` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `permohonan_data_nonbps_ibfk_1` FOREIGN KEY (`data_inventori_id`) REFERENCES `data_inventori` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,7 +322,7 @@ CREATE TABLE `permohonan_data_nonbps` (
 
 LOCK TABLES `permohonan_data_nonbps` WRITE;
 /*!40000 ALTER TABLE `permohonan_data_nonbps` DISABLE KEYS */;
-INSERT INTO `permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,'','','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 00:00:00',4,5,1),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,'Laki-laki','3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-02-01 00:00:00',NULL,3,2),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 07:59:02',NULL,6,3),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 08:08:12',6,6,1),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 09:39:37',NULL,8,3),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:03:28',24,21,1),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:09:00',14,7,1),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 21:11:19',NULL,17,3);
+INSERT INTO `permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,'','','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 00:00:00',4,5,1),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,'Laki-laki','3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-02-01 00:00:00',NULL,3,2),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 07:59:02',NULL,6,3),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 08:08:12',6,6,1),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 09:39:37',NULL,8,3),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:03:28',24,21,1),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:09:00',14,7,1),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 21:11:19',NULL,17,3),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 11:11:39',22,5,1),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,'Laki-laki','4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 14:48:05',NULL,14,2),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 15:46:21',NULL,14,3);
 /*!40000 ALTER TABLE `permohonan_data_nonbps` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -475,7 +475,7 @@ CREATE TABLE `pl_license` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama_license` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -484,7 +484,7 @@ CREATE TABLE `pl_license` (
 
 LOCK TABLES `pl_license` WRITE;
 /*!40000 ALTER TABLE `pl_license` DISABLE KEYS */;
-INSERT INTO `pl_license` VALUES (1,'Single License'),(2,'Corporate License'),(3,'Shareware'),(4,'Public Domain'),(5,'Freeware'),(6,'No License'),(7,'BPS RI'),(9,'Embuh');
+INSERT INTO `pl_license` VALUES (1,'Single License'),(2,'Corporate License'),(3,'Shareware'),(4,'Public Domain'),(5,'Freeware'),(6,'No License'),(7,'BPS RI');
 /*!40000 ALTER TABLE `pl_license` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -545,7 +545,7 @@ CREATE TABLE `pl_transaksi` (
 
 LOCK TABLES `pl_transaksi` WRITE;
 /*!40000 ALTER TABLE `pl_transaksi` DISABLE KEYS */;
-INSERT INTO `pl_transaksi` VALUES (1,'2016-02-05','2016-02-12','2016-02-12',6,33,NULL,9,'2016-02-05 00:00:00'),(2,'2016-02-08',NULL,NULL,10,17,'',3,'0000-00-00 00:00:00'),(3,'2016-02-08',NULL,NULL,23,17,'',34,'0000-00-00 00:00:00'),(4,'2016-02-09','2016-02-17',NULL,3,17,'',13,'0000-00-00 00:00:00'),(5,'2016-02-03','2016-02-18',NULL,6,17,'',30,'0000-00-00 00:00:00'),(6,'2016-02-13',NULL,NULL,15,17,'',48,'0000-00-00 00:00:00'),(7,'2016-02-10','2016-02-17',NULL,4,17,'',28,'0000-00-00 00:00:00'),(8,'2016-02-09',NULL,NULL,8,17,'',51,'2016-02-07 17:06:35'),(9,'2016-02-10','2016-02-16',NULL,7,17,'',32,'2016-02-07 17:07:22'),(10,'2016-02-09','2016-02-15',NULL,7,17,'',26,'2016-02-07 17:07:59'),(11,'2016-02-09','2016-02-16',NULL,14,17,'',27,'2016-02-07 17:08:52'),(12,'2016-02-01',NULL,NULL,33,17,'',94,'2016-02-16 15:42:41'),(13,'2016-02-02','2016-02-10',NULL,8,17,'',10,'2016-02-16 15:48:32');
+INSERT INTO `pl_transaksi` VALUES (1,'2016-02-05','2016-02-12','2016-02-12',6,33,NULL,9,'2016-02-05 00:00:00'),(2,'2016-02-08',NULL,NULL,10,17,'',8,'0000-00-00 00:00:00'),(3,'2016-02-08',NULL,NULL,23,17,'',34,'0000-00-00 00:00:00'),(4,'2016-02-09','2016-02-17',NULL,3,17,'',14,'0000-00-00 00:00:00'),(5,'2016-02-03','2016-02-18',NULL,6,17,'',30,'0000-00-00 00:00:00'),(6,'2016-02-13',NULL,NULL,15,17,'',48,'0000-00-00 00:00:00'),(7,'2016-02-10','2016-02-17',NULL,4,17,'',28,'0000-00-00 00:00:00'),(8,'2016-02-09',NULL,NULL,8,17,'',51,'2016-02-07 17:06:35'),(9,'2016-02-10','2016-02-16',NULL,7,17,'',32,'2016-02-07 17:07:22'),(10,'2016-02-09','2016-02-15',NULL,7,17,'',26,'2016-02-07 17:07:59'),(11,'2016-02-09','2016-02-16',NULL,14,17,'',27,'2016-02-07 17:08:52'),(12,'2016-02-01',NULL,NULL,33,17,'',94,'2016-02-16 15:42:41'),(13,'2016-02-02','2016-02-10',NULL,8,17,'',10,'2016-02-16 15:48:32');
 /*!40000 ALTER TABLE `pl_transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -703,4 +703,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-16 16:21:03
+-- Dump completed on 2016-02-17 16:41:46
