@@ -28,7 +28,6 @@
 <?php $this->renderPartial('_form', array(
     'model'=>$model, 
     'bidangs'=>$bidangs,
-    'seksis'=>$seksis,
     'roles'=>$roles
     ));?>
     </div>      

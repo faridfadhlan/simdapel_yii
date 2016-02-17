@@ -52,13 +52,21 @@
                             echo '<td class="text-center">'.datetime_to_tanggal($data->tgl_pinjam).'</td>';
                             echo '<td class="text-center">'.datetime_to_tanggal($data->tgl_kembali).'</td>';
                             echo '<td>'.($data->tgl_targetkembali===NULL?'Software digandakan':($data->tgl_kembali===NULL?'Belum Kembali':'Sudah Kembali')).'</td>';
-                            echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('peminjaman_pl/update','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-remove"></i>',array('peminjaman_pl/delete','id'=>$data->id)).
-                                    '</td>';
-                            echo '</tr>';
-                        }
-                        ?>
+                            echo '<td class="text-center">';?>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default btn-flat">Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                        <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><?php echo CHtml::link('Edit / Pengembalian',array('peminjaman_pl/update','id'=>$data->id));?></li>
+                                            <li><?php echo CHtml::link('Hapus',array('peminjaman_pl/delete','id'=>$data->id));?></li>                                            
+                                        </ul>
+                                    </div>
+                                    </td>
+                            </tr>
+                        <?php }?>
                     </tbody>
                   </table>
 

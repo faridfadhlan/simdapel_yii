@@ -134,6 +134,24 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
         
+        public function actionRegister()
+        {
+                $model = new RegistrasiForm;
+                if(isset($_POST['RegistrasiForm']))
+		{
+			$model->attributes=$_POST['RegistrasiForm'];
+			if($model->validate()):
+                            $user = new User;
+                            $user->attributes = $model->attributes;
+                            if($user->save()){
+                                $this->redirect(array('site/login'));
+                            }
+                        endif;
+		}
+		// display the login form
+		$this->render('register',array('model'=>$model));
+        }
+        
         public function actionBuat($pass){
             echo User::hashPassword($pass);
         }

@@ -56,16 +56,17 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nip,nama,bidang_id,seksi_id,role_id,username, email, password, password_confirmation', 'required', 'on'=>'create'),
+			array('nip,nama,seksi_id,role_id,username, email, password, password_confirmation', 'required', 'on'=>'create'),
                         array('nip,nama,bidang_id,seksi_id,role_id,username, email', 'required', 'on'=>'update'),
 			array('umur, seksi_id, role_id', 'numerical', 'integerOnly'=>true),
 			array('nip', 'length', 'max'=>18),
 			array('nama, pendidikan_terakhir', 'length', 'max'=>50),
 			array('username', 'length', 'max'=>25),
+                        array('password,password_confirmation,bidang_id', 'safe'),
                         array('username,email','unique'),
 			array('email', 'length', 'max'=>150),
-			array('password', 'length', 'min'=>6, 'max'=>15),
-                        array('password', 'compare', 'compareAttribute'=>'password_confirmation'),
+			array('password', 'length', 'min'=>6, 'max'=>15, 'on'=>'create'),
+                        array('password', 'compare', 'compareAttribute'=>'password_confirmation', 'on'=>'create'),
 			array('remember_token, jenis_identitas, no_identitas, jk, telp, pekerjaan', 'length', 'max'=>100),
 			array('alamat', 'length', 'max'=>255),
 			array('instansi_pekerjaan', 'length', 'max'=>200),

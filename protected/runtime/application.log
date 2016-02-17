@@ -5095,3 +5095,1595 @@ in C:\xampp\htdocs\simdapel_yii\index.php (14)
 2016/02/17 10:30:18 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataIndividuForm".
 in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
 in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 12:56:29 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:33 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "no_surat" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:49 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataIndividuForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (168)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:06:59 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:07:09 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:31 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (173)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:42 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:08:52 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:43 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:10:56 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:12 [error] [php] Undefined variable: model (C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php:162)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): Permohonan_dataController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): Permohonan_dataController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): Permohonan_dataController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): Permohonan_dataController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=permohonan_data/update&id=13
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (162)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:16:52 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:18 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:19:27 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:02 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:29 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (185)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:37 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (186)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:49 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:22:54 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:25 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (219)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:41 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (219)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:23:49 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:14 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "alamat" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "telp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "nama_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "kategori_instansi" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "nama_kepala" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "pnbp" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "proses_data" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "size" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:24:20 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataBPSForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (163)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "jenis_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "no_identitas" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "nama" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "umur" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "jk" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "pendidikan_terakhir" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "pekerjaan" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "email" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "status_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "operator_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "create_time" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "pegawai_id" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:25:16 [warning] [application] Failed to set unsafe attribute "flag_user" of "PermohonanDataInstansiForm".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (175)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:54:35 [error] [php] Undefined variable: seksis (C:\xampp\htdocs\simdapel_yii\protected\views\user\create.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php(76): UserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=user/create
+in C:\xampp\htdocs\simdapel_yii\protected\views\user\create.php (31)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (76)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:55:02 [error] [php] Use of undefined constant seksi_id - assumed 'seksi_id' (C:\xampp\htdocs\simdapel_yii\protected\views\user\_form.php:53)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\simdapel_yii\protected\views\user\create.php(32): UserController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): UserController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): UserController->renderPartial()
+#6 C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php(76): UserController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=user/create
+in C:\xampp\htdocs\simdapel_yii\protected\views\user\_form.php (53)
+in C:\xampp\htdocs\simdapel_yii\protected\views\user\create.php (32)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (76)
+2016/02/17 14:58:34 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 14:58:34 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:00:29 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:00:29 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:00:46 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:00:46 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:06:49 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:06:49 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:07:51 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:07:51 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:07:59 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:07:59 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:08:12 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:08:12 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:09:14 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:09:14 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:09:44 [warning] [application] Failed to set unsafe attribute "password_confirmation" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:09:44 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:11:24 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:15:59 [warning] [application] Failed to set unsafe attribute "bidang_id" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:16:00 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\simdapel_yii\protected\views\user\index.php:52)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php(136): UserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=user/index
+in C:\xampp\htdocs\simdapel_yii\protected\views\user\index.php (52)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (136)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:17:31 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\simdapel_yii\protected\views\user\index.php:52)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php(136): UserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=user/index
+in C:\xampp\htdocs\simdapel_yii\protected\views\user\index.php (52)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (136)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:33:28 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:33:43 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:34:20 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:35:07 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:35:13 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:35:45 [warning] [application] Failed to set unsafe attribute "password" of "User".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\UserController.php (64)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:41:04 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (73)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:41:04 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (73)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:41:04 [warning] [application] Failed to set unsafe attribute "duplikasi" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (73)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:55:51 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (105)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:55:51 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (105)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/17 15:55:51 [warning] [application] Failed to set unsafe attribute "duplikasi" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (105)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)

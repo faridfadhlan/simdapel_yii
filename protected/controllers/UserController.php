@@ -62,17 +62,22 @@ class UserController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
-                        $model->password = User::model()->hashPassword($model->password);
-			if($model->save()):
-                                Yii::app()->user->setFlash('success', "Data berhasil ditambah!");
-				$this->redirect(array('index'));
+                        if($model->seksi_id!=NULL):
+                            $model->bidang_id = $model->seksi->bidang_id;
                         endif;
+                        $model->scenario = 'create';
+                        //print_r($model);exit;
+                        if($model->validate()){
+                            if($model->save()):
+                                    Yii::app()->user->setFlash('success', "Data berhasil ditambah!");
+                                    $this->redirect(array('index'));
+                            endif;
+                        }
 		}
 
 		$this->render('create',array(
 			'model' => $model,
                         'bidangs' =>  Bidang::model()->findAll(),
-                        'seksis' =>  Seksi::model()->findAll(),
                         'roles' =>  Role::model()->findAllByAttributes(array(),'id!=:id',array(':id'=>3))
                 ));
 	}
@@ -93,9 +98,12 @@ class UserController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
-			if($model->save()):
-                                Yii::app()->user->setFlash('success', "Data berhasil diubah!");
-				$this->redirect(array('index'));
+                        $model->scenario = 'update';
+                        if($model->validate()):
+                            if($model->save()):
+                                    Yii::app()->user->setFlash('success', "Data berhasil diubah!");
+                                    $this->redirect(array('index'));
+                            endif;
                         endif;
 		}
 

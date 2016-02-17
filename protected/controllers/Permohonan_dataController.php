@@ -150,27 +150,29 @@ class Permohonan_dataController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$permohonan=$this->loadModel($id);
                 $model_bps = new PermohonanDataBPSForm();
                 $model_individu = new PermohonanDataIndividuForm();
                 $model_instansi = new PermohonanDataInstansiForm();
                 $tab_aktif = 0;
                 
                 //unset(Yii::app()->request->cookies['data_inventori_id']);
-                Yii::app()->request->cookies['data_inventori_id'] = new CHttpCookie('data_inventori_id',$model->data_inventori_id);
+                Yii::app()->request->cookies['data_inventori_id'] = new CHttpCookie('data_inventori_id',$permohonan->data_inventori_id);
                 //print_r($model);exit;
-                if($model->flag_user==1) {                    
-                    $model_bps->attributes = $model->attributes;
+                if($permohonan->flag_user==1) {                    
+                    $model_bps->attributes = $permohonan->attributes;
+                    $model_bps->bidang_id = $permohonan->peminjam_bps->seksi->bidang_id;
+                    $model_bps->seksi_id = $permohonan->peminjam_bps->seksi_id;
                     //print_r($model_bps->attributes);exit;
                 }
                 
-                if($model->flag_user==2) {
-                    $model_individu->attributes = $model->attributes;
+                if($permohonan->flag_user==2) {
+                    $model_individu->attributes = $permohonan->attributes;
                     $tab_aktif = 1;
                 }
                 
-                if($model->flag_user==3) {
-                    $model_instansi->attributes = $model->attributes;
+                if($permohonan->flag_user==3) {
+                    $model_instansi->attributes = $permohonan->attributes;
                     $tab_aktif = 2;
                 }
                 //print_r($tab_aktif);exit;
@@ -178,11 +180,55 @@ class Permohonan_dataController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['PermohonanData']))
+                if(isset($_POST['PermohonanDataBPSForm']))
 		{
-			$model->attributes=$_POST['PermohonanData'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        $model_bps->attributes = $_POST['PermohonanDataBPSForm'];
+                        $permohonan->attributes=$_POST['PermohonanDataBPSForm'];
+                        if(isset($permohonan->peminjam_bps)):
+                            $model_bps->bidang_id = $permohonan->peminjam_bps->seksi->bidang_id;
+                            $model_bps->seksi_id = $permohonan->peminjam_bps->seksi_id;
+                        endif;
+                        if($model_bps->validate()):
+                            $permohonan->flag_user='1';
+                            if($permohonan->save())
+				$this->redirect(array('index'));
+                        endif;
+		}
+                
+                if(isset($_POST['PermohonanDataIndividuForm']))
+		{
+                        $model_individu->attributes = $_POST['PermohonanDataIndividuForm'];
+                        $permohonan->attributes=$_POST['PermohonanDataIndividuForm'];
+                        if($model_individu->validate()):
+                            $permohonan->flag_user='2';
+                            if($permohonan->pnbp=='2') :
+                                $permohonan->proses_data = NULL;
+                                $permohonan->size = NULL;
+                            endif;
+                            if($permohonan->save()):
+                                unset(Yii::app()->request->cookies['data_inventori_id']);
+                                $this->redirect(array('index'));
+                            endif;
+				
+                        endif;
+		}
+                
+                if(isset($_POST['PermohonanDataInstansiForm']))
+		{
+                        $model_instansi->attributes = $_POST['PermohonanDataInstansiForm'];
+                        $permohonan->attributes=$_POST['PermohonanDataInstansiForm'];
+                        if($model_instansi->validate()):
+                            $permohonan->flag_user='3';
+                            if($permohonan->pnbp=='2') :
+                                $permohonan->proses_data = NULL;
+                                $permohonan->size = NULL;
+                            endif;
+                            if($permohonan->save()):
+                                unset(Yii::app()->request->cookies['data_inventori_id']);
+                                $this->redirect(array('index'));
+                            endif;
+				
+                        endif;
 		}
 
 		$this->render('update',array(

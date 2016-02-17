@@ -24,7 +24,7 @@
         <?php if(Yii::app()->controller->action->id == 'create'): ?>
         <div class="form-group">
             <?php echo $form->labelEx($model,'password'); ?>
-            <?php echo $form->passwordField($model,'password',array('maxlength'=>25,'class'=>'form-control','placeholder'=>'Username')); ?>    
+            <?php echo $form->passwordField($model,'password',array('maxlength'=>25,'class'=>'form-control','placeholder'=>'password')); ?>    
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'password_confirmation'); ?>
@@ -35,15 +35,35 @@
     <div class="col-md-6">
         <div class="form-group">
             <?php echo $form->labelEx($model,'email'); ?>
-            <?php echo $form->textField($model,'email',array('maxlength'=>18,'class'=>'form-control','placeholder'=>'Email')); ?>    
+            <?php echo $form->textField($model,'email',array('maxlength'=>150,'class'=>'form-control','placeholder'=>'Email')); ?>    
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'bidang_id'); ?>
-            <?php echo $form->dropDownList($model,'bidang_id',CHtml::listData($bidangs, 'id', 'nama_bidang'),array('class'=>'form-control','prompt'=>'Pilih Bidang...')); ?>    
+            <?php echo $form->dropDownList(
+                    $model,
+                    'bidang_id',
+                    CHtml::listData($bidangs, 'id', 'nama_bidang'),
+                    array(
+                        'class'=>'form-control',
+                        'prompt'=>'Pilih Bidang...',
+                        'ajax' => array(
+                            'type'=>'POST',
+                            'data'=>array('bidang_id'=>'js:this.value'),
+                            'url'=>Yii::app()->createUrl('peminjaman_pl/getDropdownSeksi'), //url to call.
+                            'update'=>'#'.CHtml::activeId($model, 'seksi_id'),
+                        ),
+                    )); ?>    
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'seksi_id'); ?>
-            <?php echo $form->dropDownList($model,'seksi_id',CHtml::listData($seksis, 'id', 'nama_seksi'),array('class'=>'form-control','prompt'=>'Pilih Seksi...')); ?>    
+            <?php echo $form->dropDownList(
+                    $model,
+                    'seksi_id',
+                    CHtml::listData(Seksi::model()->findAll('bidang_id=:bidang_id', array(':bidang_id'=>$model->bidang_id)),'id', 'nama_seksi'),
+                    array(
+                        'class'=>'form-control',
+                        'prompt'=>'Pilih Seksi...'
+                    )); ?>    
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'role_id'); ?>

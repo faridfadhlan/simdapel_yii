@@ -103,17 +103,22 @@
                         array('class'=>'form-control','prompt'=>'Pilih Nama Peminjam...')); ?>    
             </div>
             <div class="form-group">
+                <?php echo $form->labelEx($model,'tgl_pinjam'); ?>
+                <?php echo $form->textField($model,'tgl_pinjam',array('class'=>'form-control datepicker','placeholder'=>'Tanggal Pinjam')); ?>    
+            </div>
+            <div class="form-group">
                 <?php echo $form->checkBox($model,'duplikasi'); ?> Buat duplikasi baru
             </div>
         </div>
         <div class="col-md-6">            
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'tgl_pinjam'); ?>
-                <?php echo $form->textField($model,'tgl_pinjam',array('class'=>'form-control datepicker','placeholder'=>'Tanggal Pinjam')); ?>    
-            </div>
-            <div class="form-group" id="tgl_targetkembali_container">
+            
+            <div class="form-group tgl_kembali_container">
                 <?php echo $form->labelEx($model,'tgl_targetkembali'); ?>
-                <?php echo $form->textField($model,'tgl_targetkembali',array('class'=>'form-control datepicker','placeholder'=>'Tanggal Kembali')); ?>    
+                <?php echo $form->textField($model,'tgl_targetkembali',array('class'=>'form-control datepicker','placeholder'=>'Target Tanggal Kembali')); ?>    
+            </div>
+            <div class="form-group tgl_kembali_container">
+                <?php echo $form->labelEx($model,'tgl_kembali'); ?>
+                <?php echo $form->textField($model,'tgl_kembali',array('class'=>'form-control datepicker','placeholder'=>'Tanggal Kembali')); ?>    
             </div>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'keterangan'); ?>
@@ -142,9 +147,9 @@ $cs->registerScript("sukses","
 ", CClientScript::POS_END);
 $show_tgl_kembali = $model->duplikasi=='1'?'false':'true';
 $cs->registerScript("duplikasi","
-    $('#tgl_targetkembali_container').toggle(".$show_tgl_kembali.");
+    $('.tgl_kembali_container').toggle(".$show_tgl_kembali.");
     jQuery('body').on('click','#".CHtml::activeId($model,'duplikasi')."',function(){
-        $('#tgl_targetkembali_container').toggle();
+        $('.tgl_kembali_container').toggle();
     });
     $('.datepicker').datepicker({
         format: 'yyyy-mm-dd',
