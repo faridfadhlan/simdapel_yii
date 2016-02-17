@@ -55,7 +55,20 @@
                             echo '<td class="text-center">'.
                                     CHtml::link('<i class="fa fa-edit"></i>',array('pl_data/update','id'=>$data->id)).
                                     CHtml::link('<i class="fa fa-remove"></i>',array('pl_data/delete','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-cart-plus"></i>',array('pl_data/pinjam','id'=>$data->id)).
+                                    (($update_id!=NULL)?
+                                    CHtml::link(
+                                            '<i class="fa fa-cart-plus"></i>',
+                                            array(
+                                                'pl_data/pinjam',
+                                                'id'=>$data->id,
+                                                'update_id'=>$update_id
+                                            )):
+                                    CHtml::link(
+                                            '<i class="fa fa-cart-plus"></i>',
+                                            array(
+                                                'pl_data/pinjam',
+                                                'id'=>$data->id,
+                                            ))).
                                     '</td>';
                             echo '</tr>';
                         }

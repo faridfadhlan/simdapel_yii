@@ -56,7 +56,7 @@
            
             
             <li class="treeview"><?php echo CHtml::link('<i class="fa fa-table text-yellow"></i><span>Peminjaman Software</span>', array('peminjaman_pl/index'));?></li>
-            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Permintaan Data</span>', array('permintaan_data/index'));?></li>
+            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Permohonan Data</span>', array('permohonan_data/index'));?></li>
             <?php }?>
           </ul>
         </section>

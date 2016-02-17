@@ -2,17 +2,17 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Master Data Inventori
+        Permohonan Data
         <!--<small>Control panel</small>-->
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li>Master Data Inventori</li>
-        <li class="active">Data Inventori</li>
+        <li>Permohonan Data</li>
+        <li class="active">Data Permohonan Data</li>
       </ol>
         <br />
         <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4'): ?> 
-        <?php echo CHtml::link('<i class="fa fa-plus"></i>Tambah Data Inventori', array('data_inventori/create'), array('class'=>'btn btn-default pull-left'));?>
+        <?php echo CHtml::link('<i class="fa fa-plus"></i>Tambah Permohonan Data', array('permohonan_data/create'), array('class'=>'btn btn-default pull-left'));?>
         <div class='clearfix'></div>
         
         <?php endif;?>
@@ -33,42 +33,31 @@
                 <table id="tabel1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th class="text-center">No CD</th>
-                        <th class="text-center">Label CD</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center">Tahun</th>
-                        <th class="text-center">Rincian</th>
-                        <th class="text-center">Format</th>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Kategori Pemohon</th>
+                        <th class="text-center">Nomor Surat</th>
+                        <th class="text-center">Nama Pemohon/Instansi</th>
+                        <th class="text-center">Data</th>
+                        <th class="text-center">Tanggal Permohonan</th>
                         <th class="text-center">Aksi</th>
                       </tr>
                     </thead>  
                     <tbody>
                         <?php 
+                        $i=0;
+                        $jenis = array('1'=>'Pegawai BPS', '2'=>'Individu', '3'=>'Instansi/Lembaga');
                         foreach($dataProvider as $data) {
+                            $i++;
                             echo '<tr>';
-                            echo '<td class="text-center">'.$data->no_cd.'</td>';
-                            echo '<td>'.$data->label_cd.'</td>';
-                            echo '<td>'.$data->nama_data.'</td>';
-                            echo '<td>'.$data->tahun.'</td>';
-                            echo '<td>'.$data->rincian.'</td>';
-                            echo '<td>'.$data->format.'</td>';
+                            echo '<td class="text-center">'.$i.'</td>';
+                            echo '<td>'.($data->jk!=NULL?"Individu":$jenis[$data->flag_user]).'</td>';
+                            echo '<td>'.$data->no_surat.'</td>';
+                            echo '<td>'.(($data->flag_user=='2')?$data->nama:(($data->flag_user=='1')?$data->peminjam_bps->nama:$data->nama_instansi)).'</td>';
+                            echo '<td>'.$data->data_inventori->nama_data.'</td>';
+                            echo '<td class="text-center">'.datetime_to_tanggal($data->create_time).'</td>';
                             echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('data_inventori/update','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-remove"></i>',array('data_inventori/delete','id'=>$data->id)).
-                                    (isset($update_id)?
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'data_inventori/pinjam',
-                                                'id'=>$data->id,
-                                                'update_id'=>$update_id
-                                            )):
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'data_inventori/pinjam',
-                                                'id'=>$data->id,
-                                            ))).
+                                    CHtml::link('<i class="fa fa-edit"></i>',array('permohonan_data/update','id'=>$data->id)).
+                                    CHtml::link('<i class="fa fa-remove"></i>',array('permohonan_data/delete','id'=>$data->id)).
                                     '</td>';
                             echo '</tr>';
                         }
@@ -88,6 +77,8 @@ $cs->registerCssFile(Yii::app()->request->baseUrl.'/public/plugins/datatables/da
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/public/plugins/datatables/jquery.dataTables.min.js',CClientScript::POS_END);
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/public/plugins/datatables/dataTables.bootstrap.min.js',CClientScript::POS_END);
 $cs->registerScript("datatable", "
-    $('#tabel1').DataTable();
+    $('#tabel1').DataTable({
+        'ordering': false
+    });
 ");
 ?>

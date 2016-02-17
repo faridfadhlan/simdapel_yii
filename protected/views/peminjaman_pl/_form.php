@@ -26,7 +26,21 @@
                         <?php echo $pl_data->kode;?>
                         <?php echo $form->hiddenField($model,'pl_data_id');?>
                     </td>
-                    <td><?php echo $pl_data->nama.'&nbsp;('.CHtml::link('Ganti', array('pl_data/index')).' / '.CHtml::link('Hapus', array('pl_data/hapuspinjam')).')';?></td>
+                    <td><?php echo $pl_data->nama.'&nbsp;('.
+                            (($model->isNewRecord)?
+                            CHtml::link(
+                                    'Ganti', 
+                                    array(
+                                        'pl_data/index',
+                                    )):
+                            CHtml::link(
+                                    'Ganti', 
+                                    array(
+                                        'pl_data/index',
+                                        'update_id'=>$model->id
+                                    ))
+                            ).
+                            ' / '.CHtml::link('Hapus', array('pl_data/hapuspinjam')).')';?></td>
                     <td><?php echo $pl_data->jenis->nama_jenis;?></td>
                     <td><?php echo $pl_data->jumlah_media;?></td>
                     <td><?php echo $pl_data->license->nama_license;?></td>
@@ -121,14 +135,14 @@ $cs->scriptMap=array('jquery.js'=>false);
 $cs->registerCssFile(Yii::app()->baseUrl."/public/plugins/datepicker/datepicker3.css");
 $cs->registerScriptFile(Yii::app()->baseUrl."/public/plugins/datepicker/bootstrap-datepicker.js",CClientScript::POS_END);
 $cs->registerScript("sukses","
-    function update_seksi_user(data)
-    {
+    function update_seksi_user(data) {
         $('#".CHtml::activeId($model,'seksi_id')."').html(data);
-        $('#".CHtml::activeId($model,'user_id')."').html('');
+        $('#".CHtml::activeId($model,'user_id')."').html('<option>Pilih Nama Peminjam...</option>');
     }
 ", CClientScript::POS_END);
-
+$show_tgl_kembali = $model->duplikasi=='1'?'false':'true';
 $cs->registerScript("duplikasi","
+    $('#tgl_targetkembali_container').toggle(".$show_tgl_kembali.");
     jQuery('body').on('click','#".CHtml::activeId($model,'duplikasi')."',function(){
         $('#tgl_targetkembali_container').toggle();
     });

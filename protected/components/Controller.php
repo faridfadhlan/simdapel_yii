@@ -24,17 +24,23 @@ class Controller extends CController
 	public $breadcrumbs=array();
         
         public function harus_admin_or_operator() {
-            if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
-            return false;
+            if(isset(Yii::app()->user->role_id)):
+                if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
+                return false;
+            endif;
         }
         
         public function harus_admin() {
-            if(Yii::app()->user->role_id == '1') return true;
-            return false;
+            if(isset(Yii::app()->user->role_id)):    
+                if(Yii::app()->user->role_id == '1') return true;
+                return false;
+            endif;    
         }
         
         public function harus_operator() {
-            if(Yii::app()->user->role_id == '4') return true;
-            return false;
+            if(isset(Yii::app()->user->role_id)):    
+                if(Yii::app()->user->role_id == '4') return true;
+                return false;
+            endif;    
         }
 }

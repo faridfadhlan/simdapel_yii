@@ -80,8 +80,7 @@ class Peminjaman_plController extends Controller
 		}
                 
                 if(isset(Yii::app()->request->cookies['pl_data']))
-                    $model->pl_data_id = Yii::app()->request->cookies['pl_data'];
-                    
+                    $model->pl_data_id = Yii::app()->request->cookies['pl_data'];                
 		$this->render('create',array(
 			'model'=>$model,
                         'bidangs'=>  Bidang::model()->findAll(),
@@ -104,16 +103,24 @@ class Peminjaman_plController extends Controller
 		if(isset($_POST['PlTransaksi']))
 		{
 			$model->attributes=$_POST['PlTransaksi'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        $model->operator_id = Yii::app()->user->id;
+                        if($_POST['PlTransaksi']['duplikasi']==='1') $model->tgl_targetkembali = NULL;
+			if($model->save()):
+                            unset(Yii::app()->request->cookies['pl_data']);
+                            $this->redirect(array('index'));
+                        endif;
 		}
                 
                 $model->bidang_id = $model->user->seksi->bidang_id;
                 $model->seksi_id = $model->user->seksi_id;
+                $model->duplikasi = $model->tgl_targetkembali==NULL?'1':'0';
+                //Jika memilih data baru, variabel pl_data_id diubah sesuai cookie, jika tidak sesuai di db
+                if(isset(Yii::app()->request->cookies['pl_data']))
+                    $model->pl_data_id = Yii::app()->request->cookies['pl_data'];
 		$this->render('update',array(
-			'model'=>$model,
-                        'bidangs'=>  Bidang::model()->findAll(),
-                        'pl_data'=>  PlData::model()->findByPk($model->pl_data_id)
+                    'model'=>$model,
+                    'bidangs'=>  Bidang::model()->findAll(),
+                    'pl_data'=>  PlData::model()->findByPk((string)$model->pl_data_id)
 		));
 	}
 
@@ -136,6 +143,7 @@ class Peminjaman_plController extends Controller
 	 */
 	public function actionIndex()
 	{
+                unset(Yii::app()->request->cookies['pl_data']);
 		$dataProvider=  PlTransaksi::model()->findAll();
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

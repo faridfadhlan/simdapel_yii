@@ -157,7 +157,7 @@ class Pl_dataController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionIndex($update_id = NULL)
 	{
 		$dataProvider=PlData::model()->findAll();
                 $this->js_tambahan = array(
@@ -165,9 +165,10 @@ class Pl_dataController extends Controller
                     '<script type="text/javascript" src="'.Yii::app()->request->baseUrl.'/public/plugins/datatables/dataTables.bootstrap.min.js'.'"></script>'
                 );
                 //print_r($dataProvider);
-               
+                if($update_id == NULL) unset(Yii::app()->request->cookies['pl_data']);
 		$this->render('index',array(
 			'pl_data'=>$dataProvider,
+                        'update_id'=>$update_id
 		));
 	}
 
@@ -201,8 +202,9 @@ class Pl_dataController extends Controller
 		return $model;
 	}
         
-        public function actionPinjam($id) {
+        public function actionPinjam($id, $update_id=NULL) {
             Yii::app()->request->cookies['pl_data'] = new CHttpCookie('pl_data',$id);
+            if($update_id!=NULL) $this->redirect(array('peminjaman_pl/update','id'=>$update_id));
             $this->redirect(array('peminjaman_pl/create'));
         }
         

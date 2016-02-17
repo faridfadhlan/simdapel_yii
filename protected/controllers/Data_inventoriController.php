@@ -36,7 +36,7 @@ class Data_inventoriController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','pinjam','hapuspinjam'),
 				'expression'=>array('Controller','harus_admin_or_operator')
 			),
 			array('deny',  // deny all users
@@ -172,6 +172,17 @@ class Data_inventoriController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+        
+        public function actionPinjam($id, $update_id = NULL) {
+            Yii::app()->request->cookies['data_inventori_id'] = new CHttpCookie('data_inventori_id',$id);
+            if($update_id != NULL) $this->redirect(array('permohonan_data/update','id'=>$update_id));
+            $this->redirect(array('permohonan_data/create'));
+        }
+        
+        public function actionHapuspinjam() {
+            unset(Yii::app()->request->cookies['data_inventori_id']);
+            $this->redirect(array('permohonan_data/create'));
+        }
 
 	/**
 	 * Performs the AJAX validation.
