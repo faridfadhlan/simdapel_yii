@@ -1,4 +1,5 @@
 <div class="box-body">
+<?php print_r($model->getErrors());?>
 <?php echo CHtml::errorSummary($model,NULL, NULL,array('class'=>'alert alert-danger')); ?>
 </div>
 <?php $form=$this->beginWidget('CActiveForm', array(

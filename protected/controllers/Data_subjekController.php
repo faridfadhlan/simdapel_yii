@@ -27,17 +27,18 @@ class Data_subjekController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('index','view'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'expression'=>array('Controller','harus_admin_or_operator')
+				'actions'=>array('admin','delete','create','update'),
+				'expression'=>function () {
+                                                if(isset(Yii::app()->user->role_id)):
+                                                    if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
+                                                    return false;
+                                                endif;
+                                            }
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

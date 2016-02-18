@@ -22,7 +22,7 @@ class SiteController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('login','buat'),
+				'actions'=>array('login','buat','register','captcha'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions
@@ -136,6 +136,7 @@ class SiteController extends Controller
         
         public function actionRegister()
         {
+                $this->layout = '//layouts/kosong';
                 $model = new RegistrasiForm;
                 if(isset($_POST['RegistrasiForm']))
 		{
@@ -143,6 +144,7 @@ class SiteController extends Controller
 			if($model->validate()):
                             $user = new User;
                             $user->attributes = $model->attributes;
+                            $user->role_id = '3';
                             if($user->save()){
                                 $this->redirect(array('site/login'));
                             }

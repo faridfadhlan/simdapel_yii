@@ -16,15 +16,24 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 	'id'=>'login-form',
 	'enableAjaxValidation'=>false,
 )); ?>
-          <div class="form-group has-feedback">
+          <div class="form-group has-feedback <?php echo $model->hasErrors('username')?'has-error':''; ?>">
+              <?php echo $model->hasErrors('username')?CHtml::label($model->getError('username'),CHtml::activeName($model, 'username')):'';?>
               <?php echo $form->textField($model,'username',array('class'=>'form-control', 'placeholder'=>'Username')); ?>
             
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
-          <div class="form-group has-feedback">
-            <?php echo $form->passwordField($model,'password',array('class'=>'form-control', 'placeholder'=>'Password')); ?>
+          <div class="form-group has-feedback <?php echo $model->hasErrors('password')?'has-error':''; ?>">
+            <?php echo $model->hasErrors('password')?CHtml::label($model->getError('password'),CHtml::activeName($model, 'password')):'';?>
+              <?php echo $form->passwordField($model,'password',array('class'=>'form-control', 'placeholder'=>'Password')); ?>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
+        <div class="form-group has-feedback <?php echo $model->hasErrors('verifyCode')?'has-error':''; ?>">
+             <?php echo $model->hasErrors('verifyCode')?CHtml::label($model->getError('verifyCode'),CHtml::activeName($model, 'verifyCode')):'';?>
+            <?php $this->widget('CCaptcha');?>
+            <?php echo $form->textField($model,'verifyCode',array('class'=>'form-control', 'placeholder'=>'Kode Verifikasi')); ?>
+            
+          </div>
+            
           <div class="row">
             <div class="col-xs-8">
               <div class="checkbox icheck">
@@ -39,7 +48,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
             </div><!-- /.col -->
           </div>
                         <div class="row"><div class="col-xs-12">
-                             <?php echo CHtml::link("Register", "#");?>
+                             <?php echo 'Belum terdaftar? Silahkan registrasi di '.CHtml::link("sini", array('site/register'));?>
                             </div></div>
         <?php $this->endWidget();?>
 

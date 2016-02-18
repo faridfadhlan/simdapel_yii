@@ -37,7 +37,12 @@ class Peminjaman_plController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete','getDropdownSeksi','getDropdownPeminjam'),
-				'expression'=>array('Controller','harus_admin_or_operator')
+				'expression'=>function () {
+                                                if(isset(Yii::app()->user->role_id)):
+                                                    if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
+                                                    return false;
+                                                endif;
+                                            }
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

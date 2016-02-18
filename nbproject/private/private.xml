@@ -3,17 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/peminjaman_pl/_form.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/user/_form.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_mediaController.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_companyController.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Data_inventoriController.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Permohonan_dataController.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_jenisController.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_licenseController.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Data_subjekController.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/UserController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/site/register.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/config/main.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/components/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Peminjaman_plController.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/SiteController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/peminjaman_pl/index.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/User.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/RegistrasiForm.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/PermohonanDataIndividuForm.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_dataController.php</file>
         </group>
     </open-files>
 </project-private>
