@@ -32,6 +32,7 @@ class DataInventori extends CActiveRecord
 	 * @return string the associated database table name
 	 */
         public $layout_file;
+        public $kode;
     
 	public function tableName()
 	{
@@ -46,11 +47,12 @@ class DataInventori extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('subjek_id,no_cd, label_cd, nama_data, tahun, format, file_size, create_time', 'required'),
+			array('subjek_id,no_cd, label_cd, nama_data, tahun, format, file_size', 'required'),
 			array('jumlah_rec, file_size, subjek_id, operator_id', 'numerical', 'integerOnly'=>true),
 			array('no_cd, label_cd, nama_data, rincian, format, keterangan, nama_layout', 'length', 'max'=>255),
 			array('tahun', 'length', 'max'=>4),
 			array('file_size_unit', 'length', 'max'=>2),
+                    
                         array('layout_file', 'file', 'types'=>'pdf', 'allowEmpty'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -146,4 +148,22 @@ class DataInventori extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function set_new_kode() {
+            $this->no_cd = $this->get_new_kode();
+        }
+        
+        public function get_new_kode() {
+            //print_r($this->subjek_id);exit;
+                $criteria = new CDbCriteria();
+                $criteria->select = 'substring(max(no_cd),-3) as kode';
+                $criteria->condition = 'subjek_id='.$this->subjek_id;
+                $tertinggi = $this::model()->find($criteria);
+                $angkanol = array(0 => '000', 1=>'00', 2=>'0', 3=>'');
+                $angkanol_jenis = array(0=>'00', 1=>'0', 2=>'');
+                $next_kode = (intval($tertinggi->kode)+1);
+                return $angkanol_jenis[strlen($this->subjek_id)].$this->subjek_id.$angkanol[strlen($next_kode)].$next_kode;
+        }
+        
+        
 }

@@ -33,13 +33,13 @@
                 <table id="tabel1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th width='10%' style='text-align: center;vertical-align: center;'>Kode</th>
-                        <th style='text-align: center;vertical-align: center;'>Nama</th>
-                        <th width='10%' style='text-align: center;vertical-align: center;'>Jumlah Media</th>
-                        <th width='20%' style='text-align: center;vertical-align: center;'>Company</th>
-                        <th width='20%' style='text-align: center;vertical-align: center;'>Lisensi</th>
-                        <th style='text-align: center;vertical-align: center;'>Manual</th>
-                        <th style='text-align: center;vertical-align: center;'>Aksi</th>
+                        <th class="text-center">Kode</th>
+                        <th class="text-center">Nama</th>
+                        <th class="text-center">Jumlah Media</th>
+                        <th class="text-center">Company</th>
+                        <th class="text-center">Lisensi</th>
+                        <th class="text-center">Manual</th>
+                        <th class="text-center">Aksi</th>
                       </tr>
                     </thead>  
                     <tbody>
@@ -52,24 +52,39 @@
                             echo '<td>'.$data->company->nama_company.'</td>';
                             echo '<td>'.$data->license->nama_license.'</td>';
                             echo '<td>'.$data->manual.'</td>';
-                            echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('pl_data/update','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-remove"></i>',array('pl_data/delete','id'=>$data->id)).
-                                    (($update_id!=NULL)?
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'pl_data/pinjam',
-                                                'id'=>$data->id,
-                                                'update_id'=>$update_id
-                                            )):
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'pl_data/pinjam',
-                                                'id'=>$data->id,
-                                            ))).
-                                    '</td>';
+                            echo '<td class="text-center">';?>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default btn-flat">Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                        <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><?php echo CHtml::link('Edit',array('pl_data/update','id'=>$data->id));?></li>
+                                            <li><?php echo CHtml::link('Hapus',array('pl_data/delete','id'=>$data->id));?></li>
+                                            <li>
+                                                <?php
+                                                echo (($update_id!=NULL)?
+                                                    CHtml::link(
+                                                            'Pinjam',
+                                                            array(
+                                                                'pl_data/pinjam',
+                                                                'id'=>$data->id,
+                                                                'update_id'=>$update_id
+                                                            )):
+                                                    CHtml::link(
+                                                            'Pinjam',
+                                                            array(
+                                                                'pl_data/pinjam',
+                                                                'id'=>$data->id,
+                                                            )));
+                                                ?>
+                                            </li>
+                                            <li><?php echo CHtml::link('Instal',array('pl_data/instal','id'=>$data->id));?></li>
+                                        </ul>
+                                    </div>
+                                    </td>
+                            <?php
                             echo '</tr>';
                         }
                         ?>

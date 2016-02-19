@@ -32,7 +32,7 @@ class Pl_dataController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','pinjam', 'hapuspinjam'),
+				'actions'=>array('create','update','pinjam', 'hapuspinjam','instal'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -211,6 +211,12 @@ class Pl_dataController extends Controller
             Yii::app()->request->cookies['pl_data'] = new CHttpCookie('pl_data',$id);
             if($update_id!=NULL) $this->redirect(array('peminjaman_pl/update','id'=>$update_id));
             $this->redirect(array('peminjaman_pl/create'));
+        }
+        
+        public function actionInstal($id, $update_id=NULL) {
+            Yii::app()->request->cookies['pl_data_id_instal'] = new CHttpCookie('pl_data_id_instal',$id);
+            if($update_id!=NULL) $this->redirect(array('instalasi_pl/update','id'=>$update_id));
+            $this->redirect(array('instalasi_pl/create'));
         }
         
         public function actionHapuspinjam() {

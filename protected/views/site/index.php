@@ -19,34 +19,32 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>150</h3>
+                  <h3><?php echo $jumlah['pl'];?></h3>
                   <p>Perangkat Lunak</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-android-desktop"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
+                </div><?php echo CHtml::link('More info <i class="fa fa-arrow-circle-right"></i>', array('pl_data/index'), array('class'=>'small-box-footer'));?></div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>150</h3>
+                  <h3><?php echo $jumlah['data'];?></h3>
                   <p>Data Inventori</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <?php echo CHtml::link('More info <i class="fa fa-arrow-circle-right"></i>', array('data_inventori/index'), array('class'=>'small-box-footer'));?>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>105</h3>
-                  <p>Pegawai</p>
+                  <h3><?php echo $jumlah['user_self_register'];?></h3>
+                  <p>Pengguna Mendaftar Sendiri</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
@@ -58,8 +56,8 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>32</h3>
-                  <p>Peminjaman Data Inventori</p>
+                  <h3><?php echo $jumlah['permohonan_data'];?></h3>
+                  <p>Permohonan Data Inventori</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
@@ -76,7 +74,7 @@
               <div class="box box-primary">
                 
                 <div class="box-header">
-                  <h3 class="box-title">Data Peminjaman</h3>
+                  <h3 class="box-title">Peminjaman Perangkat Lunak Belum Kembali</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <table id="tabel1" class="table table-bordered table-striped">
@@ -90,160 +88,15 @@
                       </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($peminjaman_pl as $data):?>
                       <tr>
                         <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
+                        <td><?php echo $data->user->nama;?></td>
+                        <td><?php echo $data->pl_data->nama;?></td>
                         <td>8 Januar 2015</td>
                         <td>Belum Kembali</td>
                       </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
-                      <tr>
-                        <td>14 Januari 2016</td>
-                        <td>Muhammad Farid Fadhlan</td>
-                        <td>CD Microsoft Office 2010</td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
-                      </tr>
+                      <?php endforeach;?>
                     </tbody>
                   </table>
                 </div><!-- /.box-body -->

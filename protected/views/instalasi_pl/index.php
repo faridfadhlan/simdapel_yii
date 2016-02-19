@@ -2,18 +2,17 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Master Data Inventori
+        Permintaan Instalansi Perangkat Lunak
         <!--<small>Control panel</small>-->
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li>Master Data Inventori</li>
-        <li class="active">Data Inventori</li>
+        <li>Permintaan Instalansi Perangkat Lunak</li>
+        <li class="active">Data Permintaan Instalansi Perangkat Lunak</li>
       </ol>
         <br />
         <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4'): ?> 
-        <?php echo CHtml::link('<i class="fa fa-plus"></i>Tambah Data Inventori', array('data_inventori/create'), array('class'=>'btn btn-default pull-left'));?>
-        <?php echo CHtml::link('Import Excel', array('data_inventori/importexcel'), array('class'=>'btn btn-default pull-left'));?>
+        <?php echo CHtml::link('<i class="fa fa-plus"></i>Tambah Instalansi Perangkat Lunak', array('instalasi_pl/create'), array('class'=>'btn btn-default pull-left'));?>
         <div class='clearfix'></div>
         
         <?php endif;?>
@@ -34,12 +33,11 @@
                 <table id="tabel1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th class="text-center">No CD</th>
-                        <th class="text-center">Label CD</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center">Tahun</th>
-                        <th class="text-center">Rincian</th>
-                        <th class="text-center">Format</th>
+                        <th class="text-center">ID</th>
+                        <th>Nama</th>
+                        <th>Nama Software</th>
+                        <th class="text-center">Jumlah Perangkat</th>
+                        <th>Petugas Instalasi</th>
                         <th class="text-center">Aksi</th>
                       </tr>
                     </thead>  
@@ -47,29 +45,14 @@
                         <?php 
                         foreach($dataProvider as $data) {
                             echo '<tr>';
-                            echo '<td class="text-center">'.$data->no_cd.'</td>';
-                            echo '<td>'.$data->label_cd.'</td>';
-                            echo '<td>'.$data->nama_data.'</td>';
-                            echo '<td>'.$data->tahun.'</td>';
-                            echo '<td>'.$data->rincian.'</td>';
-                            echo '<td>'.$data->format.'</td>';
+                            echo '<td  class="text-center">'.$data->id.'</td>';
+                            echo '<td>'.$data->pegawai->nama.'</td>';
+                            echo '<td>'.$data->pl_data->nama.'</td>';
+                            echo '<td class="text-center">'.$data->banyak_perangkat.'</td>';
+                            echo '<td>'.$data->petugas_instalasi->nama.'</td>';
                             echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('data_inventori/update','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-remove"></i>',array('data_inventori/delete','id'=>$data->id)).
-                                    (isset($update_id)?
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'data_inventori/pinjam',
-                                                'id'=>$data->id,
-                                                'update_id'=>$update_id
-                                            )):
-                                    CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
-                                            array(
-                                                'data_inventori/pinjam',
-                                                'id'=>$data->id,
-                                            ))).
+                                    CHtml::link('<i class="fa fa-edit"></i>',array('instalasi_pl/update','id'=>$data->id)).
+                                    CHtml::link('<i class="fa fa-remove"></i>',array('instalasi_pl/delete','id'=>$data->id)).
                                     '</td>';
                             echo '</tr>';
                         }

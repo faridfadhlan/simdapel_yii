@@ -29,12 +29,13 @@ class UserController extends Controller
 		return array(
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete','index','view','create','update'),
-				'expression'=>function() {
+				'expression'=>array('Controller', 'harus_admin'),/*
+                            function() {
                                     if(isset(Yii::app()->user->role_id)):    
                                         if(Yii::app()->user->role_id == '1') return true;
                                         return false;
                                     endif;    
-                                }
+                                }*/
 			),
 			array('deny',
                                 'users'=>array('*')

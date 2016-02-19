@@ -1,6 +1,6 @@
 <?php
 
-class Data_inventoriController extends Controller
+class Instalasi_plController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -27,12 +27,16 @@ class Data_inventoriController extends Controller
 	public function accessRules()
 	{
 		return array(
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','view'),
+				'users'=>array('*'),
+			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','pinjam','hapuspinjam','create','update','importexcel'),
+				'actions'=>array('admin','delete'),
 				'expression'=>function () {
                                                 if(isset(Yii::app()->user->role_id)):
                                                     if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
@@ -63,30 +67,29 @@ class Data_inventoriController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new DataInventori;
+		$model=new PlInstalasi;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['DataInventori']))
+		if(isset($_POST['PlInstalasi']))
 		{
-			$model->attributes=$_POST['DataInventori'];
-                        $filenya = CUploadedFile::getInstance($model,'manual_file');
-                        if(isset($filenya)) :
-                            $model->nama_layout = $model->nama_data.'.'.$filenya->getExtensionName();
-                        endif;
+			$model->attributes=$_POST['PlInstalasi'];
 			if($model->save()):
-                                Yii::app()->user->setFlash('success', "Data berhasil ditambah!");
-                                if(isset($filenya)) {
-                                    $filenya->saveAs(Yii::app()->basePath.'/../storage/layouts/'.$model->nama_layout);
-                                }
-				$this->redirect(array('index'));
+                            unset(Yii::app()->request->cookies['pl_data_id_instal']);
+                            Yii::app()->user->setFlash('success', "Data berhasil ditambah!");
+                            $this->redirect(array('index'));
                         endif;
+				
 		}
 
+                if(isset(Yii::app()->request->cookies['pl_data_id_instal']))
+                    $model->pl_data_id = Yii::app()->request->cookies['pl_data_id_instal'];
+                
 		$this->render('create',array(
 			'model'=>$model,
-                        'subjeks'=>  DataSubjek::model()->findAll()
+                        'bidangs'=>  Bidang::model()->findAll(),
+                        'pl_data'=> PlData::model()->findByPk((string)Yii::app()->request->cookies['pl_data_id_instal'])
 		));
 	}
 
@@ -102,18 +105,19 @@ class Data_inventoriController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['DataInventori']))
+		if(isset($_POST['PlInstalasi']))
 		{
-			$model->attributes=$_POST['DataInventori'];
-			if($model->save()):
-                                Yii::app()->user->setFlash('success', "Data berhasil diupdate!");
-				$this->redirect(array('index'));
-                        endif;
+			$model->attributes=$_POST['PlInstalasi'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
 		}
-
+                
+                $model->bidang_id = $model->pegawai->seksi->bidang_id;
+                $model->seksi_id = $model->pegawai->seksi_id;
 		$this->render('update',array(
 			'model'=>$model,
-                        'subjeks'=>  DataSubjek::model()->findAll()
+                        'bidangs'=>  Bidang::model()->findAll(),
+                        'pl_data'=> PlData::model()->findByPk($model->pl_data_id)
 		));
 	}
 
@@ -125,12 +129,10 @@ class Data_inventoriController extends Controller
 	public function actionDelete($id)
 	{
 		$this->loadModel($id)->delete();
-                Yii::app()->user->setFlash('success', "Data berhasil dihapus!");
-		$this->redirect(array('index'));
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		//if(!isset($_GET['ajax']))
-		//	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	/**
@@ -138,23 +140,21 @@ class Data_inventoriController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=  DataInventori::model()->findAll();
+		$dataProvider=  PlInstalasi::model()->findAll();
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}
-        
-        
 
 	/**
 	 * Manages all models.
 	 */
 	public function actionAdmin()
 	{
-		$model=new DataInventori('search');
+		$model=new PlInstalasi('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['DataInventori']))
-			$model->attributes=$_GET['DataInventori'];
+		if(isset($_GET['PlInstalasi']))
+			$model->attributes=$_GET['PlInstalasi'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -165,51 +165,27 @@ class Data_inventoriController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return DataInventori the loaded model
+	 * @return PlInstalasi the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=DataInventori::model()->findByPk($id);
+		$model=PlInstalasi::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-        
-        public function actionPinjam($id, $update_id = NULL) {
-            Yii::app()->request->cookies['data_inventori_id'] = new CHttpCookie('data_inventori_id',$id);
-            if($update_id != NULL) $this->redirect(array('permohonan_data/update','id'=>$update_id));
-            $this->redirect(array('permohonan_data/create'));
-        }
-        
-        public function actionHapuspinjam() {
-            unset(Yii::app()->request->cookies['data_inventori_id']);
-            $this->redirect(array('permohonan_data/create'));
-        }
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param DataInventori $model the model to be validated
+	 * @param PlInstalasi $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='data-inventori-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='pl-instalasi-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-        
-        public function actionImportexcel()
-        {
-            $model = new ImportExcelForm;
-            if(isset($_POST['ImportExcelForm'])) {
-                $model->attributes = $_POST['ImportExcelForm'];
-                if($model->validate())
-                    Yii::app()->user->setFlash('success', $model->jumlah_import. " data berhasil diimport!");
-            }
-            $this->render('importexcel', array('model'=>$model));
-        }
-        
-        
 }

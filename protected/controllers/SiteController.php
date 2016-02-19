@@ -60,8 +60,14 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+            //eval('echo ("Hai");');exit;
             $this->layout = '//layouts/column2';
-            $this->render('index');
+            $jumlah['pl'] = PlData::model()->count();
+            $jumlah['data'] = DataInventori::model()->count();
+            $jumlah['user_self_register'] = User::model()->count('role_id=3');
+            $jumlah['permohonan_data'] = PermohonanData::model()->count();
+            //print_r($jumlah);exit;
+            $this->render('index', array('jumlah'=>$jumlah, 'peminjaman_pl'=>  PlTransaksi::model()->findAll('tgl_targetkembali IS NOT NULL && tgl_kembali IS NULL')));
 	}
 
 	/**
@@ -72,9 +78,9 @@ class SiteController extends Controller
 		if($error=Yii::app()->errorHandler->error)
 		{
 			if(Yii::app()->request->isAjaxRequest)
-				echo $error['message'];
+                            echo $error['message'];
 			else
-				$this->render('error', $error);
+                            $this->render('error', $error);
 		}
 	}
 
