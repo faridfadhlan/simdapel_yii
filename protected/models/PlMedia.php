@@ -17,7 +17,7 @@ class PlMedia extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pl_media';
+		return 'simdapel_pl_media';
 	}
 
 	/**

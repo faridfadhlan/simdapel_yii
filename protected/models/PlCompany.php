@@ -17,7 +17,7 @@ class PlCompany extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pl_company';
+		return 'simdapel_pl_company';
 	}
 
 	/**

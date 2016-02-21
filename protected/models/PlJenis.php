@@ -18,7 +18,7 @@ class PlJenis extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pl_jenis';
+		return 'simdapel_pl_jenis';
 	}
 
 	/**

@@ -17,7 +17,7 @@ class Bidang extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'bidang';
+		return 'simdapel_bidang';
 	}
 
 	/**

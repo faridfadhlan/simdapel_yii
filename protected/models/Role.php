@@ -18,7 +18,7 @@ class Role extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'role';
+		return 'simdapel_role';
 	}
 
 	/**

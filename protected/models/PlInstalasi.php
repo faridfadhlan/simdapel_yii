@@ -30,7 +30,7 @@ class PlInstalasi extends CActiveRecord
          
         public function tableName()
 	{
-		return 'pl_instalasi';
+		return 'simdapel_pl_instalasi';
 	}
 
 	/**

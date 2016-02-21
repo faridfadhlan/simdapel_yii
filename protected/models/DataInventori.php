@@ -36,7 +36,7 @@ class DataInventori extends CActiveRecord
     
 	public function tableName()
 	{
-		return 'data_inventori';
+		return 'simdapel_data_inventori';
 	}
 
 	/**

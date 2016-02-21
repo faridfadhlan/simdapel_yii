@@ -17,7 +17,7 @@ class PlLicense extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pl_license';
+		return 'simdapel_pl_license';
 	}
 
 	/**

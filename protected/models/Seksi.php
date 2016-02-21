@@ -19,7 +19,7 @@ class Seksi extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'seksi';
+		return 'simdapel_seksi';
 	}
 
 	/**

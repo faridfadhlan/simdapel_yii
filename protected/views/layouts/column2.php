@@ -18,7 +18,8 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">HOME</li>
-            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-table"></i>Notifikasi', array('site/index'));?></li>
+            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-bell-o"></i><span>Notifikasi</span>', array('site/index'));?></li>
+            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-envelope-o"></i><span>Pesan</span>', array('messages/index'));?></li>
             <li class="header">MASTER DATA</li>
             <?php if(Yii::app()->user->role_id != '3') { ?>
             <li class="treeview <?php 
@@ -61,7 +62,7 @@
               </ul>
             </li>
             <?php if(Yii::app()->user->role_id == '1') { ?>
-            <li class="treeview <?php echo (Yii::app()->controller->id == 'user')?'active':'';?>"> <?php echo CHtml::link('<i class="fa fa-table"></i>Master Pengguna', array('user/index'));?></li>
+            <li class="treeview <?php echo (Yii::app()->controller->id == 'user')?'active':'';?>"> <?php echo CHtml::link('<i class="fa fa-table"></i><span>Master Pengguna</span>', array('user/index'));?></li>
             <?php }?>
             <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4') {?>
            

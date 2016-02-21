@@ -19,7 +19,7 @@ class DataSubjek extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'data_subjek';
+		return 'simdapel_data_subjek';
 	}
 
 	/**

@@ -31,7 +31,7 @@ class PlTransaksi extends CActiveRecord
         
         public function tableName()
 	{
-		return 'pl_transaksi';
+		return 'simdapel_pl_transaksi';
 	}
 
 	/**

@@ -45,7 +45,7 @@ class PermohonanData extends CActiveRecord
     
         public function tableName()
 	{
-		return 'permohonan_data_nonbps';
+		return 'simdapel_permohonan_data_nonbps';
 	}
 
 	/**

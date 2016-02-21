@@ -42,7 +42,7 @@ class PlData extends CActiveRecord
     
 	public function tableName()
 	{
-		return 'pl_data';
+		return 'simdapel_pl_data';
 	}
 
 	/**

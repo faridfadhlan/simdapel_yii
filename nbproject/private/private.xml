@@ -3,23 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/instalasi_pl/update.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/ImportExcelForm.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/Messages.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/layouts/header.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/pl_jenis/index.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/components/helpers.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/messages/index.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/layouts/main.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/config/main.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/components/UserIdentity.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_licenseController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/UserController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/DataInventori.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/SiteController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/data_inventori/_form.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_dataController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/data_inventori/importexcel.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/site/index.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/models/PlTransaksi.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/layouts/column2.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Data_inventoriController.php</file>
-            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/data_inventori/index.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/messages/view.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/MessagesController.php</file>
         </group>
     </open-files>
 </project-private>
