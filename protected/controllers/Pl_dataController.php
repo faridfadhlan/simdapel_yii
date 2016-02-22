@@ -32,7 +32,7 @@ class Pl_dataController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','pinjam', 'hapuspinjam','instal'),
+				'actions'=>array('create','update','pinjam', 'hapuspinjam','instal','getkode'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -79,7 +79,6 @@ class Pl_dataController extends Controller
                         if(isset($filenya)) $model->manual = $model->nama.'.'.$filenya->getExtensionName();
                         $model->manual = $model->nama.'.'.$filenya->getExtensionName();
                         $model->operator_id = Yii::app()->user->id;
-                        if($model->jenis_id != NULL)$model->set_kode();
                         //print_r($model->kode);exit;
 			if($model->save()){
                                 if(isset($filenya)) $filenya->saveAs(Yii::app()->basePath.'/../storage/manuals/'.$model->manual);
@@ -222,6 +221,13 @@ class Pl_dataController extends Controller
         public function actionHapuspinjam() {
             unset(Yii::app()->request->cookies['pl_data']);
             $this->redirect(array('peminjaman_pl/create'));
+        }
+        
+        public function actionGetkode() {
+            $model = new PlData;
+            $model->jenis_id = $_POST['jenis_id'];
+            $model->set_kode();
+            echo $model->kode;
         }
 
 	/**

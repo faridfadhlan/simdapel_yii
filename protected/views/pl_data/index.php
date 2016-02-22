@@ -47,7 +47,7 @@
                         foreach($pl_data as $data) {
                             echo '<tr>';
                             echo '<td class="text-center">'.$data->kode.'</td>';
-                            echo '<td>'.$data->nama.'</td>';
+                            echo '<td>'.CHtml::link($data->nama,array('pl_data/view', 'id'=>$data->id)).'</td>';
                             echo '<td class="text-center">'.$data->jumlah_media.'</td>';
                             echo '<td>'.$data->company->nama_company.'</td>';
                             echo '<td>'.$data->license->nama_license.'</td>';

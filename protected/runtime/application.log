@@ -9794,3 +9794,234 @@ Stack trace:
 #20 {main}
 REQUEST_URI=/simdapel_yii/index.php?r=site/index
 ---
+2016/02/22 13:04:35 [warning] [application] Failed to set unsafe attribute "data_diminta" of "PermohonanData".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Permohonan_dataController.php (333)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/22 13:41:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#9 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/view&id=20
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=data_inventori/index
+---
+2016/02/22 13:50:10 [error] [php] Undefined variable: data (C:\xampp\htdocs\simdapel_yii\protected\views\data_inventori\view.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): Data_inventoriController->renderFile()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): Data_inventoriController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php(67): Data_inventoriController->render()
+#3 unknown(0): Data_inventoriController->actionView()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): Data_inventoriController->runAction()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): Data_inventoriController->filterAccessControl()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): Data_inventoriController->runActionWithFilters()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): Data_inventoriController->run()
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/view&id=20
+in C:\xampp\htdocs\simdapel_yii\protected\views\data_inventori\view.php (26)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php (67)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/22 13:50:50 [error] [exception.CException] exception 'CException' with message 'Property "DataInventori.kode_data" is not defined.' in C:\xampp\htdocs\simdapel_yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('kode_data')
+#1 C:\xampp\htdocs\simdapel_yii\protected\views\data_inventori\view.php(26): CActiveRecord->__get('kode_data')
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php(67): CController->render('view', Array)
+#7 [internal function]: Data_inventoriController->actionView('20')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(Data_inventoriController), Array)
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(Data_inventoriController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#20 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/view&id=20
+---
+2016/02/22 13:51:06 [error] [exception.CException] exception 'CException' with message 'Property "DataInventori.kodedata" is not defined.' in C:\xampp\htdocs\simdapel_yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('kodedata')
+#1 C:\xampp\htdocs\simdapel_yii\protected\views\data_inventori\view.php(26): CActiveRecord->__get('kodedata')
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php(67): CController->render('view', Array)
+#7 [internal function]: Data_inventoriController->actionView('20')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(Data_inventoriController), Array)
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(Data_inventoriController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#20 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/view&id=20
+---
+2016/02/22 13:56:45 [error] [exception.CException] exception 'CException' with message 'Property "DataInventori.subjek_data" is not defined.' in C:\xampp\htdocs\simdapel_yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('subjek_data')
+#1 C:\xampp\htdocs\simdapel_yii\protected\views\data_inventori\view.php(32): CActiveRecord->__get('subjek_data')
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php(67): CController->render('view', Array)
+#7 [internal function]: Data_inventoriController->actionView('20')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(Data_inventoriController), Array)
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(Data_inventoriController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#20 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/view&id=20
+---
+2016/02/22 15:13:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#9 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/index
+---
+2016/02/22 15:13:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#9 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/index
+HTTP_REFERER=http://localhost/simdapel_yii/
+---
+2016/02/22 15:31:46 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT substring(max(no_cd),-3) as kode FROM `simdapel_data_inventori` `t` WHERE subjek_id= LIMIT 1.
+in C:\xampp\htdocs\simdapel_yii\protected\models\DataInventori.php (161)
+in C:\xampp\htdocs\simdapel_yii\protected\models\DataInventori.php (153)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php (234)
+2016/02/22 15:31:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT substring(max(no_cd),-3) as kode FROM `simdapel_data_inventori` `t` WHERE subjek_id= LIMIT 1' in C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\xampp\htdocs\simdapel_yii\protected\models\DataInventori.php(161): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\simdapel_yii\protected\models\DataInventori.php(153): DataInventori->get_new_kode()
+#5 C:\xampp\htdocs\simdapel_yii\protected\controllers\Data_inventoriController.php(234): DataInventori->set_new_kode()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): Data_inventoriController->actionGetnocd()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('getnocd')
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data_inventori/...')
+#17 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=data_inventori/getnocd
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=data_inventori/update&id=18
+---
+2016/02/22 16:23:04 [error] [php] Undefined index: jenis_id (C:\xampp\htdocs\simdapel_yii\protected\controllers\Pl_dataController.php:229)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): Pl_dataController->runAction()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): Pl_dataController->filterAccessControl()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): Pl_dataController->runActionWithFilters()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): Pl_dataController->run()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=pl_data/getkode
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Pl_dataController.php (229)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/22 16:36:28 [error] [exception.CException] exception 'CException' with message 'Property "PlData.nama_data" is not defined.' in C:\xampp\htdocs\simdapel_yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('nama_data')
+#1 C:\xampp\htdocs\simdapel_yii\protected\views\pl_data\view.php(5): CActiveRecord->__get('nama_data')
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\simdapel_yii\protected\controllers\Pl_dataController.php(61): CController->render('view', Array)
+#7 [internal function]: Pl_dataController->actionView('10')
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(Pl_dataController), Array)
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(Pl_dataController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pl_data/view')
+#20 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=pl_data/view&id=10
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=pl_data/index
+---

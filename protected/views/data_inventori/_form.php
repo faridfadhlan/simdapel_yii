@@ -12,11 +12,26 @@
     <div class="col-md-6">
         <div class="form-group">
             <?php echo $form->labelEx($model,'subjek_id'); ?>
-            <?php echo $form->dropDownList($model,'subjek_id',CHtml::listData($subjeks, 'id','nama_subjek'),array('class'=>'form-control','prompt'=>'Pilih Subjek...')); ?>
+            <?php echo $form->dropDownList(
+                    $model,
+                    'subjek_id',
+                    CHtml::listData($subjeks, 'id','nama_subjek'),
+                    array(
+                        'class'=>'form-control',
+                        'prompt'=>'Pilih Subjek...',
+                        'ajax' => array(
+                                'type'=>'POST',
+                                'data'=>array('subjek_id'=>'js:this.value'),
+                                'url'=>Yii::app()->createUrl('data_inventori/getnocd'), //url to call.
+                                'success'=>'update_no_cd',
+                                //'update'=>'#'.CHTML::activeId($model,'seksi_id'),
+                            ),
+                    )); ?>
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'no_cd'); ?>
-            <?php echo $form->textField($model,'no_cd',array('maxlength'=>255,'class'=>'form-control','placeholder'=>'No CD')); ?>    
+            <?php echo $form->textField($model,'no_cd',array('class'=>'form-control no_cd','disabled'=>'disabled')); ?>    
+            <?php //echo $form->hiddenField($model,'no_cd'); ?>    
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'label_cd'); ?>
@@ -49,13 +64,17 @@
             <?php echo $form->textField($model,'file_size',array('class'=>'form-control','placeholder'=>'Ukuran File')); ?>    
         </div>
         <div class="form-group">
+            <?php echo $form->labelEx($model,'file_size_unit'); ?>
+            <?php echo $form->dropDownList($model,'file_size_unit',array('1'=>'KB', '2'=>'MB', '3'=>'GB'),array('class'=>'form-control','prompt'=>'Pilih Satuan Ukuran File...')); ?>    
+        </div>
+        <div class="form-group">
             <?php echo $form->labelEx($model,'keterangan'); ?>
             <?php echo $form->textArea($model,'keterangan',array('class'=>'form-control','placeholder'=>'Keterangan...','rows'=>'8')); ?>
         </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'layout_file'); ?>
             <?php echo $form->fileField($model,'layout_file',array('class'=>'form-control')); ?>  
-            <?php echo $model->nama_layout; ?>
+            <?php echo CHtml::link($model->nama_layout,Yii::app()->baseUrl.'/storage/layouts/'.$model->nama_layout); ?>
         </div>
     </div>
 </div>
@@ -66,3 +85,13 @@
 </div>
     
 <?php $this->endWidget(); ?>
+
+<?php
+$cs = Yii::app()->clientScript;
+$cs->scriptMap=array('jquery.js'=>false);
+$cs->registerScript("sukses","
+    function update_no_cd(data) {
+        $('#".CHtml::activeId($model,'no_cd')."').val(data);
+    }
+", CClientScript::POS_END);
+?>

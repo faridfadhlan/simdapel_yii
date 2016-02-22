@@ -49,34 +49,39 @@
                             echo '<tr>';
                             echo '<td class="text-center">'.$data->no_cd.'</td>';
                             echo '<td>'.$data->label_cd.'</td>';
-                            echo '<td>'.$data->nama_data.'</td>';
+                            echo '<td>'.CHtml::link($data->nama_data, array('data_inventori/view','id'=>$data->id)).'</td>';
                             echo '<td>'.$data->tahun.'</td>';
                             echo '<td>'.$data->rincian.'</td>';
                             echo '<td>'.$data->format.'</td>';
-                            echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('data_inventori/update','id'=>$data->id)).
-                                    CHtml::link('<i class="fa fa-remove"></i>',array('data_inventori/delete','id'=>$data->id)).
+                            echo '<td class="text-center">';
+                            if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') {
+                                    echo
+                                    CHtml::link('<i class="glyphicon glyphicon-pencil"></i>',array('data_inventori/update','id'=>$data->id)).'&nbsp;'.
+                                    CHtml::link('<i class="glyphicon glyphicon-trash"></i>',array('data_inventori/delete','id'=>$data->id)).'&nbsp;'.
                                     (isset($update_id)?
                                     CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
+                                            '<i class="glyphicon glyphicon-shopping-cart"></i>',
                                             array(
                                                 'data_inventori/pinjam',
                                                 'id'=>$data->id,
                                                 'update_id'=>$update_id
-                                            )):
+                                            )).'&nbsp;':
                                     CHtml::link(
-                                            '<i class="fa fa-cart-plus"></i>',
+                                            '<i class="glyphicon glyphicon-shopping-cart"></i>',
                                             array(
                                                 'data_inventori/pinjam',
                                                 'id'=>$data->id,
-                                            ))).
-                                    CHtml::link(
+                                            )));
+                            }
+                            if(Yii::app()->user->role_id == '2' || Yii::app()->user->role_id == '3') {
+                                    echo CHtml::link(
                                             '<i class="fa fa-cart-plus"></i>',
                                             array(
                                                 'data_inventori/mohon',
                                                 'id'=>$data->id,
-                                            )).
-                                    '</td>';
+                                            ));
+                                    }
+                         echo '</td>';
                             echo '</tr>';
                         }
                         ?>

@@ -28,7 +28,7 @@ class Data_inventoriController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index'),
+				'actions'=>array('view','index', 'getnocd'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -49,6 +49,7 @@ class Data_inventoriController extends Controller
                                                 endif;
                                             }
 			),
+                        
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
@@ -82,7 +83,7 @@ class Data_inventoriController extends Controller
 			$model->attributes=$_POST['DataInventori'];
                         $filenya = CUploadedFile::getInstance($model,'manual_file');
                         if(isset($filenya)) :
-                            $model->nama_layout = $model->nama_data.'.'.$filenya->getExtensionName();
+                            $model->nama_layout = $model->label_cd.'.'.$filenya->getExtensionName();
                         endif;
 			if($model->save()):
                                 Yii::app()->user->setFlash('success', "Data berhasil ditambah!");
@@ -113,8 +114,20 @@ class Data_inventoriController extends Controller
 
 		if(isset($_POST['DataInventori']))
 		{
+                        $filenya = CUploadedFile::getInstance($model,'layout_file');
+                        //print_r($filenya);exit;
+                        if(isset($filenya)) :
+                            $layout_lama = $model->nama_layout;
+                            $model->nama_layout = $model->nama_data.'.'.$filenya->getExtensionName();
+                        endif;
 			$model->attributes=$_POST['DataInventori'];
 			if($model->save()):
+                                if(isset($filenya)) {
+                                    if($layout_lama != NULL && file_exists(Yii::app()->basePath.'/../storage/layouts/'.$layout_lama)) {
+                                        unlink(Yii::app()->basePath.'/../storage/layouts/'.$layout_lama);
+                                    }
+                                    $filenya->saveAs(Yii::app()->basePath.'/../storage/layouts/'.$model->nama_layout);
+                                }
                                 Yii::app()->user->setFlash('success', "Data berhasil diupdate!");
 				$this->redirect(array('index'));
                         endif;
@@ -224,5 +237,13 @@ class Data_inventoriController extends Controller
                     Yii::app()->user->setFlash('success', $model->jumlah_import. " data berhasil diimport!");
             }
             $this->render('importexcel', array('model'=>$model));
+        }
+        
+        public function actionGetnocd() {
+            $subjek_id = $_POST['subjek_id'];
+            $data = new DataInventori;
+            $data->subjek_id = $subjek_id;
+            $data->set_new_kode();
+            echo $data->no_cd;
         }
 }

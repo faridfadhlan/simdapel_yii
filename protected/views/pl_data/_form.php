@@ -10,6 +10,28 @@
     <p class="note">Fields with <span class="required">*</span> are required.</p>
     <div class="col-md-6">
         <div class="form-group">
+            <?php echo $form->labelEx($model,'jenis_id'); ?>
+            <?php echo $form->dropDownList(
+                    $model,
+                    'jenis_id',
+                    CHtml::listData($jenises, 'id','nama_jenis'),
+                    array(
+                        'class'=>'form-control',
+                        'prompt'=>'Pilih Jenis...',
+                        'ajax' => array(
+                                'type'=>'POST',
+                                'data'=>array('jenis_id'=>'js:this.value'),
+                                'url'=>Yii::app()->createUrl('pl_data/getkode'), //url to call.
+                                'success'=>'update_kode',
+                                //'update'=>'#'.CHTML::activeId($model,'seksi_id'),
+                            ),
+                    )); ?>
+        </div>
+        <div class="form-group">
+            <?php echo $form->labelEx($model,'kode'); ?>
+            <?php echo $form->textField($model,'kode',array('class'=>'form-control','disabled'=>'disabled')); ?>
+        </div>
+        <div class="form-group">
             <?php echo $form->labelEx($model,'nama'); ?>
             <?php echo $form->textField($model,'nama',array('maxlength'=>255,'class'=>'form-control','placeholder'=>'Nama')); ?>    
         </div>
@@ -34,17 +56,14 @@
             <?php echo $form->labelEx($model,'media_id'); ?>
             <?php echo $form->dropDownList($model,'media_id',CHtml::listData($medias, 'id','nama_media'),array('class'=>'form-control','prompt'=>'Pilih Media...')); ?>    
         </div>
+        
+    </div>
+    <div class="col-md-6">
         <div class="form-group">
             <?php echo $form->labelEx($model,'license_id'); ?>
             <?php echo $form->dropDownList($model,'license_id',CHtml::listData($licenses, 'id','nama_license'),array('class'=>'form-control','prompt'=>'Pilih Lisensi...')); ?>    
         </div>
-    </div>
-    <div class="col-md-6">
         
-        <div class="form-group">
-            <?php echo $form->labelEx($model,'jenis_id'); ?>
-            <?php echo $form->dropDownList($model,'jenis_id',CHtml::listData($jenises, 'id','nama_jenis'),array('class'=>'form-control','prompt'=>'Pilih Jenis...')); ?>    
-        </div>
         <div class="form-group">
             <?php echo $form->labelEx($model,'company_id'); ?>
             <?php echo $form->dropDownList($model,'company_id',CHtml::listData($companies, 'id','nama_company'),array('class'=>'form-control','prompt'=>'Pilih Company...')); ?>    
@@ -82,4 +101,9 @@ $cs->registerScript("datepicker", '
             format: "yyyy-mm-dd",
         });
 ');
+$cs->registerScript("sukses","
+    function update_kode(data) {
+        $('#".CHtml::activeId($model,'kode')."').val(data);
+    }
+", CClientScript::POS_END);
 ?>

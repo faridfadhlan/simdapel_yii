@@ -171,7 +171,7 @@ class PlData extends CActiveRecord
                 $criteria->select = 'substring(max(kode),-3) as kode';
                 $criteria->condition = 'jenis_id='.$this->jenis_id;
                 $tertinggi = $this::model()->find($criteria);
-                $angkanol = array(0 => '000', 1=>'00', 2=>'0');
+                $angkanol = array(0 => '000', 1=>'00', 2=>'0', 3=>'');
                 $next_kode = (intval($tertinggi->kode)+1);
                 return $this->jenis_id.$angkanol[strlen($next_kode)].$next_kode;
         }
