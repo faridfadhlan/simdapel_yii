@@ -62,12 +62,29 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
             //eval('echo ("Hai");');exit;
             $this->layout = '//layouts/column2';
-            $jumlah['pl'] = PlData::model()->count();
-            $jumlah['data'] = DataInventori::model()->count();
-            $jumlah['user_self_register'] = User::model()->count('role_id=3');
-            $jumlah['permohonan_data'] = PermohonanData::model()->count();
-            //print_r($jumlah);exit;
-            $this->render('index', array('jumlah'=>$jumlah, 'peminjaman_pl'=>  PlTransaksi::model()->findAll('tgl_targetkembali IS NOT NULL && tgl_kembali IS NULL')));
+            
+            $role = Yii::app()->user->role_id;
+            if($role=='1'){
+                $jumlah['data1'] = array(PlData::model()->count(), 'Perangkat Lunak');
+                $jumlah['data2'] = array(DataInventori::model()->count(), 'Data Inventori');
+                $jumlah['data3'] = array(User::model()->count('role_id=3'), 'Pengguna Mendaftar');
+                $jumlah['data4'] = array(PermohonanData::model()->count('status=:status',array(':status'=>'warning')), 'Permohonan Data Pending');
+                $this->render('index', array(
+                    'jumlah'=>$jumlah, 
+                    'peminjaman_pl'=>  PlTransaksi::model()->findAll('tgl_targetkembali IS NOT NULL && tgl_kembali IS NULL'),
+                    'permohonan_data' => PermohonanData::model()->findAll('status=:status', array(':status'=>'warning')),
+                ));
+            }
+            
+            if($role=='2' || $role=='3') {
+                $jumlah['data1'] = array(PlData::model()->count(), 'Perangkat Lunak');
+                $jumlah['data2'] = array(DataInventori::model()->count(), 'Data Inventori');
+                $jumlah['data3'] = array(PermohonanData::model()->count('user_id=:user_id AND status=:status', array(':user_id'=>Yii::app()->user->id,':status'=>'warning')), 'Permohonan Data Pending');
+                $jumlah['data4'] = array(PermohonanData::model()->count('user_id=:user_id', array(':user_id'=>Yii::app()->user->id)), 'Total Permohonan Data');
+                $this->render('index_user_non_bps', array('jumlah'=>$jumlah, 'permohonan_data'=>  PermohonanData::model()->findAll('user_id=:user_id',array(':user_id'=>Yii::app()->user->id))));
+                //$jumlah['permohonan_data'] = PermohonanData::model()->count('user_id=:user_id', array(':user_id'=>Yii::app()->user->id));
+            }
+            
 	}
 
 	/**

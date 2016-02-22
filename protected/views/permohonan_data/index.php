@@ -35,10 +35,10 @@
                       <tr>
                         <th class="text-center">ID</th>
                         <th class="text-center">Kategori Pemohon</th>
-                        <th class="text-center">Nomor Surat</th>
                         <th class="text-center">Nama Pemohon/Instansi</th>
                         <th class="text-center">Data</th>
                         <th class="text-center">Tanggal Permohonan</th>
+                        <th class="text-center">Status</th>
                         <th class="text-center">Aksi</th>
                       </tr>
                     </thead>  
@@ -50,11 +50,11 @@
                             $i++;
                             echo '<tr>';
                             echo '<td class="text-center">'.$i.'</td>';
-                            echo '<td>'.($data->jk!=NULL?"Individu":$jenis[$data->flag_user]).'</td>';
-                            echo '<td>'.$data->no_surat.'</td>';
-                            echo '<td>'.(($data->flag_user=='2')?$data->nama:(($data->flag_user=='1')?$data->peminjam_bps->nama:$data->nama_instansi)).'</td>';
-                            echo '<td>'.$data->data_inventori->nama_data.'</td>';
+                            echo '<td>'.(($data->user_id!=NULL)?$data->peminjam->role->name:($data->nama==NULL?'Instansi':'Individu')).'</td>';
+                            echo '<td>'.(($data->flag_user=='2')?$data->nama:(($data->flag_user=='1')?$data->peminjam->nama:$data->nama_instansi)).'</td>';
+                            echo '<td>'.CHtml::link($data->data_inventori->nama_data,'#').'</td>';
                             echo '<td class="text-center">'.datetime_to_tanggal($data->create_time).'</td>';
+                            echo '<td><span class="label label-'.$data->status.'">'.($data->status=='success'?'Approved':'Pending').'</span></td>';
                             echo '<td class="text-center">'.
                                     CHtml::link('<i class="fa fa-edit"></i>',array('permohonan_data/update','id'=>$data->id)).
                                     CHtml::link('<i class="fa fa-remove"></i>',array('permohonan_data/delete','id'=>$data->id)).

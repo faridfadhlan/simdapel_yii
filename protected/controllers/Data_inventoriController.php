@@ -40,6 +40,15 @@ class Data_inventoriController extends Controller
                                                 endif;
                                             }
 			),
+                        array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('mohon'),
+				'expression'=>function () {
+                                                if(isset(Yii::app()->user->role_id)):
+                                                    if(Yii::app()->user->role_id == '2' || Yii::app()->user->role_id == '3') return true;
+                                                    return false;
+                                                endif;
+                                            }
+			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
@@ -182,6 +191,12 @@ class Data_inventoriController extends Controller
             $this->redirect(array('permohonan_data/create'));
         }
         
+        public function actionMohon($id, $update_id = NULL) {
+            Yii::app()->request->cookies['mohon_data_inventori_id'] = new CHttpCookie('mohon_data_inventori_id',$id);
+            if($update_id != NULL) $this->redirect(array('permohonan_data/umum','id'=>$update_id));
+            $this->redirect(array('permohonan_data/umum'));
+        }
+        
         public function actionHapuspinjam() {
             unset(Yii::app()->request->cookies['data_inventori_id']);
             $this->redirect(array('permohonan_data/create'));
@@ -210,6 +225,4 @@ class Data_inventoriController extends Controller
             }
             $this->render('importexcel', array('model'=>$model));
         }
-        
-        
 }

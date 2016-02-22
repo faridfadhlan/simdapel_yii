@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `simdapel_new` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `simdapel_new`;
 -- MySQL dump 10.13  Distrib 5.7.9, for Win32 (AMD64)
 --
 -- Host: 127.0.0.1    Database: simdapel_new
@@ -318,7 +320,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   `no_identitas` varchar(100) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `umur` int(2) NOT NULL,
-  `jk` enum('Laki-laki','Perempuan') DEFAULT NULL,
+  `jk` int(11) DEFAULT NULL,
   `pendidikan_terakhir` varchar(50) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `telp` varchar(100) NOT NULL,
@@ -334,16 +336,17 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   `status_id` int(11) DEFAULT NULL,
   `operator_id` int(11) DEFAULT NULL,
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `pegawai_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
   `data_inventori_id` int(11) DEFAULT NULL,
   `flag_user` tinyint(1) NOT NULL,
+  `status` varchar(50) DEFAULT 'success',
   PRIMARY KEY (`id`),
   KEY `IX_Relationship58` (`operator_id`),
   KEY `IX_Relationship59` (`status_id`),
   KEY `data_inventori_id` (`data_inventori_id`),
   CONSTRAINT `Relationship58` FOREIGN KEY (`operator_id`) REFERENCES `simdapel_user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `Relationship59` FOREIGN KEY (`status_id`) REFERENCES `simdapel_status` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -352,7 +355,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
 
 LOCK TABLES `simdapel_permohonan_data_nonbps` WRITE;
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` DISABLE KEYS */;
-INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,'','','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 00:00:00',4,5,1),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,'Laki-laki','3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-02-01 00:00:00',NULL,3,2),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 07:59:02',NULL,6,3),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 08:08:12',6,6,1),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 09:39:37',NULL,8,3),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:03:28',24,21,1),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:09:00',14,7,1),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 21:11:19',NULL,17,3),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 11:11:39',22,5,1),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,'Laki-laki','4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 14:48:05',NULL,14,2),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 15:46:21',NULL,14,3);
+INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,0,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 00:00:00',4,5,1,'success'),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,1,'3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-02-01 00:00:00',NULL,3,2,'success'),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 07:59:02',NULL,6,3,'success'),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 08:08:12',6,6,1,'success'),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 09:39:37',NULL,8,3,'success'),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:03:28',24,21,1,'success'),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:09:00',14,7,1,'success'),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 21:11:19',NULL,17,3,'success'),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 11:11:39',22,5,1,'success'),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,1,'4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 14:48:05',NULL,14,2,'success'),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 15:46:21',NULL,14,3,'success'),(17,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','',NULL,NULL,'','',1,1,4000,NULL,NULL,'2016-02-22 13:58:54',36,18,2,'success'),(18,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 14:08:42',36,14,2,'success'),(19,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,NULL,NULL,NULL,'2016-02-22 15:32:14',36,6,2,'warning');
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -734,4 +737,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-22  6:44:09
+-- Dump completed on 2016-02-22 16:12:26

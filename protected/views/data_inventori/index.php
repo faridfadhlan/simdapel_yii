@@ -70,6 +70,12 @@
                                                 'data_inventori/pinjam',
                                                 'id'=>$data->id,
                                             ))).
+                                    CHtml::link(
+                                            '<i class="fa fa-cart-plus"></i>',
+                                            array(
+                                                'data_inventori/mohon',
+                                                'id'=>$data->id,
+                                            )).
                                     '</td>';
                             echo '</tr>';
                         }

@@ -19,8 +19,8 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3><?php echo $jumlah['pl'];?></h3>
-                  <p>Perangkat Lunak</p>
+                  <h3><?php echo $jumlah['data1'][0];?></h3>
+                  <p><?php echo $jumlah['data1'][1];?></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-android-desktop"></i>
@@ -30,8 +30,8 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3><?php echo $jumlah['data'];?></h3>
-                  <p>Data Inventori</p>
+                  <h3><?php echo $jumlah['data2'][0];?></h3>
+                  <p><?php echo $jumlah['data2'][1];?></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
@@ -43,8 +43,8 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3><?php echo $jumlah['user_self_register'];?></h3>
-                  <p>Pengguna Mendaftar Sendiri</p>
+                  <h3><?php echo $jumlah['data3'][0];?></h3>
+                  <p><?php echo $jumlah['data3'][1];?></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
@@ -56,8 +56,8 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3><?php echo $jumlah['permohonan_data'];?></h3>
-                  <p>Permohonan Data Inventori</p>
+                  <h3><?php echo $jumlah['data4'][0];?></h3>
+                  <p><?php echo $jumlah['data4'][1];?></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
@@ -80,146 +80,58 @@
                   <table id="tabel1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Tanggal Kembali</th>
-                        <th>Nama Peminjam</th>
-                        <th>Data Dipinjam</th>
-                        <th>Tanggal Pinjam</th>
-                        <th>Status</th>
+                        <th class="text-center">Tanggal Kembali</th>
+                        <th class="text-center">Nama Peminjam</th>
+                        <th class="text-center">Data Dipinjam</th>
+                        <th class="text-center">Tanggal Pinjam</th>
+                        <th class="text-center">Status</th>
                       </tr>
                     </thead>
                     <tbody>
                         <?php foreach($peminjaman_pl as $data):?>
                       <tr>
-                        <td>14 Januari 2016</td>
+                          <td class="text-center"><?php echo datetime_to_tanggal($data->tgl_targetkembali);?></td>
                         <td><?php echo $data->user->nama;?></td>
                         <td><?php echo $data->pl_data->nama;?></td>
-                        <td>8 Januar 2015</td>
-                        <td>Belum Kembali</td>
+                        <td class="text-center"><?php echo datetime_to_tanggal($data->tgl_pinjam);?></td>
+                        <td class="text-center"><span class="label label-danger">Belum Kembali</span></td>
                       </tr>
                       <?php endforeach;?>
                     </tbody>
                   </table>
                 </div><!-- /.box-body -->
+              </div><!-- /.box -->
               
+              <div class="box box-primary">
+                
+                <div class="box-header">
+                  <h3 class="box-title">Permohonan Data yang Belum dicek</h3>
+                </div><!-- /.box-header -->
                 <div class="box-body">
-                  <ul class="todo-list">
-                    <li>
-                      <!-- drag handle -->
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <!-- checkbox -->
-                      <input type="checkbox" value="" name="">
-                      <!-- todo text -->
-                      <span class="text">Design a nice theme</span>
-                      <!-- Emphasis label -->
-                      <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                      <!-- General tools such as edit or delete-->
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name="">
-                      <span class="text">Make the theme responsive</span>
-                      <small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name="">
-                      <span class="text">Check your messages and notifications</span>
-                      <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                  </ul>
+                  <table id="tabel1" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Tanggal Permohonan</th>
+                        <th>Nama Pemohon</th>
+                        <th>Data Dipinjam</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($permohonan_data as $data):?>
+                      <tr>
+                          <td><?php echo datetime_to_tanggal($data->create_time);?></td>
+                        <td><?php echo $data->peminjam->nama;?></td>
+                        <td><?php echo $data->data_inventori->nama_data;?></td>
+                        <td class="text-center"><?php echo '<span class="label label-'.$data->status.'">'.($data->status=='success'?'Approved':'Pending').'</span>';?></td>
+                      </tr>
+                      <?php endforeach;?>
+                    </tbody>
+                  </table>
                 </div><!-- /.box-body -->
-                <div class="box-footer clearfix no-border">
-                  <button class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-                </div>
               </div><!-- /.box -->
 
-              <!-- quick email widget -->
-              <div class="box box-info">
-                <div class="box-header">
-                  <i class="fa fa-envelope"></i>
-                  <h3 class="box-title">Quick Email</h3>
-                  <!-- tools box -->
-                  <div class="pull-right box-tools">
-                    <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-                  </div><!-- /. tools -->
-                </div>
-                <div class="box-body">
-                  <form action="#" method="post">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="emailto" placeholder="Email to:">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject">
-                    </div>
-                    <div>
-                      <textarea class="textarea" placeholder="Message" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="box-footer clearfix">
-                  <button class="pull-right btn btn-default" id="sendEmail">Send <i class="fa fa-arrow-circle-right"></i></button>
-                </div>
-              </div>
+              
 
             </section><!-- /.Left col -->
             

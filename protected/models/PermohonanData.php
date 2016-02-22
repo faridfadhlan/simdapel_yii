@@ -56,14 +56,14 @@ class PermohonanData extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('umur, pnbp, proses_data, size, status_id, operator_id, pegawai_id, data_inventori_id, flag_user', 'numerical', 'integerOnly'=>true),
+			array('umur, pnbp, proses_data, size, status_id, operator_id, user_id, data_inventori_id, flag_user', 'numerical', 'integerOnly'=>true),
 			array('no_surat, jenis_identitas, no_identitas, nama, alamat, telp, pekerjaan, nama_instansi', 'length', 'max'=>100),
 			array('jk', 'length', 'max'=>9),
 			array('pendidikan_terakhir, email', 'length', 'max'=>50),
 			array('kategori_instansi, nama_kepala', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, no_surat, jenis_identitas, no_identitas, nama, umur, jk, pendidikan_terakhir, alamat, telp, pekerjaan, nama_instansi, kategori_instansi, nama_kepala, email, data_diminta, pnbp, proses_data, size, status_id, operator_id, create_time, pegawai_id, data_inventori_id, flag_user', 'safe', 'on'=>'search'),
+			array('id, no_surat, jenis_identitas, no_identitas, nama, umur, jk, pendidikan_terakhir, alamat, telp, pekerjaan, nama_instansi, kategori_instansi, nama_kepala, email, data_diminta, pnbp, proses_data, size, status_id, operator_id, create_time, user_id, data_inventori_id, flag_user', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,7 +77,7 @@ class PermohonanData extends CActiveRecord
 		return array(
 			'operator' => array(self::BELONGS_TO, 'User', 'operator_id'),
 			'status' => array(self::BELONGS_TO, 'Status', 'status_id'),
-                        'peminjam_bps'=>array(self::BELONGS_TO, 'User', 'pegawai_id'),
+                        'peminjam'=>array(self::BELONGS_TO, 'User', 'user_id'),
 			'data_inventori' => array(self::BELONGS_TO, 'DataInventori', 'data_inventori_id'),
 		);
 	}
@@ -112,7 +112,7 @@ class PermohonanData extends CActiveRecord
 			'status_id' => 'Status',
 			'operator_id' => 'Operator',
 			'create_time' => 'Create Time',
-			'pegawai_id' => 'Pegawai',
+			'user_id' => 'Peminjam',
 			'data_inventori_id' => 'Data Inventori',
 			'flag_user' => 'Flag User',
 		);
@@ -158,7 +158,7 @@ class PermohonanData extends CActiveRecord
 		$criteria->compare('status_id',$this->status_id);
 		$criteria->compare('operator_id',$this->operator_id);
 		$criteria->compare('create_time',$this->create_time,true);
-		$criteria->compare('pegawai_id',$this->pegawai_id);
+		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('data_inventori_id',$this->data_inventori_id);
 		$criteria->compare('flag_user',$this->flag_user);
 

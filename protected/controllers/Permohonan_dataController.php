@@ -32,7 +32,7 @@ class Permohonan_dataController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','umum'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -166,13 +166,14 @@ class Permohonan_dataController extends Controller
                 //print_r($model);exit;
                 if($permohonan->flag_user==1) {                    
                     $model_bps->attributes = $permohonan->attributes;
-                    $model_bps->bidang_id = $permohonan->peminjam_bps->seksi->bidang_id;
-                    $model_bps->seksi_id = $permohonan->peminjam_bps->seksi_id;
+                    $model_bps->bidang_id = $permohonan->peminjam->seksi->bidang_id;
+                    $model_bps->seksi_id = $permohonan->peminjam->seksi_id;
                     //print_r($model_bps->attributes);exit;
                 }
                 
                 if($permohonan->flag_user==2) {
                     $model_individu->attributes = $permohonan->attributes;
+                    //print_r($model_individu->attributes);exit;
                     $tab_aktif = 1;
                 }
                 
@@ -190,11 +191,12 @@ class Permohonan_dataController extends Controller
                         $model_bps->attributes = $_POST['PermohonanDataBPSForm'];
                         $permohonan->attributes=$_POST['PermohonanDataBPSForm'];
                         if(isset($permohonan->peminjam_bps)):
-                            $model_bps->bidang_id = $permohonan->peminjam_bps->seksi->bidang_id;
-                            $model_bps->seksi_id = $permohonan->peminjam_bps->seksi_id;
+                            $model_bps->bidang_id = $permohonan->peminjam->seksi->bidang_id;
+                            $model_bps->seksi_id = $permohonan->peminjam->seksi_id;
                         endif;
                         if($model_bps->validate()):
                             $permohonan->flag_user='1';
+                            $permohonan->status = 'success';
                             if($permohonan->save())
 				$this->redirect(array('index'));
                         endif;
@@ -210,6 +212,7 @@ class Permohonan_dataController extends Controller
                                 $permohonan->proses_data = NULL;
                                 $permohonan->size = NULL;
                             endif;
+                            $permohonan->status = 'success';
                             if($permohonan->save()):
                                 unset(Yii::app()->request->cookies['data_inventori_id']);
                                 $this->redirect(array('index'));
@@ -265,7 +268,9 @@ class Permohonan_dataController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider= PermohonanData::model()->findAll();
+                $criteria = new CDbCriteria;
+                $criteria->order = 'status DESC';
+		$dataProvider= PermohonanData::model()->findAll($criteria);
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -313,4 +318,57 @@ class Permohonan_dataController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionUmum() {
+            $model_raw = new PermohonanDataRawForm;
+            $model_lainnya = new PermohonanDataLainnyaForm;
+            $tab_aktif = '0';
+            
+            
+            if(isset($_POST['PermohonanDataRawForm'])){
+                $model_raw->attributes = $_POST['PermohonanDataRawForm'];
+                if($model_raw->validate()){
+                    $permohonan_data = new PermohonanData;
+                    $user = User::model()->findByPk(Yii::app()->user->id);
+                    $permohonan_data->attributes = $model_raw->attributes;
+                    $permohonan_data->user_id = Yii::app()->user->id;
+                    $permohonan_data->flag_user = '2';
+                    $permohonan_data->jenis_identitas = $user->jenis_identitas;
+                    $permohonan_data->no_identitas = $user->no_identitas;
+                    $permohonan_data->nama = $user->nama;
+                    $permohonan_data->umur = $user->umur;
+                    $permohonan_data->jk = $user->jk;
+                    $permohonan_data->pendidikan_terakhir = $user->pendidikan_terakhir;
+                    $permohonan_data->alamat = $user->alamat;
+                    $permohonan_data->telp = $user->telp;
+                    $permohonan_data->pekerjaan = $user->pekerjaan;
+                    $permohonan_data->nama_instansi = $user->instansi_pekerjaan;
+                    $permohonan_data->email = $user->email;
+                    $permohonan_data->pnbp = '1';
+                    $permohonan_data->status = 'warning';
+                    unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
+                    $permohonan_data->save(false);
+                }
+                $tab_aktif = '0';
+            }
+            
+            if(isset($_POST['PermohonanDataLainnyaForm'])){
+                $model_lainnya->attributes = $_POST['PermohonanDataLainnyaForm'];
+                $model_lainnya->validate();
+                $tab_aktif = '1';
+            }
+            
+            if(isset(Yii::app()->request->cookies['mohon_data_inventori_id'])) {
+                $model_raw->data_inventori_id = Yii::app()->request->cookies['mohon_data_inventori_id'];
+            }
+            
+            $this->render(
+                    'umum', 
+                    array(
+                        'model_raw'=>$model_raw,
+                        'model_lainnya'=>$model_lainnya,
+                        'tab_aktif'=>$tab_aktif,
+                        'data_inventori'=>DataInventori::model()->findByPk((string)Yii::app()->request->cookies['mohon_data_inventori_id']),
+                    ));
+        }
 }

@@ -72,15 +72,15 @@
                             'type'=>'POST',
                             'data'=>array('seksi_id'=>'js:this.value'),
                             'url'=>Yii::app()->createUrl('peminjaman_pl/getDropdownPeminjam'), //url to call.
-                            'update'=>'#'.CHTML::activeId($model_bps,'pegawai_id'),
+                            'update'=>'#'.CHTML::activeId($model_bps,'user_id'),
                         ),
                     )); ?>    
         </div>
         <div class="form-group">
-            <?php echo $form->labelEx($model_bps,'pegawai_id'); ?>
+            <?php echo $form->labelEx($model_bps,'user_id'); ?>
             <?php echo $form->dropDownList(
                     $model_bps,
-                    'pegawai_id',
+                    'user_id',
                     CHtml::listData(User::model()->findAll('seksi_id=:seksi_id', array(':seksi_id'=>$model_bps->seksi_id)),'id', 'nama'),
                     array('class'=>'form-control','prompt'=>'Pilih Nama Peminjam...')); ?>    
         </div>
@@ -105,7 +105,7 @@ $cs->scriptMap=array('jquery.js'=>false);
 $cs->registerScript("sukses","
     function update_seksi_user(data) {
         $('#".CHtml::activeId($model_bps,'seksi_id')."').html(data);
-        $('#".CHtml::activeId($model_bps,'pegawai_id')."').html('<option>Pilih Nama Peminjam...</option>');
+        $('#".CHtml::activeId($model_bps,'user_id')."').html('<option>Pilih Nama Peminjam...</option>');
     }
 ", CClientScript::POS_END);
 

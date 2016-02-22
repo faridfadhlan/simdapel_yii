@@ -11,7 +11,7 @@ class PermohonanDataBPSForm extends CFormModel
 	public $no_surat;
         public $bidang_id;
         public $seksi_id;
-	public $pegawai_id;
+	public $user_id;
         public $data_diminta;
 
 	/**
@@ -22,7 +22,7 @@ class PermohonanDataBPSForm extends CFormModel
 	public function rules()
 	{
 		return array(
-			array('data_inventori_id,no_surat,pegawai_id', 'required'),
+			array('data_inventori_id,no_surat,user_id', 'required'),
 		);
 	}
 
@@ -36,7 +36,7 @@ class PermohonanDataBPSForm extends CFormModel
                         'no_surat'=>'No Surat',
                         'bidang_id'=>'Nama Bidang',
                         'seksi_id'=>'Nama Seksi',
-                        'pegawai_id'=>'Nama Peminjam',
+                        'user_id'=>'Nama Peminjam',
                         'data_diminta'=>'Keterangan'
 		);
 	}
