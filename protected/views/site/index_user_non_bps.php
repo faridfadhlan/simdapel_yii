@@ -80,15 +80,15 @@
                   <table id="tabel1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Tanggal Permohonan</th>
-                        <th>Data Dipinjam</th>
-                        <th>Status</th>
+                        <th class="text-center">Tanggal Permohonan</th>
+                        <th class="text-center">Data Dipinjam</th>
+                        <th class="text-center">Status</th>
                       </tr>
                     </thead>
                     <tbody>
                         <?php foreach($permohonan_data as $data):?>
                       <tr>
-                          <td><?php echo datetime_to_tanggal($data->create_time);?></td>
+                          <td class="text-center"><?php echo datetime_to_tanggal($data->create_time);?></td>
                         <td><?php echo $data->data_inventori->nama_data;?></td>
                         <td class="text-center"><?php echo '<span class="label label-'.$data->status.'">'.($data->status=='success'?'Approved':'Pending').'</span>';?></td>
                       </tr>

@@ -62,7 +62,7 @@ CREATE TABLE `simdapel_data_inventori` (
   `keterangan` varchar(255) DEFAULT NULL,
   `nama_layout` varchar(255) DEFAULT NULL,
   `subjek_id` int(11) DEFAULT NULL,
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `operator_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IX_Relationship51` (`subjek_id`),
@@ -78,7 +78,7 @@ CREATE TABLE `simdapel_data_inventori` (
 
 LOCK TABLES `simdapel_data_inventori` WRITE;
 /*!40000 ALTER TABLE `simdapel_data_inventori` DISABLE KEYS */;
-INSERT INTO `simdapel_data_inventori` VALUES (1,'10001','IMK_TW_2011','IMK Data 2011 Triwulanan ','2011','imk','',0,1849,'','','',10,'2016-02-01 09:48:40',18),(2,'10002','IMK_TW_2012','IMK Data 2012 Triwulanan ','2012','imk','',0,27800,'','','',10,'2016-02-01 09:48:41',18),(3,'10003','IMK_TW_2013','IMK Data 2013 Triwulanan ','2013','imk','',0,2367,'','','',10,'2016-02-01 09:48:42',18),(4,'10004','IMK_TW_2014','IMK Data 2014 Triwulanan ','2014','imk','',0,405,'','','',10,'2016-02-01 09:48:43',18),(5,'10005','IMK_TH_2014','IMK Data 2014 Tahunan','2014','imk','',0,405,'','','',10,'2016-02-01 09:48:44',18),(6,'08001','PIPA_2012','PIPA 2012 Data','2012','pipa','',0,67174,'','','',8,'2016-02-01 09:48:45',18),(7,'06001','PODES_2011','PODES 2011 Data','2011','sav','',0,6387,'','','',6,'2016-02-01 09:48:46',18),(8,'06002','PODES_2014','PODES 2014 Data','2014','bpod','',0,69698,'','','',6,'2016-02-01 09:48:47',18),(9,'07001','PPLS_2008','PPLS 2008 Data','2008','dbf','',0,497179,'','','',7,'2016-02-01 09:48:48',18),(10,'07002','PPLS_2011','PPLS 2011 Data','2011','zip','',0,237877,'','','',7,'2016-02-01 09:48:49',18),(11,'07003','PPLS_TNP2K_2012','PPLS TNP2K Data Aggregat Basis Data Terpadu 2012','2012','xls','',0,3743,'','','',7,'2016-02-01 09:48:50',18),(12,'05001','SAK_ENTRY_2011','SAKERNAS 2011 Data Entry','2011','','dat',0,153037,'','','',5,'2016-02-01 09:48:51',18),(13,'05002','SAK_ENTRY_2012','SAKERNAS 2012 Data Entry','2012','dat','',0,9676,'','','',5,'2016-02-01 09:48:52',18),(14,'05003','SAK_LISTING_2012','SAKERNAS 2012 Data Listing','2012','dat','',0,1402,'','','',5,'2016-02-01 09:48:53',18),(15,'05004','SAK_ENTRI_2013','SAKERNAS 2013 Data Entry','2013','dat','',0,75247,'','','',5,'2016-02-01 09:48:54',18),(16,'05005','SAK_LISTING_2013','SAKERNAS 2013 Data Listing','2013','dat','',0,409654,'','','',5,'2016-02-01 09:48:55',18),(17,'05006','SAK_ENTRI_2014','SAKERNAS 2014 Data Entry','2014','bsak','',0,2342,'','','',5,'2016-02-01 09:48:56',18),(18,'02001','SP_2010','SP2010 Data','2010','','dbf',0,3220996,'','','SP2010 Data.pdf',2,'2016-02-01 09:48:57',18),(19,'09001','SPPLH_2013','SPPLH13 Data','2013','dbf','',0,30052,'','','',9,'2016-02-01 09:48:58',18),(20,'04001','SSN_SBH_2012','SSN SBH 2012 Data','2012','','dbf',0,69107,'','','',4,'2016-02-01 09:48:59',18),(21,'07004','PPLS_SOSIALISASI_2011','PPLS 2011 Media Sosialisasi','2011','xls','',0,218300,'','','',7,'0000-00-00 00:00:00',18),(22,'11001','PSPK_RAKERNAS_2011','Rakernas PSPK2011','2011','docx','',0,146465,'','','',11,'0000-00-00 00:00:00',18);
+INSERT INTO `simdapel_data_inventori` VALUES (1,'10001','IMK_TW_2011','IMK Data 2011 Triwulanan ','2011','imk','',0,1849,'','','',10,'2016-02-01 02:48:40',18),(2,'10002','IMK_TW_2012','IMK Data 2012 Triwulanan ','2012','imk','',0,27800,'','','',10,'2016-02-01 02:48:41',18),(3,'10003','IMK_TW_2013','IMK Data 2013 Triwulanan ','2013','imk','',0,2367,'','','',10,'2016-02-01 02:48:42',18),(4,'10004','IMK_TW_2014','IMK Data 2014 Triwulanan ','2014','imk','',0,405,'','','',10,'2016-02-01 02:48:43',18),(5,'10005','IMK_TH_2014','IMK Data 2014 Tahunan','2014','imk','',0,405,'','','',10,'2016-02-01 02:48:44',18),(6,'08001','PIPA_2012','PIPA 2012 Data','2012','pipa','',0,67174,'','','',8,'2016-02-01 02:48:45',18),(7,'06001','PODES_2011','PODES 2011 Data','2011','sav','',0,6387,'','','',6,'2016-02-01 02:48:46',18),(8,'06002','PODES_2014','PODES 2014 Data','2014','bpod','',0,69698,'','','',6,'2016-02-01 02:48:47',18),(9,'07001','PPLS_2008','PPLS 2008 Data','2008','dbf','',0,497179,'','','',7,'2016-02-01 02:48:48',18),(10,'07002','PPLS_2011','PPLS 2011 Data','2011','zip','',0,237877,'','','',7,'2016-02-01 02:48:49',18),(11,'07003','PPLS_TNP2K_2012','PPLS TNP2K Data Aggregat Basis Data Terpadu 2012','2012','xls','',0,3743,'','','',7,'2016-02-01 02:48:50',18),(12,'05001','SAK_ENTRY_2011','SAKERNAS 2011 Data Entry','2011','','dat',0,153037,'','','',5,'2016-02-01 02:48:51',18),(13,'05002','SAK_ENTRY_2012','SAKERNAS 2012 Data Entry','2012','dat','',0,9676,'','','',5,'2016-02-01 02:48:52',18),(14,'05003','SAK_LISTING_2012','SAKERNAS 2012 Data Listing','2012','dat','',0,1402,'','','',5,'2016-02-01 02:48:53',18),(15,'05004','SAK_ENTRI_2013','SAKERNAS 2013 Data Entry','2013','dat','',0,75247,'','','',5,'2016-02-01 02:48:54',18),(16,'05005','SAK_LISTING_2013','SAKERNAS 2013 Data Listing','2013','dat','',0,409654,'','','',5,'2016-02-01 02:48:55',18),(17,'05006','SAK_ENTRI_2014','SAKERNAS 2014 Data Entry','2014','bsak','',0,2342,'','','',5,'2016-02-01 02:48:56',18),(18,'02001','SP_2010','SP2010 Data','2010','','dbf',0,3220996,'','','SP2010 Data.pdf',2,'2016-02-01 02:48:57',18),(19,'09001','SPPLH_2013','SPPLH13 Data','2013','dbf','',0,30052,'','','',9,'2016-02-01 02:48:58',18),(20,'04001','SSN_SBH_2012','SSN SBH 2012 Data','2012','','dbf',0,69107,'','','',4,'2016-02-01 02:48:59',18),(21,'07004','PPLS_SOSIALISASI_2011','PPLS 2011 Media Sosialisasi','2011','xls','',0,218300,'','','',7,'0000-00-00 00:00:00',18),(22,'11001','PSPK_RAKERNAS_2011','Rakernas PSPK2011','2011','docx','',0,146465,'','','',11,'0000-00-00 00:00:00',18);
 /*!40000 ALTER TABLE `simdapel_data_inventori` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,174 +135,33 @@ INSERT INTO `simdapel_data_subjek` VALUES (1,'01','Sensus Ekonomi'),(2,'02','Sen
 UNLOCK TABLES;
 
 --
--- Table structure for table `simdapel_instansi`
+-- Table structure for table `simdapel_konsultasi`
 --
 
-DROP TABLE IF EXISTS `simdapel_instansi`;
+DROP TABLE IF EXISTS `simdapel_konsultasi`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_instansi` (
+CREATE TABLE `simdapel_konsultasi` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nama_unit` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_instansi`
---
-
-LOCK TABLES `simdapel_instansi` WRITE;
-/*!40000 ALTER TABLE `simdapel_instansi` DISABLE KEYS */;
-INSERT INTO `simdapel_instansi` VALUES (1,'Bidang IPDS'),(2,'Bidang NWAS'),(3,'Bidang Sosial'),(4,'Bidang Produksi'),(5,'Bidang Distribusi');
-/*!40000 ALTER TABLE `simdapel_instansi` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simdapel_level`
---
-
-DROP TABLE IF EXISTS `simdapel_level`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_level` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nama_level` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_level`
---
-
-LOCK TABLES `simdapel_level` WRITE;
-/*!40000 ALTER TABLE `simdapel_level` DISABLE KEYS */;
-INSERT INTO `simdapel_level` VALUES (1,'admin'),(2,'user_bps'),(3,'user_non_bps'),(4,'operator');
-/*!40000 ALTER TABLE `simdapel_level` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simdapel_messages`
---
-
-DROP TABLE IF EXISTS `simdapel_messages`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_messages` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `judul` varchar(255) NOT NULL,
+  `judul_id` int(11) NOT NULL,
+  `judul` varchar(255) DEFAULT NULL,
   `isi` text NOT NULL,
   `user_id` int(11) NOT NULL,
   `status` int(11) NOT NULL,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  KEY `simdapel_messages_user_id_idx` (`user_id`),
-  CONSTRAINT `message_user` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `konsultasi_user` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `simdapel_messages`
+-- Dumping data for table `simdapel_konsultasi`
 --
 
-LOCK TABLES `simdapel_messages` WRITE;
-/*!40000 ALTER TABLE `simdapel_messages` DISABLE KEYS */;
-INSERT INTO `simdapel_messages` VALUES (1,'Permintaan Data Kemiskinan','Yang terhormat, saya ingin meminta data kemiskinan. Bagaimana caranya?',36,1,'2016-02-20 05:18:08'),(2,'Permohonan Data Inflasi','Kami memohon data inflasi',36,1,'2016-02-20 05:31:08'),(3,'Permintaan Data Kemiskinan','Siap',33,2,'2016-02-20 05:58:37');
-/*!40000 ALTER TABLE `simdapel_messages` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simdapel_operator`
---
-
-DROP TABLE IF EXISTS `simdapel_operator`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_operator` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `level` varchar(10) NOT NULL,
-  `pegawai_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_operator`
---
-
-LOCK TABLES `simdapel_operator` WRITE;
-/*!40000 ALTER TABLE `simdapel_operator` DISABLE KEYS */;
-INSERT INTO `simdapel_operator` VALUES (1,'farid','farid','admin',1);
-/*!40000 ALTER TABLE `simdapel_operator` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simdapel_pegawai`
---
-
-DROP TABLE IF EXISTS `simdapel_pegawai`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_pegawai` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nip` char(18) NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `unit_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `IX_Relationship63` (`unit_id`),
-  CONSTRAINT `Relationship63` FOREIGN KEY (`unit_id`) REFERENCES `simdapel_instansi` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_pegawai`
---
-
-LOCK TABLES `simdapel_pegawai` WRITE;
-/*!40000 ALTER TABLE `simdapel_pegawai` DISABLE KEYS */;
-INSERT INTO `simdapel_pegawai` VALUES (1,'198909202012111001','Muhammad Farid Fadhlan',1);
-/*!40000 ALTER TABLE `simdapel_pegawai` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simdapel_permohonan_data_bps`
---
-
-DROP TABLE IF EXISTS `simdapel_permohonan_data_bps`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_permohonan_data_bps` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `no_surat` varchar(100) NOT NULL,
-  `data_diminta` text NOT NULL,
-  `pegawai_id` int(11) DEFAULT NULL,
-  `status_id` int(11) DEFAULT NULL,
-  `operator_id` int(11) DEFAULT NULL,
-  `data_inventori_id` int(11) DEFAULT NULL,
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `IX_Relationship60` (`operator_id`),
-  KEY `IX_Relationship61` (`status_id`),
-  KEY `IX_Relationship62` (`pegawai_id`),
-  KEY `data_inventori_id` (`data_inventori_id`),
-  CONSTRAINT `Relasi1` FOREIGN KEY (`data_inventori_id`) REFERENCES `simdapel_data_inventori` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
-  CONSTRAINT `Relationship60` FOREIGN KEY (`operator_id`) REFERENCES `simdapel_user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
-  CONSTRAINT `Relationship61` FOREIGN KEY (`status_id`) REFERENCES `simdapel_status` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
-  CONSTRAINT `Relationship62` FOREIGN KEY (`pegawai_id`) REFERENCES `simdapel_user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_permohonan_data_bps`
---
-
-LOCK TABLES `simdapel_permohonan_data_bps` WRITE;
-/*!40000 ALTER TABLE `simdapel_permohonan_data_bps` DISABLE KEYS */;
-INSERT INTO `simdapel_permohonan_data_bps` VALUES (1,'','',12,NULL,17,4,'2016-01-31 11:58:02'),(2,'12/22/BPS/2016','',6,NULL,17,6,'2016-01-31 12:28:13');
-/*!40000 ALTER TABLE `simdapel_permohonan_data_bps` ENABLE KEYS */;
+LOCK TABLES `simdapel_konsultasi` WRITE;
+/*!40000 ALTER TABLE `simdapel_konsultasi` DISABLE KEYS */;
+/*!40000 ALTER TABLE `simdapel_konsultasi` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -334,7 +193,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   `size` int(11) DEFAULT NULL,
   `status_id` int(11) DEFAULT NULL,
   `operator_id` int(11) DEFAULT NULL,
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) DEFAULT NULL,
   `data_inventori_id` int(11) DEFAULT NULL,
   `flag_user` tinyint(1) NOT NULL,
@@ -354,7 +213,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
 
 LOCK TABLES `simdapel_permohonan_data_nonbps` WRITE;
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` DISABLE KEYS */;
-INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,0,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 00:00:00',4,5,1,'success'),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,1,'3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-02-01 00:00:00',NULL,3,2,'success'),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 07:59:02',NULL,6,3,'success'),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 08:08:12',6,6,1,'success'),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 09:39:37',NULL,8,3,'success'),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:03:28',24,21,1,'success'),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 21:09:00',14,7,1,'success'),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 21:11:19',NULL,17,3,'success'),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 11:11:39',22,5,1,'success'),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,1,'4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 14:48:05',NULL,14,2,'success'),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 15:46:21',NULL,14,3,'success'),(17,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','',NULL,NULL,'','',1,1,4000,NULL,NULL,'2016-02-22 13:58:54',36,18,2,'success'),(18,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 14:08:42',36,14,2,'success'),(19,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,NULL,NULL,NULL,'2016-02-22 15:32:14',36,6,2,'warning'),(20,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,1,NULL,NULL,NULL,'2016-02-22 19:04:35',36,17,2,'warning');
+INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,0,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-01 17:00:00',4,5,1,'success'),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,1,'3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-01-31 17:00:00',NULL,3,2,'success'),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 00:59:02',NULL,6,3,'success'),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 01:08:12',6,6,1,'success'),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 02:39:37',NULL,8,3,'success'),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:03:28',24,21,1,'success'),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:09:00',14,7,1,'success'),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 14:11:19',NULL,17,3,'success'),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 04:11:39',22,5,1,'success'),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,1,'4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 07:48:05',NULL,14,2,'success'),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 08:46:21',NULL,14,3,'success'),(17,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','',NULL,NULL,'','',1,1,4000,NULL,NULL,'2016-02-22 06:58:54',36,18,2,'success'),(18,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 07:08:42',36,14,2,'success'),(19,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,NULL,NULL,NULL,'2016-02-22 08:32:14',36,6,2,'warning'),(20,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,1,NULL,NULL,NULL,'2016-02-22 12:04:35',36,17,2,'warning');
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -404,7 +263,7 @@ CREATE TABLE `simdapel_pl_data` (
   `company_id` int(11) DEFAULT NULL,
   `tgl_expired` date DEFAULT NULL,
   `ket` text,
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `operator_id` int(11) DEFAULT NULL,
   `kontak_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -429,7 +288,7 @@ CREATE TABLE `simdapel_pl_data` (
 
 LOCK TABLES `simdapel_pl_data` WRITE;
 /*!40000 ALTER TABLE `simdapel_pl_data` DISABLE KEYS */;
-INSERT INTO `simdapel_pl_data` VALUES (1,'1001','SYMANTEC Server X',1,1,'SYMANTEC Server X.pdf','2015-01-01','-',3,2,1,17,'2016-01-01','-','2016-02-01 09:15:29',33,18),(2,'1004','Avast Pro Antivirus 6.0.1000',1,1,'1004.pdf','2015-01-01','',4,6,1,20,'2016-01-01','','2016-02-01 09:15:30',17,18),(3,'1005','McAfee VirusScan Enterprise 8.5i Plus Patch 6',1,1,'1005.pdf','2015-01-01','',4,6,1,7,'2016-01-01','','2016-02-01 09:15:31',17,18),(4,'2034','DPP 2013 Program',3,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:32',17,18),(5,'2033','DPPNRT 2014 Program',1,2,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:33',17,18),(6,'2035','IBS 2012',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:34',17,18),(7,'2036','IHK Online',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:35',17,18),(8,'2005','IMK Progam Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:36',18,18),(9,'2006','PIPA 2012 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:37',18,18),(10,'2007','PODES 2011 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:38',18,18),(11,'2008','PODES 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:39',18,18),(12,'2009','PPLS 2011 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:40',18,18),(13,'2010','PSPK2011 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:41',18,18),(14,'2011','PST Aplikasi',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:42',18,18),(15,'2012','RPH Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:43',18,18),(16,'2013','SAKERNAS 2011 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:44',18,18),(17,'2014','SAKERNAS 2011 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:45',18,18),(18,'2015','SAKERNAS 2012 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:46',18,18),(19,'2016','SAKERNAS 2012 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:47',18,18),(20,'2017','SAKERNAS 2013 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:48',18,18),(21,'2018','SAKERNAS 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:49',18,18),(22,'2019','SPPLH13 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:50',18,18),(23,'2020','SPSS11_5',1,1,NULL,'2015-01-01','-',3,2,2,17,'2016-01-01','-','2016-02-01 09:15:51',18,18),(24,'2021','SPTI Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:52',18,18),(25,'2022','SSN 2012 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:53',18,18),(26,'2023','SSN SBH 2012 Program Entri',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:54',18,18),(27,'2024','ST2013 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:55',18,18),(28,'2025','StatTransfer7',1,1,NULL,'2015-01-01','-',3,2,2,17,'2016-01-01','-','2016-02-01 09:15:56',18,18),(29,'2026','STRPBS 2013',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:57',18,18),(30,'2027','SUSENAS 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:58',18,18),(31,'2028','SUSENAS 2015 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 09:15:59',18,18),(32,'2029','Cspro40',1,1,NULL,'2015-01-01','',4,7,2,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(33,'2030','SIMAK_BMN_2011_MIGRASI',1,1,NULL,'2015-01-01','',4,7,2,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(34,'3001','Adobe Photoshop CS2',1,1,NULL,'2015-01-01','-',3,2,3,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(35,'3002','ArcGIS 10',1,1,NULL,'2015-01-01','-',3,2,3,2,'2016-01-01','-','0000-00-00 00:00:00',18,18),(36,'3003','Flash',1,1,NULL,'2015-01-01','-',3,2,3,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(37,'3004','Photoshop Cover Action 2',1,1,NULL,'2015-01-01','-',3,2,3,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(38,'3005','Ulead.VideoStudio.11.Portable ON for WinXP',1,1,NULL,'2015-01-01','-',3,2,3,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(39,'3006','Adobe Photoshop 7.0',1,1,NULL,'2015-01-01','1045-0203-3247-2217-3566-6177',4,6,3,1,'2016-01-01','','0000-00-00 00:00:00',18,18),(40,'3007','image web',1,1,NULL,'2015-01-01','',4,6,3,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(41,'3008','Joomla',1,1,NULL,'2015-01-01','',4,6,3,17,'2016-01-01','','0000-00-00 00:00:00',17,18),(42,'5001','Team Viewer',1,1,NULL,'2015-01-01','-',3,2,5,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(43,'6001','Microsoft Office 2003',1,1,NULL,'2015-01-01','GWH28-DGCMP-P6RC4-6J4MT-3HFDY',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(44,'6002','Microsoft Office 2007 Enterprise',1,1,NULL,'2015-01-01','KGFVY-7733B-8WCK9-KTG64-BC7D8',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(45,'6003','OFFICE97',1,1,NULL,'2015-01-01','4156-0212207',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(46,'6004','Office 2010',1,1,NULL,'2015-01-01','TRT2Y-9PD2R-KKRYK-Y32BH-6HHWY',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(47,'6005','VB6',1,1,NULL,'2015-01-01','422-1111111',4,6,6,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(48,'12001','CANON_mp 258',1,1,NULL,'2015-01-01','',4,2,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(49,'12002','CANON_PIXMA MP198',1,1,NULL,'2015-01-01','',4,2,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(50,'12003','Driver ACER',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(51,'12004','DRIVER PRINTRONIX',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(52,'12005','HP LASERJET 1320',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(53,'12006','HP LJ P4010_P451 (E)',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(54,'12007','Scan Fujitsu Fi',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(55,'12008','STELLHEAD',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(56,'17001','adobe pro 9',1,1,NULL,'2015-01-01','-',3,2,17,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(57,'17002','IMAGE BURNING',1,1,NULL,'2015-01-01','',4,6,17,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(58,'18001','WIN7',1,1,NULL,'2015-01-01','-',3,2,18,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(59,'18002','Win8',1,1,NULL,'2015-01-01','-',3,2,18,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(60,'18003','Cloning Server Kabupaten',1,1,NULL,'2015-01-01','',4,7,18,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(61,'18004','SPSS v16.0',1,1,NULL,'2015-01-01','',4,6,18,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(62,'19001','SPTK2013',1,1,NULL,'2015-01-01','',4,6,19,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(63,'19002','Visual Foxpro',1,1,NULL,'2015-01-01','757-2573155',4,6,19,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(64,'19003','windows server kabupaten',1,1,NULL,'2015-01-01','',4,7,19,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(65,'20001','Microsoft Office Visio 2007 - Eng',1,1,NULL,'2015-01-01','-',3,2,20,8,'2016-01-01','-','0000-00-00 00:00:00',18,18),(66,'21001','Hiren\' Boot',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(67,'21002','LG CDROM',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(68,'21003','Program VCD Cutter v4.0_With_CRACK',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(69,'99001','Flipping Book',1,1,NULL,'2015-01-01','-',3,2,99,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(70,'99002','Adobe Acrobat 6.0 Professional',1,1,NULL,'2015-01-01','1118-1911-4821-7104-6966-4189',4,6,99,1,'2016-01-01','','0000-00-00 00:00:00',18,18),(71,'99003','Ghost',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(72,'99004','GIS_LAT',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(73,'99005','GIS_PSPK',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(74,'99006','Handkey',1,1,NULL,'2015-01-01','',4,7,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(75,'99007','Installer Flipbook',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(76,'99008','Lat GIS',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(77,'99009','Macromedia Dreamweaver MX',1,1,NULL,'2015-01-01','WSW600-59791-91721-99978CD ',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(78,'99010','MapObject2.1',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(79,'99011','Partitionmagic',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(80,'99012','PODES2011',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(81,'99013','Portable PDF Password Remover 3.0',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(82,'99014','Program IMK',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(83,'99015','REDATAM',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(84,'99016','SIMPEG',1,1,NULL,'2015-01-01','',4,7,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(85,'99017','TL-WN723N',1,1,NULL,'2015-01-01','',4,6,99,3,'2016-01-01','','0000-00-00 00:00:00',18,18),(86,'99018','Total Video Converter v3.01 + crack',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(87,'99019','VS',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(88,'99020','vs6',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(94,'6006','Android Professional',2,2,'BAB1 Toho_Ulasan.pdf','2016-02-14',NULL,5,3,6,5,'2016-02-24','','2016-02-14 21:59:07',17,18),(95,'3009','Software 33',1,1,'Software 33.pdf','2016-02-10',NULL,3,1,3,3,'2016-03-03','','2016-02-14 22:10:52',17,18);
+INSERT INTO `simdapel_pl_data` VALUES (1,'1001','SYMANTEC Server X',1,1,'SYMANTEC Server X.pdf','2015-01-01','-',3,2,1,17,'2016-01-01','-','2016-02-01 02:15:29',33,18),(2,'1004','Avast Pro Antivirus 6.0.1000',1,1,'1004.pdf','2015-01-01','',4,6,1,20,'2016-01-01','','2016-02-01 02:15:30',17,18),(3,'1005','McAfee VirusScan Enterprise 8.5i Plus Patch 6',1,1,'1005.pdf','2015-01-01','',4,6,1,7,'2016-01-01','','2016-02-01 02:15:31',17,18),(4,'2034','DPP 2013 Program',3,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:32',17,18),(5,'2033','DPPNRT 2014 Program',1,2,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:33',17,18),(6,'2035','IBS 2012',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:34',17,18),(7,'2036','IHK Online',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:35',17,18),(8,'2005','IMK Progam Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:36',18,18),(9,'2006','PIPA 2012 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:37',18,18),(10,'2007','PODES 2011 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:38',18,18),(11,'2008','PODES 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:39',18,18),(12,'2009','PPLS 2011 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:40',18,18),(13,'2010','PSPK2011 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:41',18,18),(14,'2011','PST Aplikasi',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:42',18,18),(15,'2012','RPH Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:43',18,18),(16,'2013','SAKERNAS 2011 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:44',18,18),(17,'2014','SAKERNAS 2011 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:45',18,18),(18,'2015','SAKERNAS 2012 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:46',18,18),(19,'2016','SAKERNAS 2012 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:47',18,18),(20,'2017','SAKERNAS 2013 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:48',18,18),(21,'2018','SAKERNAS 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:49',18,18),(22,'2019','SPPLH13 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:50',18,18),(23,'2020','SPSS11_5',1,1,NULL,'2015-01-01','-',3,2,2,17,'2016-01-01','-','2016-02-01 02:15:51',18,18),(24,'2021','SPTI Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:52',18,18),(25,'2022','SSN 2012 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:53',18,18),(26,'2023','SSN SBH 2012 Program Entri',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:54',18,18),(27,'2024','ST2013 Program',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:55',18,18),(28,'2025','StatTransfer7',1,1,NULL,'2015-01-01','-',3,2,2,17,'2016-01-01','-','2016-02-01 02:15:56',18,18),(29,'2026','STRPBS 2013',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:57',18,18),(30,'2027','SUSENAS 2014 Program Entry',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:58',18,18),(31,'2028','SUSENAS 2015 Program Updating',1,1,NULL,'2015-01-01','-',3,7,2,17,'2016-01-01','-','2016-02-01 02:15:59',18,18),(32,'2029','Cspro40',1,1,NULL,'2015-01-01','',4,7,2,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(33,'2030','SIMAK_BMN_2011_MIGRASI',1,1,NULL,'2015-01-01','',4,7,2,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(34,'3001','Adobe Photoshop CS2',1,1,NULL,'2015-01-01','-',3,2,3,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(35,'3002','ArcGIS 10',1,1,NULL,'2015-01-01','-',3,2,3,2,'2016-01-01','-','0000-00-00 00:00:00',18,18),(36,'3003','Flash',1,1,NULL,'2015-01-01','-',3,2,3,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(37,'3004','Photoshop Cover Action 2',1,1,NULL,'2015-01-01','-',3,2,3,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(38,'3005','Ulead.VideoStudio.11.Portable ON for WinXP',1,1,NULL,'2015-01-01','-',3,2,3,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(39,'3006','Adobe Photoshop 7.0',1,1,NULL,'2015-01-01','1045-0203-3247-2217-3566-6177',4,6,3,1,'2016-01-01','','0000-00-00 00:00:00',18,18),(40,'3007','image web',1,1,NULL,'2015-01-01','',4,6,3,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(41,'3008','Joomla',1,1,NULL,'2015-01-01','',4,6,3,17,'2016-01-01','','0000-00-00 00:00:00',17,18),(42,'5001','Team Viewer',1,1,NULL,'2015-01-01','-',3,2,5,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(43,'6001','Microsoft Office 2003',1,1,NULL,'2015-01-01','GWH28-DGCMP-P6RC4-6J4MT-3HFDY',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(44,'6002','Microsoft Office 2007 Enterprise',1,1,NULL,'2015-01-01','KGFVY-7733B-8WCK9-KTG64-BC7D8',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(45,'6003','OFFICE97',1,1,NULL,'2015-01-01','4156-0212207',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(46,'6004','Office 2010',1,1,NULL,'2015-01-01','TRT2Y-9PD2R-KKRYK-Y32BH-6HHWY',4,6,6,8,'2016-01-01','','0000-00-00 00:00:00',18,18),(47,'6005','VB6',1,1,NULL,'2015-01-01','422-1111111',4,6,6,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(48,'12001','CANON_mp 258',1,1,NULL,'2015-01-01','',4,2,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(49,'12002','CANON_PIXMA MP198',1,1,NULL,'2015-01-01','',4,2,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(50,'12003','Driver ACER',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(51,'12004','DRIVER PRINTRONIX',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(52,'12005','HP LASERJET 1320',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(53,'12006','HP LJ P4010_P451 (E)',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(54,'12007','Scan Fujitsu Fi',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(55,'12008','STELLHEAD',1,1,NULL,'2015-01-01','',4,6,12,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(56,'17001','adobe pro 9',1,1,NULL,'2015-01-01','-',3,2,17,1,'2016-01-01','-','0000-00-00 00:00:00',18,18),(57,'17002','IMAGE BURNING',1,1,NULL,'2015-01-01','',4,6,17,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(58,'18001','WIN7',1,1,NULL,'2015-01-01','-',3,2,18,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(59,'18002','Win8',1,1,NULL,'2015-01-01','-',3,2,18,17,'2016-01-01','-','0000-00-00 00:00:00',18,18),(60,'18003','Cloning Server Kabupaten',1,1,NULL,'2015-01-01','',4,7,18,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(61,'18004','SPSS v16.0',1,1,NULL,'2015-01-01','',4,6,18,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(62,'19001','SPTK2013',1,1,NULL,'2015-01-01','',4,6,19,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(63,'19002','Visual Foxpro',1,1,NULL,'2015-01-01','757-2573155',4,6,19,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(64,'19003','windows server kabupaten',1,1,NULL,'2015-01-01','',4,7,19,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(65,'20001','Microsoft Office Visio 2007 - Eng',1,1,NULL,'2015-01-01','-',3,2,20,8,'2016-01-01','-','0000-00-00 00:00:00',18,18),(66,'21001','Hiren\' Boot',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(67,'21002','LG CDROM',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(68,'21003','Program VCD Cutter v4.0_With_CRACK',1,1,NULL,'2015-01-01','-',3,2,21,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(69,'99001','Flipping Book',1,1,NULL,'2015-01-01','-',3,2,99,20,'2016-01-01','-','0000-00-00 00:00:00',18,18),(70,'99002','Adobe Acrobat 6.0 Professional',1,1,NULL,'2015-01-01','1118-1911-4821-7104-6966-4189',4,6,99,1,'2016-01-01','','0000-00-00 00:00:00',18,18),(71,'99003','Ghost',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(72,'99004','GIS_LAT',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(73,'99005','GIS_PSPK',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(74,'99006','Handkey',1,1,NULL,'2015-01-01','',4,7,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(75,'99007','Installer Flipbook',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(76,'99008','Lat GIS',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(77,'99009','Macromedia Dreamweaver MX',1,1,NULL,'2015-01-01','WSW600-59791-91721-99978CD ',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(78,'99010','MapObject2.1',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(79,'99011','Partitionmagic',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(80,'99012','PODES2011',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(81,'99013','Portable PDF Password Remover 3.0',1,1,NULL,'2015-01-01','',4,6,99,20,'2016-01-01','','0000-00-00 00:00:00',18,18),(82,'99014','Program IMK',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(83,'99015','REDATAM',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(84,'99016','SIMPEG',1,1,NULL,'2015-01-01','',4,7,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(85,'99017','TL-WN723N',1,1,NULL,'2015-01-01','',4,6,99,3,'2016-01-01','','0000-00-00 00:00:00',18,18),(86,'99018','Total Video Converter v3.01 + crack',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(87,'99019','VS',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(88,'99020','vs6',1,1,NULL,'2015-01-01','',4,6,99,17,'2016-01-01','','0000-00-00 00:00:00',18,18),(94,'6006','Android Professional',2,2,'BAB1 Toho_Ulasan.pdf','2016-02-14',NULL,5,3,6,5,'2016-02-24','','2016-02-14 14:59:07',17,18),(95,'3009','Software 33',1,1,'Software 33.pdf','2016-02-10',NULL,3,1,3,3,'2016-03-03','','2016-02-14 15:10:52',17,18);
 /*!40000 ALTER TABLE `simdapel_pl_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -561,7 +420,7 @@ CREATE TABLE `simdapel_pl_transaksi` (
   `operator_id` int(11) DEFAULT NULL,
   `keterangan` text,
   `pl_data_id` int(11) DEFAULT NULL,
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `IX_Relationship49` (`pl_data_id`),
   KEY `user_id` (`user_id`),
@@ -578,7 +437,7 @@ CREATE TABLE `simdapel_pl_transaksi` (
 
 LOCK TABLES `simdapel_pl_transaksi` WRITE;
 /*!40000 ALTER TABLE `simdapel_pl_transaksi` DISABLE KEYS */;
-INSERT INTO `simdapel_pl_transaksi` VALUES (1,'2016-02-05','2016-02-12','2016-02-12',6,33,NULL,9,'2016-02-05 00:00:00'),(2,'2016-02-08',NULL,NULL,10,17,'',8,'0000-00-00 00:00:00'),(3,'2016-02-08',NULL,NULL,23,17,'',34,'0000-00-00 00:00:00'),(4,'2016-02-09','2016-02-17',NULL,3,17,'',14,'0000-00-00 00:00:00'),(5,'2016-02-03','2016-02-18',NULL,6,17,'',30,'0000-00-00 00:00:00'),(6,'2016-02-13',NULL,NULL,15,17,'',48,'0000-00-00 00:00:00'),(7,'2016-02-10','2016-02-17',NULL,4,17,'',28,'0000-00-00 00:00:00'),(8,'2016-02-09',NULL,NULL,8,17,'',51,'2016-02-07 17:06:35'),(9,'2016-02-10','2016-02-16',NULL,7,17,'',32,'2016-02-07 17:07:22'),(10,'2016-02-09','2016-02-15',NULL,7,17,'',26,'2016-02-07 17:07:59'),(11,'2016-02-09','2016-02-16',NULL,14,17,'',27,'2016-02-07 17:08:52'),(12,'2016-02-01',NULL,NULL,33,17,'',94,'2016-02-16 15:42:41'),(13,'2016-02-02','2016-02-10',NULL,8,17,'',10,'2016-02-16 15:48:32');
+INSERT INTO `simdapel_pl_transaksi` VALUES (1,'2016-02-05','2016-02-12','2016-02-12',6,33,NULL,9,'2016-02-04 17:00:00'),(2,'2016-02-08',NULL,NULL,10,17,'',8,'0000-00-00 00:00:00'),(3,'2016-02-08',NULL,NULL,23,17,'',34,'0000-00-00 00:00:00'),(4,'2016-02-09','2016-02-17',NULL,3,17,'',14,'0000-00-00 00:00:00'),(5,'2016-02-03','2016-02-18',NULL,6,17,'',30,'0000-00-00 00:00:00'),(6,'2016-02-13',NULL,NULL,15,17,'',48,'0000-00-00 00:00:00'),(7,'2016-02-10','2016-02-17',NULL,4,17,'',28,'0000-00-00 00:00:00'),(8,'2016-02-09',NULL,NULL,8,17,'',51,'2016-02-07 10:06:35'),(9,'2016-02-10','2016-02-16',NULL,7,17,'',32,'2016-02-07 10:07:22'),(10,'2016-02-09','2016-02-15',NULL,7,17,'',26,'2016-02-07 10:07:59'),(11,'2016-02-09','2016-02-16',NULL,14,17,'',27,'2016-02-07 10:08:52'),(12,'2016-02-01',NULL,NULL,33,17,'',94,'2016-02-16 08:42:41'),(13,'2016-02-02','2016-02-10',NULL,8,17,'',10,'2016-02-16 08:48:32');
 /*!40000 ALTER TABLE `simdapel_pl_transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -736,4 +595,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-22 22:39:05
+-- Dump completed on 2016-02-23  6:57:25

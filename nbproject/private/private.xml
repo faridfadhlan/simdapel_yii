@@ -14,6 +14,7 @@
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/layouts/header.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/Pl_dataController.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/data_inventori/_form.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/permohonan_data/umum.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/pl_jenis/index.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/messages/index.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/components/helpers.php</file>
@@ -22,6 +23,8 @@
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/controllers/MessagesController.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/messages/view.php</file>
             <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/pl_data/index.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/permohonan_data/_form_data_raw.php</file>
+            <file>file:/C:/xampp/htdocs/simdapel_yii/protected/views/site/index_user_non_bps.php</file>
         </group>
     </open-files>
 </project-private>

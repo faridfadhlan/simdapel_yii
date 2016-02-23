@@ -18,7 +18,7 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">HOME</li>
-            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-envelope"></i><span>Konsultasi Data</span>', array('site/index'));?></li>
+            <li class="treeview"><?php echo CHtml::link('<i class="fa fa-envelope"></i><span>Konsultasi Statistik</span>', array('site/index'));?></li>
             <li class="header">MASTER DATA</li>
             <?php if(Yii::app()->user->role_id != '3') { ?>
             <li class="treeview <?php 
@@ -75,7 +75,7 @@
             <li class="treeview <?php echo (Yii::app()->controller->action->id == 'pinjam')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Peminjaman Software</span>', array('peminjaman_pl/pinjam'));?></li>
             <?php }?>
             <?php if(Yii::app()->user->role_id!='1' && Yii::app()->user->role_id!='4') {?>
-            <li class="treeview <?php echo (Yii::app()->controller->action->id == 'umum')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Layanan Data</span>', array('permohonan_data/umum'));?></li>
+            <li class="treeview <?php echo (Yii::app()->controller->action->id == 'umum')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Layanan Raw Data</span>', array('permohonan_data/umum'));?></li>
             <?php }?>
             <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4') {?>
             <li class="header">REPORT</li>

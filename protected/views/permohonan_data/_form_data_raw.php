@@ -30,7 +30,7 @@
                                 ')</td>';
                             else:
                                 echo '<td>'.$data_inventori->id.$form->hiddenField($model_raw, 'data_inventori_id').'</td>';
-                                echo '<td>'.$data_inventori->nama_data.' ('.CHtml::link('Ganti', array('data_inventori/index')).'/'.CHtml::link('Hapus', array('data_inventori/hapuspinjam')).')</td>';
+                                echo '<td>'.$data_inventori->nama_data.' ('.CHtml::link('Ganti', array('data_inventori/index')).')</td>';
                                 echo '<td>'.$data_inventori->rincian.'</td>';
                                 echo '<td>'.$data_inventori->tahun.'</td>';
                             endif;?>
