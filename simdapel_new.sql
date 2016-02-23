@@ -83,33 +83,6 @@ INSERT INTO `simdapel_data_inventori` VALUES (1,'10001','IMK_TW_2011','IMK Data 
 UNLOCK TABLES;
 
 --
--- Table structure for table `simdapel_data_kuesioner`
---
-
-DROP TABLE IF EXISTS `simdapel_data_kuesioner`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `simdapel_data_kuesioner` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `subjek_id` int(11) DEFAULT NULL,
-  `nama_kuesioner` varchar(255) NOT NULL,
-  `nama_file` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `IX_Relationship50` (`subjek_id`),
-  CONSTRAINT `Relationship50` FOREIGN KEY (`subjek_id`) REFERENCES `simdapel_data_subjek` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simdapel_data_kuesioner`
---
-
-LOCK TABLES `simdapel_data_kuesioner` WRITE;
-/*!40000 ALTER TABLE `simdapel_data_kuesioner` DISABLE KEYS */;
-/*!40000 ALTER TABLE `simdapel_data_kuesioner` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `simdapel_data_subjek`
 --
 
@@ -135,6 +108,30 @@ INSERT INTO `simdapel_data_subjek` VALUES (1,'01','Sensus Ekonomi'),(2,'02','Sen
 UNLOCK TABLES;
 
 --
+-- Table structure for table `simdapel_instansi`
+--
+
+DROP TABLE IF EXISTS `simdapel_instansi`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `simdapel_instansi` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_unit` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `simdapel_instansi`
+--
+
+LOCK TABLES `simdapel_instansi` WRITE;
+/*!40000 ALTER TABLE `simdapel_instansi` DISABLE KEYS */;
+INSERT INTO `simdapel_instansi` VALUES (1,'Bidang IPDS'),(2,'Bidang NWAS'),(3,'Bidang Sosial'),(4,'Bidang Produksi'),(5,'Bidang Distribusi');
+/*!40000 ALTER TABLE `simdapel_instansi` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `simdapel_konsultasi`
 --
 
@@ -152,7 +149,7 @@ CREATE TABLE `simdapel_konsultasi` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `konsultasi_user` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +158,32 @@ CREATE TABLE `simdapel_konsultasi` (
 
 LOCK TABLES `simdapel_konsultasi` WRITE;
 /*!40000 ALTER TABLE `simdapel_konsultasi` DISABLE KEYS */;
+INSERT INTO `simdapel_konsultasi` VALUES (1,1,'Cara memperoleh data Sensus Penduduk','I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. ',36,1,'2016-02-23 04:44:55'),(2,1,NULL,'I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market',8,1,'2016-02-23 04:48:31');
 /*!40000 ALTER TABLE `simdapel_konsultasi` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `simdapel_level`
+--
+
+DROP TABLE IF EXISTS `simdapel_level`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `simdapel_level` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_level` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `simdapel_level`
+--
+
+LOCK TABLES `simdapel_level` WRITE;
+/*!40000 ALTER TABLE `simdapel_level` DISABLE KEYS */;
+INSERT INTO `simdapel_level` VALUES (1,'admin'),(2,'user_bps'),(3,'user_non_bps'),(4,'operator');
+/*!40000 ALTER TABLE `simdapel_level` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -582,7 +604,7 @@ CREATE TABLE `simdapel_user` (
 
 LOCK TABLES `simdapel_user` WRITE;
 /*!40000 ALTER TABLE `simdapel_user` DISABLE KEYS */;
-INSERT INTO `simdapel_user` VALUES (1,'196811051994012001','Ika Novia Satriana SE, MM','ika','ika@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','Lfmt7MQPzgFopWemGi4g1uCmDAdk8Fqf4MSC7VxY6KDcyznUhCbwC5OKEVd8',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,2),(2,'196604131986032002','Faridawati','faridawati','faridawati@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,2),(3,'196903221994012001','Ir.  Elly Nurmawati  M.M.','elly','elly@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,2),(4,'195807271981031004','Suryadi S  S.H.','suryadi','suryadi@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,2),(5,'197911262002121006','Imam Setia Harnomo SST, M.Stat','imam','imam@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,2),(6,'196509051992031004','Muhammad Yani SE','yani','myani@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,6,2),(7,'198104212003122001','Rika Kartini S.ST','rika','rika@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7,2),(8,'196703151994011001','Ir. Triyanto Widiarso MMA.','dimas','dimas@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8,2),(9,'198310072006022002','Retno Pertiwi SST.,M.Si','retno','retno@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,2),(10,'197506241994031001','M. Yun Imran SE','yun','myun@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,10,2),(11,'196705291994012001','Parmiatun SE','bunda','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11,2),(12,'196003161979121001','Abdul Kadir SE','kadir','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,12,2),(13,'198307072007012012','Fitri Wahyu Yuliasih SST','fitri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','cVzqaAPaAUZ9VmLMq73or8aIfOwDZyoIp4412W718w9REfpdJAVnWehbw6BM',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,13,2),(14,'197206121994122001','Sri Suyatmi S.Si, M.Si','sri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,14,2),(15,'197608171999011001','Agus Hartanto, SE, M.Eng M.Sc','agus','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,15,2),(16,'196611111994012001','Tri Setiani SE, M.M.','tri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,16,2),(17,'197604091999011001','Hakim Azizi S.ST','hakim','hakim@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','3wrEPPTaDRHqEURzSTZBGIZVheE6o6Z2mlF4BiGWVzMi8JO0gT5iqu0EjO5A',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,1),(18,'196005121981031002','Syarif Busri S.E.','busri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','dxIke2fhhPq8yTxu25oRHuz3nX91CfabEbyBqfo2kVJ6ZWnsX6gbeyKRjfkI',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,18,2),(19,'197612121999032001','Heny Sucihati S.ST','heny','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,19,2),(20,'196509101994021001','Ir. Jamaludin ?MM','jamaludin','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,20,2),(21,'196309041991031002','Duaksa Aritonang SE, MM','duaksa','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','F9hY3ovkJfArfP0xgnoEnfD3lLVAZsrs6nT7SySniPC8Zv7eVshlhVqTpUmm',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,21,2),(22,'196703211992032002','Sari Mariani SE','mariani','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,22,2),(23,'195804261983021001','Edi Rahman Asmara S.Si, M.M','edi','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,23,2),(24,'196603041992032001','Ir. Martalena M.M.','martalena','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,24,2),(25,'197101211993121002','Sudiyanto S.Si., MM','sudiyanto','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','jPveUrvFJcKvApP0OtJKrl6ibcsowb3PRUHnQnQCUEpWSr1Iq6fLZrfLXU2C',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,25,2),(26,'196405111992031003','Ir. Pitono MAP','pitono','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','pJ3oJqNqMl9u1HKmjEHkjE4ii3PZ2Ex4m9Y3Wa6k4wStxsdosGXKqKiqUKar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,26,2),(32,NULL,'Joko Widodo','jokowi','jokowi@gmail.com','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','zf7NmrxKByBb0TCBJJQdOijiQjSYxBk3E8LJKm2Uedz2IQ3EKE89FFLpPLDi','KTP','337102541222541112',55,'Laki-Laki','S1','Jl. Merdeka Barat','021-8441253','Presiden RI','Pemerintah',NULL,3),(33,'198909202012111001','Muhammad Farid Fadhlan','farid','m.farid@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','zs0eDFMVAH67uftSAIvnGeGTYoIA7dMv9Zzofvz1cJlc4PKxgXq7jRrsxUaF',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,1),(34,'198909202012111002','Muhammad Farid Fadhlan2','omfarid','farid.fadhlan@gmai','s3m4r4ngc1ty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,2),(35,'198909202012111003','JokoBodo','jokobodo','jokobodo@gmail.com','$2y$13$BxrWS2XsPPz2cB2UjOPGaO48DaYLyZcujII9wtkxTDkC01NTT3nWS',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,14,2),(36,NULL,'Gita Aurora','gita','gita@bps.go.id','$2y$13$FpwXUwPPJmkWTURnMd8uQe.dHJzTs41apO2EtCVBJ9DMAy.usm0iS',NULL,'1','617021121988222565',26,'2','2','thjytjjt','0852145223665','PNS','BPS',NULL,3);
+INSERT INTO `simdapel_user` VALUES (1,'196811051994012001','Ika Novia Satriana SE, MM','ika','ika@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','Lfmt7MQPzgFopWemGi4g1uCmDAdk8Fqf4MSC7VxY6KDcyznUhCbwC5OKEVd8',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,2),(2,'196604131986032002','Faridawati','faridawati','faridawati@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,2),(3,'196903221994012001','Ir.  Elly Nurmawati  M.M.','elly','elly@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,2),(4,'195807271981031004','Suryadi S  S.H.','suryadi','suryadi@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,2),(5,'197911262002121006','Imam Setia Harnomo SST, M.Stat','imam','imam@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,2),(6,'196509051992031004','Muhammad Yani SE','yani','myani@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,6,2),(7,'198104212003122001','Rika Kartini S.ST','rika','rika@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7,2),(8,'196703151994011001','Ir. Triyanto Widiarso MMA.','dimas','dimas@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8,2),(9,'198310072006022002','Retno Pertiwi SST.,M.Si','retno','retno@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,2),(10,'197506241994031001','M. Yun Imran SE','yun','myun@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,10,2),(11,'196705291994012001','Parmiatun SE','bunda','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11,2),(12,'196003161979121001','Abdul Kadir SE','kadir','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,12,2),(13,'198307072007012012','Fitri Wahyu Yuliasih SST','fitri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','cVzqaAPaAUZ9VmLMq73or8aIfOwDZyoIp4412W718w9REfpdJAVnWehbw6BM',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,13,2),(14,'197206121994122001','Sri Suyatmi S.Si, M.Si','sri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,14,2),(15,'197608171999011001','Agus Hartanto, SE, M.Eng M.Sc','agus','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,15,2),(16,'196611111994012001','Tri Setiani SE, M.M.','tri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,16,2),(17,'197604091999011001','Hakim Azizi S.ST','hakim','hakim@bps.go.id','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','3wrEPPTaDRHqEURzSTZBGIZVheE6o6Z2mlF4BiGWVzMi8JO0gT5iqu0EjO5A',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,1),(18,'196005121981031002','Syarif Busri S.E.','busri','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','dxIke2fhhPq8yTxu25oRHuz3nX91CfabEbyBqfo2kVJ6ZWnsX6gbeyKRjfkI',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,18,2),(19,'197612121999032001','Heny Sucihati S.ST','heny','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,19,2),(20,'196509101994021001','Ir. Jamaludin ?MM','jamaludin','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,20,2),(21,'196309041991031002','Duaksa Aritonang SE, MM','duaksa','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','F9hY3ovkJfArfP0xgnoEnfD3lLVAZsrs6nT7SySniPC8Zv7eVshlhVqTpUmm',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,21,2),(22,'196703211992032002','Sari Mariani SE','mariani','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,22,2),(23,'195804261983021001','Edi Rahman Asmara S.Si, M.M','edi','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,23,2),(24,'196603041992032001','Ir. Martalena M.M.','martalena','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,24,2),(25,'197101211993121002','Sudiyanto S.Si., MM','sudiyanto','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','jPveUrvFJcKvApP0OtJKrl6ibcsowb3PRUHnQnQCUEpWSr1Iq6fLZrfLXU2C',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,25,2),(26,'196405111992031003','Ir. Pitono MAP','pitono','','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','pJ3oJqNqMl9u1HKmjEHkjE4ii3PZ2Ex4m9Y3Wa6k4wStxsdosGXKqKiqUKar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,26,2),(32,NULL,'Joko Widodo','jokowi','jokowi@gmail.com','$2y$13$2MnhwwjL78EM0xtVviW/6.USu7dr3X2qxjDeERAORRa4f9cG/3hJa','zf7NmrxKByBb0TCBJJQdOijiQjSYxBk3E8LJKm2Uedz2IQ3EKE89FFLpPLDi','KTP','337102541222541112',55,'Laki-Laki','S1','Jl. Merdeka Barat','021-8441253','Presiden RI','Pemerintah',NULL,3),(33,'198909202012111001','Muhammad Farid Fadhlan','farid','m.farid@bps.go.id','$2y$13$xRRnKKQaP.idBjiBplKXmuyzyWfmORpP4ds/YZ.6.5WzZ24muSGHK','zs0eDFMVAH67uftSAIvnGeGTYoIA7dMv9Zzofvz1cJlc4PKxgXq7jRrsxUaF',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,1),(34,'198909202012111002','Muhammad Farid Fadhlan2','omfarid','farid.fadhlan@gmai','s3m4r4ngc1ty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,2),(35,'198909202012111003','JokoBodo','jokobodo','jokobodo@gmail.com','$2y$13$BxrWS2XsPPz2cB2UjOPGaO48DaYLyZcujII9wtkxTDkC01NTT3nWS',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,14,2),(36,NULL,'Gita Aurora','gita','gita@bps.go.id','$2y$13$FpwXUwPPJmkWTURnMd8uQe.dHJzTs41apO2EtCVBJ9DMAy.usm0iS',NULL,'1','617021121988222565',26,'2','2','thjytjjt','0852145223665','PNS','BPS',NULL,3);
 /*!40000 ALTER TABLE `simdapel_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -595,4 +617,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-23  6:57:25
+-- Dump completed on 2016-02-23 16:22:46

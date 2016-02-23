@@ -169,7 +169,7 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                        <?php echo CHtml::link('Ganti Password', array('user/gantipassword'), array('class'=>'btn btn-default btn-flat'));?>
                     </div>
                     <div class="pull-right">
                         <?php echo CHtml::link('Sign out', array('site/logout'), array('class'=>'btn btn-default btn-flat')); ?>

@@ -27,15 +27,13 @@ class UserController extends Controller
 	public function accessRules()
 	{
 		return array(
+                        array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('gantipassword'),
+				'users'=>array('@'),
+			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete','index','view','create','update'),
-				'expression'=>array('Controller', 'harus_admin'),/*
-                            function() {
-                                    if(isset(Yii::app()->user->role_id)):    
-                                        if(Yii::app()->user->role_id == '1') return true;
-                                        return false;
-                                    endif;    
-                                }*/
+				'expression'=>array('Controller', 'harus_admin'),
 			),
 			array('deny',
                                 'users'=>array('*')
@@ -175,6 +173,26 @@ class UserController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+        
+        public function actionGantipassword() {
+            $model = new GantiPasswordForm;
+            if(isset($_POST['GantiPasswordForm'])) {
+                $model->attributes = $_POST['GantiPasswordForm'];
+                if($model->validate()) {
+                    $model->user->password = $model->user->hashPassword($model->password_new);
+                    $model->user->save(false);
+                    Yii::app()->user->setFlash('success', "Password telah diubah.");
+                }
+            }
+            
+            $model->password_new = NULL;
+            $model->password_new_confirmation = NULL;
+            $model->password_old = NULL;
+            
+            $this->render('ganti_password',array(
+			'model'=>$model,
+		));
+        }
 
 	/**
 	 * Performs the AJAX validation.
