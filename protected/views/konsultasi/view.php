@@ -23,7 +23,7 @@
         <?php endif;?>
         <div class="box box-primary">
             <div class="box-header with-border">
-                  <h3 class="box-title"><?php echo $modelnya->judul;?></h3>
+                  <h3 class="box-title"><?php echo $modelnya->judul;?> <?php echo $modelnya->status=='1'?'<span class="label label-warning">Open</span></td>':'<span class="label label-success">Closed</span>';?></h3>
                 </div><!-- /.box-header -->
             <div class="box-body chat" id="chat-box">
               <?php foreach($model as $data):?>
@@ -44,16 +44,12 @@
                                 'id'=>'konsultasi-form',
                                 'enableAjaxValidation'=>false
                         )); ?>
-                    <?php if(count($model)==0) {
+                    <?php echo CHtml::errorSummary($konsultasi,NULL, NULL,array('class'=>'alert alert-danger')); ?>
+                    <?php
+                    if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') {
                     echo '<div class="form-group">';
-                      echo $form->textField($konsultasi, 'judul', array('class'=>'form-control', 'placeholder'=>'Judul'));
-                  echo '</div>';
-                        
-                    }
-                    else {
-                        echo '<div class="form-group">';
-                      echo $form->dropDownList($konsultasi, 'status', array('1'=>'Open','2'=>'Closed'),array('class'=>'form-control', 'prompt'=>'Pilih Status...'));
-                  echo '</div>';
+                    echo $form->dropDownList($konsultasi, 'status', array('1'=>'Open','2'=>'Closed'),array('class'=>'form-control', 'prompt'=>'Pilih Status...'));
+                    echo '</div>';
                     }
                     ?>
                     

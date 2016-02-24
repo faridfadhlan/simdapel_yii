@@ -10485,3 +10485,216 @@ Stack trace:
 REQUEST_URI=/simdapel_yii/index.php?r=peminjaman_pl/getDropdownSeksi
 HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=peminjaman_pl/create
 ---
+2016/02/24 04:38:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM simdapel_konsultasi WHERE judul IS NOT NULL GROUP BY judul_id' at line 1. The SQL statement executed was: SELECT COUNT(id) as jumlah_pesan,* FROM simdapel_konsultasi WHERE judul IS NOT NULL GROUP BY judul_id.
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (134)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 04:38:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM simdapel_konsultasi WHERE judul IS NOT NULL GROUP BY judul_id' at line 1. The SQL statement executed was: SELECT COUNT(id) as jumlah_pesan,* FROM simdapel_konsultasi WHERE judul IS NOT NULL GROUP BY judul_id' in C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1586): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(134): CActiveRecord->findAllBySql('SELECT COUNT(id...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): KonsultasiController->actionIndex()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('konsultasi/inde...')
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=konsultasi/index
+---
+2016/02/24 05:38:44 [error] [php] Attempt to assign property of non-object (C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php:60)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=3
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:41:37 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:41:37 [error] [php] Attempt to assign property of non-object (C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=3
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (66)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:41:52 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:42:06 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:43:22 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:43:57 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:44:43 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:44:44 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (C:\xampp\htdocs\simdapel_yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(73): spl_autoload_call()
+#1 unknown(0): KonsultasiController->actionView()
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=3
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (73)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:44:52 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:45:35 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:45:44 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:46:18 [warning] [application] Failed to set unsafe attribute "isi" of "Konsultasi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (60)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 05:58:53 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): KonsultasiController->renderFile()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): KonsultasiController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(177): KonsultasiController->render()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): KonsultasiController->actionIndex()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
+in C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\index.php (43)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (177)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 07:18:09 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): KonsultasiController->renderFile()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): KonsultasiController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(176): KonsultasiController->render()
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): KonsultasiController->actionIndex()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
+in C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\index.php (43)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (176)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 07:26:04 [warning] [application] Failed to set unsafe attribute "bidang_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (78)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 07:26:04 [warning] [application] Failed to set unsafe attribute "seksi_id" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (78)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 07:26:04 [warning] [application] Failed to set unsafe attribute "duplikasi" of "PlTransaksi".
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (78)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 07:26:05 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\simdapel_yii\protected\components\helpers.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\CBaseController.php(95): Peminjaman_plController->renderInternal()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): Peminjaman_plController->renderFile()
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): Peminjaman_plController->renderPartial()
+#3 C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php(155): Peminjaman_plController->render()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): Peminjaman_plController->actionIndex()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): Peminjaman_plController->runAction()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): Peminjaman_plController->filterAccessControl()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): Peminjaman_plController->runActionWithFilters()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): Peminjaman_plController->run()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=peminjaman_pl/index
+in C:\xampp\htdocs\simdapel_yii\protected\components\helpers.php (22)
+in C:\xampp\htdocs\simdapel_yii\protected\views\peminjaman_pl\index.php (53)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\Peminjaman_plController.php (155)
+2016/02/24 08:35:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id' at line 1. The SQL statement executed was: SELECT COUNT(id) as jumlah_pesan,,simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id.
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (170)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/02/24 08:35:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id' at line 1. The SQL statement executed was: SELECT COUNT(id) as jumlah_pesan,,simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id' in C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1586): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(170): CActiveRecord->findAllBySql('SELECT COUNT(id...')
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): KonsultasiController->actionIndex()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('konsultasi/inde...')
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=pl_data/index
+---

@@ -1,64 +1,28 @@
-<?php
-/* @var $this KonsultasiController */
-/* @var $model Konsultasi */
-/* @var $form CActiveForm */
-?>
-
-<div class="form">
-
+<div class="box-body">
+<?php echo CHtml::errorSummary($model,NULL, NULL,array('class'=>'alert alert-danger')); ?>
+</div>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'konsultasi-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
+<div class="box-body">
+    <div class="col-md-12">
+        <p class="note">Fields with <span class="required">*</span> are required.</p>
+        <div class="form-group">
+            <?php echo $form->labelEx($model,'judul'); ?>
+            <?php echo $form->textField($model,'judul',array('class'=>'form-control','placeholder'=>'Judul')); ?>    
+        </div>
+        <div class="form-group">
+            <?php echo $form->labelEx($model,'isi'); ?>
+            <?php echo $form->textArea($model,'isi',array('class'=>'form-control','placeholder'=>'Isi', 'rows'=>'8')); ?>    
+        </div>
+    </div>
+</div>
+<div class="box-footer">
+    <div class="form-group">
+    <?php echo CHtml::submitButton('Kirim', array('class'=>'btn btn-primary')); ?>
+    </div>
+</div>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'judul_id'); ?>
-		<?php echo $form->textField($model,'judul_id'); ?>
-		<?php echo $form->error($model,'judul_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'judul'); ?>
-		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'judul'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'isi'); ?>
-		<?php echo $form->textArea($model,'isi',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'isi'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->textField($model,'user_id'); ?>
-		<?php echo $form->error($model,'user_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_time'); ?>
-		<?php echo $form->textField($model,'create_time'); ?>
-		<?php echo $form->error($model,'create_time'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
-
+    
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

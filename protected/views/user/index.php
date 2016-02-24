@@ -45,7 +45,7 @@
                         foreach($dataProvider as $data) {
                             echo '<tr>';
                             echo '<td class="text-center">'.$data->id.'</td>';
-                            echo '<td>'.$data->nama.'</td>';
+                            echo '<td>'.CHtml::link($data->nama, array('user/view', 'id'=>$data->id)).'</td>';
                             echo '<td>'.$data->username.'</td>';
                             echo '<td>'.$data->email.'</td>';
                             echo '<td>'.$data->seksi['nama_seksi'].'</td>';

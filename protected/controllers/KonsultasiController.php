@@ -54,7 +54,31 @@ class KonsultasiController extends Controller
                 $konsultasi = new Konsultasi;
                 $modelnya = $this->loadModel($id);
                 $model = Konsultasi::model()->findAll('judul_id=:judul_id', array(':judul_id'=>$modelnya->judul_id));
-		$this->render('view',array(
+		
+                if(isset($_POST['Konsultasi']))
+		{
+			$konsultasi->attributes=$_POST['Konsultasi'];
+                        if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') {
+                            $konsultasi->scenario = 'operator_tambah';
+                        }
+                        else {
+                            $konsultasi->status = '1';
+                            $konsultasi->scenario = 'user_tambah';
+                        }
+                        //print_r(Yii::app()->user->role_id);exit;
+			if($konsultasi->validate()) {
+                            $modelnya->status = $konsultasi->status;
+                            $modelnya->save(false);
+                            $konsultasi->judul_id = $modelnya->judul_id;
+                            $konsultasi->user_id = Yii::app()->user->id;
+                            $konsultasi->save(false);
+                            $konsultasi->status = NULL;
+                            $konsultasi->isi = NULL;
+                            $this->redirect(array('konsultasi/view', 'id'=>$id));
+                        }
+		}
+                
+                $this->render('view',array(
 			'model'=>$model,
                         'modelnya'=>$modelnya,
                         'konsultasi'=>$konsultasi
@@ -75,8 +99,13 @@ class KonsultasiController extends Controller
 		if(isset($_POST['Konsultasi']))
 		{
 			$model->attributes=$_POST['Konsultasi'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        $model->scenario = 'baru';
+                        if($model->validate()) {
+                            $model->user_id = Yii::app()->user->id;
+                            $model->status = '1';
+                            $model->save(false);
+                            $this->redirect(array('konsultasi/index'));
+                        }
 		}
 
 		$this->render('create',array(
@@ -99,8 +128,15 @@ class KonsultasiController extends Controller
 		if(isset($_POST['Konsultasi']))
 		{
 			$model->attributes=$_POST['Konsultasi'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        $model->scenario = 'nambah';
+                        
+			if($model->validate()) {
+                            $model->user_id = Yii::app()->user->id;
+                            $model->save(false);
+                            $model->status = NULL;
+                            $model->isi = NULL;
+                            $this->redirect(array('konsultasi/view', 'id'=>$id));
+                        }
 		}
 
 		$this->render('update',array(
@@ -127,9 +163,20 @@ class KonsultasiController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider = Konsultasi::model()->findAllBySql(
-                        'SELECT * FROM simdapel_konsultasi WHERE user_id='.Yii::app()->user->id.' GROUP BY judul_id'
+            $role = Yii::app()->user->role_id;
+            if($role == '1' || $role=='4') {
+                $dataProvider = Konsultasi::model()->findAllBySql(
+                        'SELECT COUNT(id) as jumlah_pesan,simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id'
                        );
+            }
+            else {
+            $dataProvider = Konsultasi::model()->findAllBySql(
+                        'SELECT COUNT(id) as jumlah_pesan,simdapel_konsultasi.* FROM simdapel_konsultasi WHERE user_id='.Yii::app()->user->id.' GROUP BY judul_id'
+                       );
+            }
+            
+            
+            
                 //print_r($dataProvider);exit;
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

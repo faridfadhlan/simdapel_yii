@@ -20,6 +20,8 @@ class Konsultasi extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+        public $jumlah_pesan;
+        
 	public function tableName()
 	{
 		return 'simdapel_konsultasi';
@@ -33,9 +35,13 @@ class Konsultasi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('judul_id, isi, user_id, status, create_time', 'required'),
+			array('judul, isi', 'required', 'on'=>'baru'),
+                        array('isi,status', 'required', 'on'=>'operator_tambah'),
+                        array('isi', 'required', 'on'=>'user_tambah'),
 			array('judul_id, user_id, status', 'numerical', 'integerOnly'=>true),
 			array('judul', 'length', 'max'=>255),
+                        array('jumlah_pesan,isi', 'safe'),
+                        
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, judul_id, judul, isi, user_id, status, create_time', 'safe', 'on'=>'search'),
@@ -111,4 +117,20 @@ class Konsultasi extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function get_next_judul_id() {
+                $criteria = new CDbCriteria();
+                $criteria->select = 'max(judul_id) as judul_id';
+                $tertinggi = $this::model()->find($criteria);
+                $next = (intval($tertinggi->judul_id)+1);
+                $this->judul_id = $next;
+        }
+        
+        
+        public function beforeSave() {
+                if($this->judul!=NULL && $this->isNewRecord) {
+                    $this->get_next_judul_id();
+                }
+                return parent::beforeSave();
+        }
 }
