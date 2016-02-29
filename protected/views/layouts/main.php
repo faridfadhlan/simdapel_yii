@@ -35,10 +35,20 @@
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
+                    <?php
+                    $role = Yii::app()->user->role_id;
+                    if($role=='1'){
+                        $messages = Konsultasi::model()->findAllBySql('SELECT * FROM simdapel_konsultasi WHERE status=1 AND judul IS NOT NULL');
+                    }
+                    if($role=='2' || $role=='3') {
+                        $messages = Konsultasi::model()->findAllBySql('SELECT * FROM simdapel_konsultasi WHERE status=1 AND user_id='.Yii::app()->user->id.' AND judul IS NOT NULL');
+                    }
+                    ?>
+                  <span class="label label-success"><?php echo count($messages);?></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
+                    
+                  <li class="header">Ada <?php echo count($messages);?> pesan dengan status open</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">

@@ -81,7 +81,10 @@ class SiteController extends Controller
                 $jumlah['data2'] = array(DataInventori::model()->count(), 'Data Inventori');
                 $jumlah['data3'] = array(PermohonanData::model()->count('user_id=:user_id AND status=:status', array(':user_id'=>Yii::app()->user->id,':status'=>'warning')), 'Permohonan Data Pending');
                 $jumlah['data4'] = array(PermohonanData::model()->count('user_id=:user_id', array(':user_id'=>Yii::app()->user->id)), 'Total Permohonan Data');
-                $this->render('index_user_non_bps', array('jumlah'=>$jumlah, 'permohonan_data'=>  PermohonanData::model()->findAll('user_id=:user_id',array(':user_id'=>Yii::app()->user->id))));
+                $this->render('index_user_non_bps', array(
+                    'jumlah'=>$jumlah, 
+                    'permohonan_data'=>  PermohonanData::model()->findAll('user_id=:user_id',array(':user_id'=>Yii::app()->user->id))
+                ));
                 //$jumlah['permohonan_data'] = PermohonanData::model()->count('user_id=:user_id', array(':user_id'=>Yii::app()->user->id));
             }
             
