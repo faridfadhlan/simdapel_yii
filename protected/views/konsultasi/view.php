@@ -26,7 +26,7 @@
                   <h3 class="box-title"><?php echo $modelnya->judul;?> <?php echo $modelnya->status=='1'?'<span class="label label-warning">Open</span></td>':'<span class="label label-success">Closed</span>';?></h3>
                 </div><!-- /.box-header -->
             <div class="box-body chat" id="chat-box">
-              <?php foreach($model as $data):?>
+              <?php foreach($modelnya->konsultasiPosts as $data):?>
               <div class="item">
                 <img src="<?php echo Yii::app()->baseUrl;?>/public/dist/img/user2-160x160.jpg" alt="user image" class="online">
                 <p class="message">

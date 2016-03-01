@@ -51,27 +51,32 @@ class KonsultasiController extends Controller
 	 */
 	public function actionView($id)
 	{
-                $konsultasi = new Konsultasi;
-                $modelnya = $this->loadModel($id);
-                $model = Konsultasi::model()->findAll('judul_id=:judul_id', array(':judul_id'=>$modelnya->judul_id));
+                $konsultasi = new KonsultasiPost;
+                $modelnya = KonsultasiThread::model()->with('konsultasiPosts')->findByPk($id);
+                //$model = Konsultasi::model()->findAll('judul_id=:judul_id', array(':judul_id'=>$modelnya->judul_id));
 		
-                if(isset($_POST['Konsultasi']))
+                if(isset($_POST['KonsultasiPost']))
 		{
-			$konsultasi->attributes=$_POST['Konsultasi'];
+			$konsultasi->attributes=$_POST['KonsultasiPost'];
                         if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') {
-                            $konsultasi->scenario = 'operator_tambah';
+                            //$konsultasi->scenario = 'operator_tambah';
                         }
                         else {
                             $konsultasi->status = '1';
-                            $konsultasi->scenario = 'user_tambah';
+                            //$konsultasi->scenario = 'user_tambah';
                         }
                         //print_r(Yii::app()->user->role_id);exit;
 			if($konsultasi->validate()) {
-                            $modelnya->status = $konsultasi->status;
-                            $modelnya->save(false);
                             $konsultasi->judul_id = $modelnya->judul_id;
                             $konsultasi->user_id = Yii::app()->user->id;
                             $konsultasi->save(false);
+                            //Update status thread
+                            Konsultasi::model()->updateAll(
+                                    array('status'=>$konsultasi->status),
+                                    'judul_id=:judul_id',
+                                    array(':judul_id'=>$konsultasi->judul_id)
+                            );
+                            //end of update status thread
                             $konsultasi->status = NULL;
                             $konsultasi->isi = NULL;
                             $this->redirect(array('konsultasi/view', 'id'=>$id));
@@ -79,7 +84,7 @@ class KonsultasiController extends Controller
 		}
                 
                 $this->render('view',array(
-			'model'=>$model,
+			//'model'=>$model,
                         'modelnya'=>$modelnya,
                         'konsultasi'=>$konsultasi
 		));
@@ -165,14 +170,11 @@ class KonsultasiController extends Controller
 	{
             $role = Yii::app()->user->role_id;
             if($role == '1' || $role=='4') {
-                $dataProvider = Konsultasi::model()->findAllBySql(
-                        'SELECT COUNT(id) as jumlah_pesan,simdapel_konsultasi.* FROM simdapel_konsultasi GROUP BY judul_id'
-                       );
+                $dataProvider =  KonsultasiThread::model()->findAll();
             }
             else {
-            $dataProvider = Konsultasi::model()->findAllBySql(
-                        'SELECT COUNT(id) as jumlah_pesan,simdapel_konsultasi.* FROM simdapel_konsultasi WHERE user_id='.Yii::app()->user->id.' GROUP BY judul_id'
-                       );
+                $dataProvider =  KonsultasiThread::model()->findAll('user_id=:user_id', array(':user_id'=>Yii::app()->user->id));
+                //print_r($dataProvider);exit;
             }
             
             
@@ -207,7 +209,7 @@ class KonsultasiController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Konsultasi::model()->findByPk($id);
+		$model=  KonsultasiThread::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

@@ -38,20 +38,34 @@
                     <?php
                     $role = Yii::app()->user->role_id;
                     if($role=='1'){
-                        $messages = Konsultasi::model()->findAllBySql('SELECT * FROM simdapel_konsultasi WHERE status=1 AND judul IS NOT NULL');
+                        $sql = 'SELECT a.* FROM simdapel_konsultasi a INNER JOIN(
+                                SELECT max(id) as id FROM simdapel_konsultasi WHERE status=1 GROUP BY judul_id
+                                ) b on a.id=b.id';
+                        
                     }
                     if($role=='2' || $role=='3') {
-                        $messages = Konsultasi::model()->findAllBySql('SELECT * FROM simdapel_konsultasi WHERE status=1 AND user_id='.Yii::app()->user->id.' AND judul IS NOT NULL');
+                        $sql = 'SELECT a.* FROM simdapel_konsultasi a INNER JOIN(
+                                SELECT max(id) as id FROM simdapel_konsultasi WHERE status=1 AND 
+                                user_id='.Yii::app()->user->id.' GROUP BY judul_id
+                                ) b on a.id=b.id WHERE user_id <> '.Yii::app()->user->id;
                     }
+                    $new = Konsultasi::model()->findAllBySql($sql);
                     ?>
-                  <span class="label label-success"><?php echo count($messages);?></span>
+                  <span class="label label-success"><?php echo count($new);?></span>
                 </a>
                 <ul class="dropdown-menu">
                     
-                  <li class="header">Ada <?php echo count($messages);?> pesan dengan status open</li>
+                  <li class="header">Ada <?php echo count($new);?> pesan dengan status open</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
+                        <?php
+                        
+                        
+                        
+                        
+                        
+                        ?>
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">

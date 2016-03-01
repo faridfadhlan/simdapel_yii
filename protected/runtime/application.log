@@ -10698,3 +10698,96 @@ Stack trace:
 REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
 HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=pl_data/index
 ---
+2016/03/01 02:17:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php:212
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(55): KonsultasiController->loadModel('4')
+#1 [internal function]: KonsultasiController->actionView('4')
+#2 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(KonsultasiController), Array)
+#3 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KonsultasiController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('konsultasi/view')
+#14 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=4
+---
+2016/03/01 05:05:55 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.:judul_id" is not defined.' in C:\xampp\htdocs\simdapel_yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set(':judul_id', '2')
+#1 C:\xampp\htdocs\simdapel_yii\framework\db\schema\CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1769): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(74): CActiveRecord->updateAll('judul_id=:judul...', Array)
+#4 [internal function]: KonsultasiController->actionView('21')
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(KonsultasiController), Array)
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KonsultasiController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('konsultasi/view')
+#17 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\simdapel_yii\index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=21
+HTTP_REFERER=http://localhost/simdapel_yii/index.php?r=konsultasi/view&id=21
+---
+2016/03/01 09:14:57 [error] [php] Array to string conversion (C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveFinder.php:1347)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery()
+#1 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find()
+#2 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1361): CActiveFinder->query()
+#3 C:\xampp\htdocs\simdapel_yii\framework\db\ar\CActiveRecord.php(1475): KonsultasiThread->query()
+#4 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(191): KonsultasiThread->findAll()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(49): KonsultasiController->actionIndex()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/index
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (191)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
+2016/03/01 10:12:55 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\view.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(869): KonsultasiController->renderFile()
+#1 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(782): KonsultasiController->renderPartial()
+#2 C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php(92): KonsultasiController->render()
+#3 unknown(0): KonsultasiController->actionView()
+#4 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\simdapel_yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(133): KonsultasiController->runAction()
+#8 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CInlineFilter.php(58): KonsultasiController->filterAccessControl()
+#11 C:\xampp\htdocs\simdapel_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\simdapel_yii\framework\web\CController.php(265): KonsultasiController->runActionWithFilters()
+#14 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(282): KonsultasiController->run()
+#15 C:\xampp\htdocs\simdapel_yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\simdapel_yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\simdapel_yii\index.php(14): CWebApplication->run()
+REQUEST_URI=/simdapel_yii/index.php?r=konsultasi/view&id=1
+in C:\xampp\htdocs\simdapel_yii\protected\views\konsultasi\view.php (26)
+in C:\xampp\htdocs\simdapel_yii\protected\controllers\KonsultasiController.php (92)
+in C:\xampp\htdocs\simdapel_yii\index.php (14)
