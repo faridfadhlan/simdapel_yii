@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 24, 2016 at 09:51 AM
--- Server version: 10.1.9-MariaDB
+-- Generation Time: Mar 01, 2016 at 10:28 AM
+-- Server version: 5.7.11-log
 -- PHP Version: 5.6.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -170,18 +170,68 @@ CREATE TABLE `simdapel_konsultasi` (
 
 INSERT INTO `simdapel_konsultasi` (`id`, `judul_id`, `judul`, `isi`, `user_id`, `status`, `create_time`) VALUES
 (1, 1, 'Cara memperoleh data Sensus Penduduk', 'I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market. ', 36, 2, '2016-02-23 04:44:55'),
-(2, 1, NULL, 'I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market', 33, 1, '2016-02-23 04:48:31'),
+(2, 1, NULL, 'I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market', 33, 2, '2016-02-23 04:48:31'),
 (3, 2, 'Data Sakernas', 'Pluto adalah planet katai di sabuk Kuiper dan objek trans-Neptunus pertama yang ditemukan. Pluto merupakan planet katai terbesar dan bermassa terbesar kedua di Tata Surya dan benda terbesar kesembilan dan bermassa terbesar kesepuluh yang mengorbit Matahari secara langsung. Pluto merupakan objek trans-Neptunus dengan volume terbesar dan massa yang sedikit lebih kecil daripada Eris, planet katai di piringan tersebar. Layaknya objek lain di sabuk Kuiper, Pluto terdiri dari batu dan es dan relatif kecil.', 1, 2, '2016-02-24 04:30:54'),
-(5, 2, NULL, 'Salah', 1, 1, '2016-02-24 04:47:24'),
-(16, 1, NULL, 'tes', 33, 1, '2016-02-24 07:15:09'),
+(5, 2, NULL, 'Salah', 1, 2, '2016-02-24 04:47:24'),
+(16, 1, NULL, 'tes', 33, 2, '2016-02-24 07:15:09'),
 (17, 1, NULL, 'vccbcbc', 33, 2, '2016-02-24 07:26:37'),
-(18, 1, NULL, 'tessssss', 33, 1, '2016-02-24 07:28:40'),
+(18, 1, NULL, 'tessssss', 33, 2, '2016-02-24 07:28:40'),
 (19, 1, NULL, 'Ya bisa jadi', 33, 2, '2016-02-24 07:29:03'),
-(20, 1, NULL, 'tapi bagaimana ikakosod?', 36, 1, '2016-02-24 07:30:18'),
-(21, 3, 'Permintaan data ppwweklrlwjlf wefmebkjf', 'ytjyukyuk7y', 36, 2, '2016-02-24 07:33:04'),
-(22, 3, NULL, 'Silahkana dnambdmna dnavdn adv', 33, 2, '2016-02-24 07:33:36'),
+(20, 1, NULL, 'tapi bagaimana ikakosod?', 36, 2, '2016-02-24 07:30:18'),
+(21, 3, 'Permintaan data ppwweklrlwjlf wefmebkjf', 'ytjyukyuk7y', 36, 1, '2016-02-24 07:33:04'),
+(22, 3, NULL, 'Silahkana dnambdmna dnavdn adv', 33, 1, '2016-02-24 07:33:36'),
 (23, 2, NULL, 'Bisa jdjsljdlasj dsbdfmsbkf sfhlk;', 33, 2, '2016-02-24 07:33:48'),
-(24, 1, NULL, 'dsfsdlf;ld;gdf,g;f fn kh; btjl''', 33, 2, '2016-02-24 07:33:58');
+(24, 1, NULL, 'dsfsdlf;ld;gdf,g;f fn kh; btjl''', 33, 2, '2016-02-24 07:33:58'),
+(25, 3, NULL, 'tes', 33, 1, '2016-02-29 08:14:06'),
+(26, 3, NULL, 'ya', 36, 1, '2016-03-01 01:17:22'),
+(27, 3, NULL, 'sip', 33, 1, '2016-03-01 04:05:55'),
+(28, 3, NULL, 'sip2', 33, 1, '2016-03-01 04:07:41'),
+(29, 2, NULL, 'ya', 33, 2, '2016-03-01 04:07:50'),
+(30, 1, NULL, 'memang', 33, 2, '2016-03-01 04:08:02'),
+(31, 3, NULL, 'tapi', 36, 1, '2016-03-01 04:08:49');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `simdapel_konsultasi_post`
+--
+
+CREATE TABLE `simdapel_konsultasi_post` (
+  `id` int(11) NOT NULL,
+  `isi` text NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `read_status` tinyint(4) NOT NULL DEFAULT '1',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `thread_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `simdapel_konsultasi_post`
+--
+
+INSERT INTO `simdapel_konsultasi_post` (`id`, `isi`, `user_id`, `read_status`, `create_time`, `thread_id`) VALUES
+(1, 'fgdgdgdd', 36, 1, '2016-03-01 08:31:29', 1),
+(2, 'yhftytrytry', 36, 1, '2016-03-01 08:33:19', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `simdapel_konsultasi_thread`
+--
+
+CREATE TABLE `simdapel_konsultasi_thread` (
+  `id` int(11) NOT NULL,
+  `judul` varchar(255) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `simdapel_konsultasi_thread`
+--
+
+INSERT INTO `simdapel_konsultasi_thread` (`id`, `judul`, `status`, `user_id`) VALUES
+(1, 'Tes', 1, 36);
 
 -- --------------------------------------------------------
 
@@ -784,6 +834,21 @@ ALTER TABLE `simdapel_konsultasi`
   ADD KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `simdapel_konsultasi_post`
+--
+ALTER TABLE `simdapel_konsultasi_post`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IX_Relationship23` (`thread_id`),
+  ADD KEY `IX_Relationship24` (`user_id`);
+
+--
+-- Indexes for table `simdapel_konsultasi_thread`
+--
+ALTER TABLE `simdapel_konsultasi_thread`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Indexes for table `simdapel_level`
 --
 ALTER TABLE `simdapel_level`
@@ -914,7 +979,17 @@ ALTER TABLE `simdapel_instansi`
 -- AUTO_INCREMENT for table `simdapel_konsultasi`
 --
 ALTER TABLE `simdapel_konsultasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+--
+-- AUTO_INCREMENT for table `simdapel_konsultasi_post`
+--
+ALTER TABLE `simdapel_konsultasi_post`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `simdapel_konsultasi_thread`
+--
+ALTER TABLE `simdapel_konsultasi_thread`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `simdapel_level`
 --
@@ -1001,6 +1076,19 @@ ALTER TABLE `simdapel_data_inventori`
 --
 ALTER TABLE `simdapel_konsultasi`
   ADD CONSTRAINT `konsultasi_user` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `simdapel_konsultasi_post`
+--
+ALTER TABLE `simdapel_konsultasi_post`
+  ADD CONSTRAINT `Relationship23` FOREIGN KEY (`thread_id`) REFERENCES `simdapel_konsultasi_thread` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `Relationship24` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `simdapel_konsultasi_thread`
+--
+ALTER TABLE `simdapel_konsultasi_thread`
+  ADD CONSTRAINT `pembuat` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `simdapel_permohonan_data_nonbps`
