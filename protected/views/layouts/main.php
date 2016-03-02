@@ -37,141 +37,56 @@
                   <i class="fa fa-envelope-o"></i>
                     <?php
                     $role = Yii::app()->user->role_id;
-                    if($role=='1'){
-                        $sql = 'SELECT a.* FROM simdapel_konsultasi a INNER JOIN(
-                                SELECT max(id) as id FROM simdapel_konsultasi WHERE status=1 GROUP BY judul_id
-                                ) b on a.id=b.id';
-                        
+                    if($role=='1' || $role=='4'){
+                        $konsultasi_notif = KonsultasiThread::model()->findAll('read_status=:read_status', array(':read_status'=>'2'));
                     }
                     if($role=='2' || $role=='3') {
-                        $sql = 'SELECT a.* FROM simdapel_konsultasi a INNER JOIN(
-                                SELECT max(id) as id FROM simdapel_konsultasi WHERE status=1 AND 
-                                user_id='.Yii::app()->user->id.' GROUP BY judul_id
-                                ) b on a.id=b.id WHERE user_id <> '.Yii::app()->user->id;
+                        $konsultasi_notif = KonsultasiThread::model()->findAll('read_status=:read_status && user_id=:user_id', array(':read_status'=>'1', ':user_id'=>Yii::app()->user->id));
                     }
-                    $new = Konsultasi::model()->findAllBySql($sql);
                     ?>
-                  <span class="label label-success"><?php echo count($new);?></span>
+                  <span class="label label-success"><?php echo count($konsultasi_notif);?></span>
                 </a>
                 <ul class="dropdown-menu">
                     
-                  <li class="header">Ada <?php echo count($new);?> pesan dengan status open</li>
+                  <li class="header">Ada <?php echo count($konsultasi_notif);?> pesan belum dibaca</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                         <?php
-                        
+                        $i = 0;
+                        foreach($konsultasi_notif as $konsultasi) {
+                            $i++;
+                            if($i<=3) :
+                                $criteria = new CDbCriteria;
+                                $criteria->select = 'MAX(id) as id';
+                                $criteria->condition = 'thread_id='.$konsultasi->id;
+                                $max_post = KonsultasiPost::model()->find($criteria);
+                                $post = KonsultasiPost::model()->findByPk($max_post->id);
+                                echo '<li>';
+                                echo '<a href="'.Yii::app()->createUrl("konsultasi/view", array("id"=>$konsultasi->id)).'">';
+                                echo '<div class="pull-left">';
+                                echo '<img src="'.Yii::app()->request->baseUrl.'/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">';
+                                echo '</div>';
+                                echo '<h4>';
+                                echo $post->user->nama;
+                                echo '<small><i class="fa fa-clock-o"></i>'.$post->create_time.'</small>';
+                                echo '</h4>';
+                                echo $post->isi;
+                                echo '</a>';
+                                echo '</li>';
+                            endif;
+                        }
                         
                         
                         
                         
                         ?>
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
                     </ul>
                   </li>
                   <li class="footer"><a href="#">See All Messages</a></li>
                 </ul>
               </li>
-              <!-- Notifications: style can be found in dropdown.less -->
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li>
+              
               <!-- Tasks: style can be found in dropdown.less -->
               
               <!-- User Account: style can be found in dropdown.less -->

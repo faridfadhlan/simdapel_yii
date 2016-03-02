@@ -26,7 +26,7 @@ class SiteController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions
-                            'actions'=>array('index','logout'),
+                            'actions'=>array('index','logout','error'),
                             'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -99,8 +99,10 @@ class SiteController extends Controller
 		{
 			if(Yii::app()->request->isAjaxRequest)
                             echo $error['message'];
-			else
+			else{
+                            $this->layout='//layouts/auth/column1';
                             $this->render('error', $error);
+                        }
 		}
 	}
 

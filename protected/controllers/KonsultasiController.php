@@ -51,40 +51,52 @@ class KonsultasiController extends Controller
 	 */
 	public function actionView($id)
 	{
+                
+                $role = Yii::app()->user->role_id;
                 $konsultasi = new KonsultasiPost;
                 $modelnya = KonsultasiThread::model()->with('konsultasiPosts')->findByPk($id);
-                //$model = Konsultasi::model()->findAll('judul_id=:judul_id', array(':judul_id'=>$modelnya->judul_id));
-		
+                
+                if($modelnya->user_id != Yii::app()->user->id && ($role != '1' && $role !='4')) 
+                    throw new CHttpException(404,'The specified post cannot be found.');
+                
                 if(isset($_POST['KonsultasiPost']))
 		{
-			$konsultasi->attributes=$_POST['KonsultasiPost'];
-                        if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') {
-                            //$konsultasi->scenario = 'operator_tambah';
+			$konsultasi->attributes = $_POST['KonsultasiPost'];
+                        if($role == '1' || $role == '4') {                            
+                            $konsultasi->scenario = 'operator_tambah';
+                            $modelnya->read_status = '1';
+                            $modelnya->status = $konsultasi->status;
                         }
                         else {
-                            $konsultasi->status = '1';
-                            //$konsultasi->scenario = 'user_tambah';
+                            $konsultasi->scenario = 'user_tambah';
+                            $modelnya->read_status = '2';
+                            $modelnya->status = '1';
                         }
-                        //print_r(Yii::app()->user->role_id);exit;
+                        $modelnya->save();
 			if($konsultasi->validate()) {
-                            $konsultasi->judul_id = $modelnya->judul_id;
+                            $konsultasi->thread_id = $modelnya->id;
                             $konsultasi->user_id = Yii::app()->user->id;
                             $konsultasi->save(false);
-                            //Update status thread
-                            Konsultasi::model()->updateAll(
-                                    array('status'=>$konsultasi->status),
-                                    'judul_id=:judul_id',
-                                    array(':judul_id'=>$konsultasi->judul_id)
-                            );
-                            //end of update status thread
+                            
                             $konsultasi->status = NULL;
                             $konsultasi->isi = NULL;
                             $this->redirect(array('konsultasi/view', 'id'=>$id));
                         }
 		}
                 
+                else {
+                    if($role == '1' || $role=='4'){
+                        if($modelnya->read_status == '2') $modelnya->read_status = '3';
+                        $modelnya->save(false);
+                    }
+                        
+                    else {
+                        if($modelnya->read_status == '1') $modelnya->read_status = '3';
+                        $modelnya->save(false);
+                    }
+                }
+                
                 $this->render('view',array(
-			//'model'=>$model,
                         'modelnya'=>$modelnya,
                         'konsultasi'=>$konsultasi
 		));
@@ -96,19 +108,29 @@ class KonsultasiController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Konsultasi;
+		$model = new KonsultasiForm;
+                
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Konsultasi']))
+		if(isset($_POST['KonsultasiForm']))
 		{
-			$model->attributes=$_POST['Konsultasi'];
-                        $model->scenario = 'baru';
+			$model->attributes=$_POST['KonsultasiForm'];
                         if($model->validate()) {
-                            $model->user_id = Yii::app()->user->id;
-                            $model->status = '1';
-                            $model->save(false);
+                            $thread = new KonsultasiThread;
+                            $post = new KonsultasiPost;
+                            $thread->judul = $model->judul;
+                            $thread->status = '1';
+                            $thread->read_status = '2';
+                            $thread->user_id = Yii::app()->user->id;
+                            $thread->save();
+                            
+                            $post->isi = $model->isi;
+                            $post->user_id = $thread->user_id;
+                            $post->thread_id = $thread->id;
+                            $post->save();
+                            
                             $this->redirect(array('konsultasi/index'));
                         }
 		}
@@ -177,12 +199,10 @@ class KonsultasiController extends Controller
                 //print_r($dataProvider);exit;
             }
             
-            
-            
-                //print_r($dataProvider);exit;
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+            //print_r($dataProvider);exit;
+            $this->render('index',array(
+                    'dataProvider'=>$dataProvider,
+            ));
 	}
 
 	/**

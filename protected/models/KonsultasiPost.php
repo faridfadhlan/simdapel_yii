@@ -20,7 +20,10 @@ class KonsultasiPost extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-	public function tableName()
+	
+        public $status;
+    
+        public function tableName()
 	{
 		return 'simdapel_konsultasi_post';
 	}
@@ -33,8 +36,10 @@ class KonsultasiPost extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('isi, create_time', 'required'),
-			array('user_id, read_status, thread_id', 'numerical', 'integerOnly'=>true),
+                        array('isi, status', 'required', 'on'=>'operator_tambah'),
+                        array('isi', 'required', 'on'=>'user_tambah'),
+			array('user_id, thread_id', 'numerical', 'integerOnly'=>true),
+                        array('isi,status,create_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, isi, user_id, read_status, create_time, thread_id', 'safe', 'on'=>'search'),
@@ -63,7 +68,6 @@ class KonsultasiPost extends CActiveRecord
 			'id' => 'ID',
 			'isi' => 'Isi',
 			'user_id' => 'User',
-			'read_status' => 'Read Status',
 			'create_time' => 'Create Time',
 			'thread_id' => 'Thread',
 		);
@@ -90,7 +94,6 @@ class KonsultasiPost extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('isi',$this->isi,true);
 		$criteria->compare('user_id',$this->user_id);
-		$criteria->compare('read_status',$this->read_status);
 		$criteria->compare('create_time',$this->create_time,true);
 		$criteria->compare('thread_id',$this->thread_id);
 

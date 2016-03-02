@@ -30,8 +30,9 @@ class KonsultasiThread extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('judul, status', 'required'),
-			array('status', 'numerical', 'integerOnly'=>true),
+			array('status,read_status', 'numerical', 'integerOnly'=>true),
 			array('judul', 'length', 'max'=>255),
+                        array('read_status', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, judul, status', 'safe', 'on'=>'search'),

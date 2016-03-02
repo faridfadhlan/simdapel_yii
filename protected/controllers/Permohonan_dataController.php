@@ -319,44 +319,67 @@ class Permohonan_dataController extends Controller
 		}
 	}
         
+        
         public function actionUmum() {
-            $model_raw = new PermohonanDataRawForm;
-            $model_lainnya = new PermohonanDataLainnyaForm;
+            
             $tab_aktif = '0';
             
-            
-            if(isset($_POST['PermohonanDataRawForm'])){
-                $model_raw->attributes = $_POST['PermohonanDataRawForm'];
-                if($model_raw->validate()){
-                    $permohonan_data = new PermohonanData;
-                    $user = User::model()->findByPk(Yii::app()->user->id);
-                    $permohonan_data->attributes = $model_raw->attributes;
-                    $permohonan_data->user_id = Yii::app()->user->id;
-                    $permohonan_data->flag_user = '2';
-                    $permohonan_data->jenis_identitas = $user->jenis_identitas;
-                    $permohonan_data->no_identitas = $user->no_identitas;
-                    $permohonan_data->nama = $user->nama;
-                    $permohonan_data->umur = $user->umur;
-                    $permohonan_data->jk = $user->jk;
-                    $permohonan_data->pendidikan_terakhir = $user->pendidikan_terakhir;
-                    $permohonan_data->alamat = $user->alamat;
-                    $permohonan_data->telp = $user->telp;
-                    $permohonan_data->pekerjaan = $user->pekerjaan;
-                    $permohonan_data->nama_instansi = $user->instansi_pekerjaan;
-                    $permohonan_data->email = $user->email;
-                    $permohonan_data->pnbp = '1';
-                    $permohonan_data->status = 'warning';
-                    unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
-                    $permohonan_data->save(false);
+            $role = Yii::app()->user->role_id;
+           // print_r($role);exit;
+            if($role == '3'):
+                $model_raw = new PermohonanDataRawForm;
+                $model_lainnya = new PermohonanDataLainnyaForm;
+                if(isset($_POST['PermohonanDataRawForm'])){
+                    $model_raw->attributes = $_POST['PermohonanDataRawForm'];
+                    if($model_raw->validate()){
+                        $permohonan_data = new PermohonanData;
+                        $user = User::model()->findByPk(Yii::app()->user->id);
+                        $permohonan_data->attributes = $model_raw->attributes;
+                        $permohonan_data->user_id = Yii::app()->user->id;
+                        $permohonan_data->flag_user = '2';
+                        $permohonan_data->jenis_identitas = $user->jenis_identitas;
+                        $permohonan_data->no_identitas = $user->no_identitas;
+                        $permohonan_data->nama = $user->nama;
+                        $permohonan_data->umur = $user->umur;
+                        $permohonan_data->jk = $user->jk;
+                        $permohonan_data->pendidikan_terakhir = $user->pendidikan_terakhir;
+                        $permohonan_data->alamat = $user->alamat;
+                        $permohonan_data->telp = $user->telp;
+                        $permohonan_data->pekerjaan = $user->pekerjaan;
+                        $permohonan_data->nama_instansi = $user->instansi_pekerjaan;
+                        $permohonan_data->email = $user->email;
+                        $permohonan_data->pnbp = '1';
+                        $permohonan_data->status = 'warning';
+                        unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
+                        $permohonan_data->save(false);
+                    }
+                    $tab_aktif = '0';
                 }
-                $tab_aktif = '0';
-            }
+
+                if(isset($_POST['PermohonanDataLainnyaForm'])){
+                    $model_lainnya->attributes = $_POST['PermohonanDataLainnyaForm'];
+                    $model_lainnya->validate();
+                    $tab_aktif = '1';
+                }
+                
+                $view = 'umum';
+                
+            elseif($role == '2'):
+                $model_raw = new PermohonanDataRawBPSForm;
+                if(isset($_POST['PermohonanDataRawBPSForm'])):
+                    $model_raw->attributes = $_POST['PermohonanDataRawForm'];
+                    if($model_raw->validate()){
+                        $permohonan_data = new PermohonanData;
+                        $permohonan_data->user_id = Yii::app()->user->id;
+                        $permohonan_data->flag_user = '1';
+                        $permohonan_data->status = 'warning';
+                        unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
+                        $permohonan_data->save(false);
+                    }
+                endif;
+                $view = 'bps';
             
-            if(isset($_POST['PermohonanDataLainnyaForm'])){
-                $model_lainnya->attributes = $_POST['PermohonanDataLainnyaForm'];
-                $model_lainnya->validate();
-                $tab_aktif = '1';
-            }
+            endif;
             
             if(isset(Yii::app()->request->cookies['mohon_data_inventori_id'])) {
                 $model_raw->data_inventori_id = Yii::app()->request->cookies['mohon_data_inventori_id'];
