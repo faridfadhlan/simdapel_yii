@@ -1,5 +1,6 @@
 <?php
 
+
 class SiteController extends Controller
 {
 	/**
@@ -22,7 +23,7 @@ class SiteController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('login','buat','register','captcha'),
+				'actions'=>array('login','buat','register','captcha','tes'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions
@@ -184,5 +185,15 @@ class SiteController extends Controller
         
         public function actionBuat($pass){
             echo User::hashPassword($pass);
+        }
+        
+        public function actionTes() {
+            $html2pdf = new Html2Pdf;
+            $html2pdf->WriteHTML($this->renderPartial('pdf', array(), true));
+            $html2pdf->Output();
+            
+            //$html2pdf = Yii::app()->ePdf->Html2Pdf();
+            //$html2pdf->WriteHTML($this->renderPartial('pdf', array(), true));
+            //$html2pdf->Output();
         }
 }

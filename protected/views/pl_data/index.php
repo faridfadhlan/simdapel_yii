@@ -39,7 +39,9 @@
                         <th class="text-center">Company</th>
                         <th class="text-center">Lisensi</th>
                         <th class="text-center">Manual</th>
+                        <?php if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4'):?>
                         <th class="text-center">Aksi</th>
+                        <?php endif;?>
                       </tr>
                     </thead>  
                     <tbody>
@@ -52,6 +54,7 @@
                             echo '<td>'.$data->company->nama_company.'</td>';
                             echo '<td>'.$data->license->nama_license.'</td>';
                             echo '<td>'.$data->manual.'</td>';
+                            if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4'):
                             echo '<td class="text-center">';?>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default btn-flat">Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -85,6 +88,7 @@
                                     </div>
                                     </td>
                             <?php
+                            endif;
                             echo '</tr>';
                         }
                         ?>

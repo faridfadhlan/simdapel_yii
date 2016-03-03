@@ -16,7 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-                'application.extensions.*'
+                'application.extensions.*',
 	),
 
 	'modules'=>array(
@@ -75,7 +75,6 @@ return array(
 				*/
 			),
 		),
-
 	),
 
 	// application-level parameters that can be accessed

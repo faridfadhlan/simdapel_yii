@@ -13,6 +13,8 @@
         <br />
         <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4'): ?> 
         <?php echo CHtml::link('<i class="fa fa-plus"></i>Tambah Permohonan Data', array('permohonan_data/create'), array('class'=>'btn btn-default pull-left'));?>
+        <?php else:
+              echo CHtml::link('<i class="fa fa-plus"></i>Tambah Permohonan Data', array('permohonan_data/umum'), array('class'=>'btn btn-default pull-left'));?>
         <div class='clearfix'></div>
         
         <?php endif;?>
@@ -54,9 +56,9 @@
                             echo '<td>'.(($data->flag_user=='2')?$data->nama:(($data->flag_user=='1')?$data->peminjam->nama:$data->nama_instansi)).'</td>';
                             echo '<td>'.CHtml::link($data->data_inventori->nama_data,'#').'</td>';
                             echo '<td class="text-center">'.datetime_to_tanggal($data->create_time).'</td>';
-                            echo '<td><span class="label label-'.$data->status.'">'.($data->status=='success'?'Approved':'Pending').'</span></td>';
+                            echo '<td class="text-center"><span class="label label-'.$data->status.'">'.($data->status=='success'?'Approved':'Pending').'</span></td>';
                             echo '<td class="text-center">'.
-                                    CHtml::link('<i class="fa fa-edit"></i>',array('permohonan_data/update','id'=>$data->id)).
+                                    ((Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4')?CHtml::link('<i class="fa fa-edit"></i>',array('permohonan_data/update','id'=>$data->id)):'').
                                     CHtml::link('<i class="fa fa-remove"></i>',array('permohonan_data/delete','id'=>$data->id)).
                                     '</td>';
                             echo '</tr>';

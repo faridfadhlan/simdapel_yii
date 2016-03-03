@@ -178,7 +178,7 @@ CREATE TABLE `simdapel_konsultasi_post` (
   KEY `IX_Relationship24` (`user_id`),
   CONSTRAINT `Relationship23` FOREIGN KEY (`thread_id`) REFERENCES `simdapel_konsultasi_thread` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE,
   CONSTRAINT `Relationship24` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,7 +187,7 @@ CREATE TABLE `simdapel_konsultasi_post` (
 
 LOCK TABLES `simdapel_konsultasi_post` WRITE;
 /*!40000 ALTER TABLE `simdapel_konsultasi_post` DISABLE KEYS */;
-INSERT INTO `simdapel_konsultasi_post` VALUES (1,'fgdgdgdd',36,'2016-03-01 08:31:29',1),(13,'dfgdgdg',33,'2016-03-02 02:01:19',1),(14,'fhfhfhfh',33,'2016-03-02 02:01:56',1),(15,'iiytititutu',33,'2016-03-02 02:05:00',1),(16,'tes',36,'2016-03-02 02:11:18',1),(18,'iukluku',36,'2016-03-02 02:18:24',1),(19,'gjgjgjgj',36,'2016-03-02 02:18:46',1),(20,'hkkyuky',36,'2016-03-02 02:34:16',1),(21,'Silahkan kunjungi ksajdlkjald',33,'2016-03-02 02:49:58',1),(22,'uiououououo',36,'2016-03-02 02:52:53',1),(23,'dfhdhdhdegdgvd',18,'2016-03-02 03:52:00',2),(24,'Silahkan membentuk zkjbsdjbashd asbdbjbdjiasd',33,'2016-03-02 03:53:13',2),(25,'Baik',33,'2016-03-02 03:53:24',1),(26,'Tapi dkjfks fkjhf',18,'2016-03-02 04:30:50',2);
+INSERT INTO `simdapel_konsultasi_post` VALUES (1,'fgdgdgdd',36,'2016-03-01 08:31:29',1),(13,'dfgdgdg',33,'2016-03-02 02:01:19',1),(14,'fhfhfhfh',33,'2016-03-02 02:01:56',1),(15,'iiytititutu',33,'2016-03-02 02:05:00',1),(16,'tes',36,'2016-03-02 02:11:18',1),(18,'iukluku',36,'2016-03-02 02:18:24',1),(19,'gjgjgjgj',36,'2016-03-02 02:18:46',1),(20,'hkkyuky',36,'2016-03-02 02:34:16',1),(21,'Silahkan kunjungi ksajdlkjald',33,'2016-03-02 02:49:58',1),(22,'uiououououo',36,'2016-03-02 02:52:53',1),(23,'dfhdhdhdegdgvd',18,'2016-03-02 03:52:00',2),(24,'Silahkan membentuk zkjbsdjbashd asbdbjbdjiasd',33,'2016-03-02 03:53:13',2),(25,'Baik',33,'2016-03-02 03:53:24',1),(26,'Tapi dkjfks fkjhf',18,'2016-03-02 04:30:50',2),(27,'Selamatgsdhs dskd skbd bas d',18,'2016-03-03 03:36:23',3),(28,'Silahkan mengunjungi URL di bawah inia jkd askd adaddas',33,'2016-03-03 03:37:04',3);
 /*!40000 ALTER TABLE `simdapel_konsultasi_post` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,7 +207,7 @@ CREATE TABLE `simdapel_konsultasi_thread` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `pembuat` FOREIGN KEY (`user_id`) REFERENCES `simdapel_user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -216,7 +216,7 @@ CREATE TABLE `simdapel_konsultasi_thread` (
 
 LOCK TABLES `simdapel_konsultasi_thread` WRITE;
 /*!40000 ALTER TABLE `simdapel_konsultasi_thread` DISABLE KEYS */;
-INSERT INTO `simdapel_konsultasi_thread` VALUES (1,'Tes',2,3,36),(2,'Data bbfdksbkfbskfb sfjsf',1,3,18);
+INSERT INTO `simdapel_konsultasi_thread` VALUES (1,'Tes',2,3,36),(2,'Data bbfdksbkfbskfb sfjsf',1,3,18),(3,'Permintaan Data',2,3,18);
 /*!40000 ALTER TABLE `simdapel_konsultasi_thread` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -256,7 +256,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   `no_surat` varchar(100) DEFAULT NULL,
   `jenis_identitas` varchar(100) DEFAULT NULL,
   `no_identitas` varchar(100) DEFAULT NULL,
-  `nama` varchar(100) NOT NULL,
+  `nama` varchar(100) DEFAULT NULL,
   `umur` int(2) DEFAULT NULL,
   `jk` int(11) DEFAULT NULL,
   `pendidikan_terakhir` varchar(50) DEFAULT NULL,
@@ -266,9 +266,9 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   `nama_instansi` varchar(100) DEFAULT NULL,
   `kategori_instansi` varchar(255) DEFAULT NULL,
   `nama_kepala` varchar(255) DEFAULT NULL,
-  `email` varchar(50) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
   `data_diminta` text,
-  `pnbp` tinyint(11) NOT NULL,
+  `pnbp` tinyint(11) DEFAULT NULL,
   `proses_data` tinyint(1) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
   `status_id` int(11) DEFAULT NULL,
@@ -284,7 +284,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
   KEY `data_inventori_id` (`data_inventori_id`),
   CONSTRAINT `Relationship58` FOREIGN KEY (`operator_id`) REFERENCES `simdapel_user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `Relationship59` FOREIGN KEY (`status_id`) REFERENCES `simdapel_status` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -293,7 +293,7 @@ CREATE TABLE `simdapel_permohonan_data_nonbps` (
 
 LOCK TABLES `simdapel_permohonan_data_nonbps` WRITE;
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` DISABLE KEYS */;
-INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,0,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-01 17:00:00',4,5,1,'success'),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,1,'3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-01-31 17:00:00',NULL,3,2,'success'),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 00:59:02',NULL,6,3,'success'),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 01:08:12',6,6,1,'success'),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 02:39:37',NULL,8,3,'success'),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:03:28',24,21,1,'success'),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:09:00',14,7,1,'success'),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 14:11:19',NULL,17,3,'success'),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 04:11:39',22,5,1,'success'),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,1,'4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 07:48:05',NULL,14,2,'success'),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 08:46:21',NULL,14,3,'success'),(17,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','',NULL,NULL,'','',1,1,4000,NULL,NULL,'2016-02-22 06:58:54',36,18,2,'success'),(18,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 07:08:42',36,14,2,'success'),(19,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 08:32:14',36,6,2,'success'),(20,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,1,NULL,NULL,NULL,'2016-02-22 12:04:35',36,17,2,'warning'),(21,NULL,NULL,NULL,'Syarif Busri S.E.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,1,2,NULL,NULL,NULL,'2016-03-02 06:40:44',18,13,2,'warning');
+INSERT INTO `simdapel_permohonan_data_nonbps` VALUES (2,'10254dfdfdf01df0d','','','',0,0,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-01 17:00:00',4,5,1,'success'),(4,NULL,'1','3374082009890002','Muhammad Farid Fadhlan',27,1,'3','Jl. Tabrani Ahmad','081258733375','PNS','BPS',NULL,NULL,'m.farid@bps.go.id','',0,NULL,NULL,1,17,'2016-01-31 17:00:00',NULL,3,2,'success'),(5,'12/584/02/2016','','','',0,NULL,'','Jl. Sutan Syahrir No. 145 Pontianak','0561-4758412','','Dinas Pertanian Provinsi Kalimantan Barat','2','Sutop, SH, MM','','',0,NULL,NULL,1,17,'2016-02-02 00:59:02',NULL,6,3,'success'),(6,'12/584/02/2016','','','',0,NULL,'','','','','',NULL,NULL,'','Tes',0,NULL,NULL,NULL,17,'2016-02-02 01:08:12',6,6,1,'success'),(9,'11/22/33/2016','','','',0,NULL,'','Jl. Letjend Sutoyo','0561-4758412','','Dinas Sosial','2','Suprapto','','',1,NULL,NULL,1,17,'2016-02-02 02:39:37',NULL,8,3,'success'),(10,'10/22/34/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:03:28',24,21,1,'success'),(11,'76/45/98/2016','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,17,'2016-02-02 14:09:00',14,7,1,'success'),(12,'98/DISPERINDAG/78378473/2016','','','',0,NULL,'','Jl. Pahlawan 10','0561-778245','','Dinas Perindustrian dan Perdagangan','2','Mulyadi','','',2,NULL,NULL,1,17,'2016-02-02 14:11:19',NULL,17,3,'success'),(13,'1254/845/8542','','','',0,NULL,'','','','','',NULL,NULL,'','',0,NULL,NULL,NULL,NULL,'2016-02-17 04:11:39',22,5,1,'success'),(14,NULL,'1','3374082009890002','Luhut Binsar Panjaitan',63,1,'4','Jakart','08541222544','Menteri','Indonesia',NULL,NULL,'luhut@gmail.com','',1,2,8000,NULL,NULL,'2016-02-17 07:48:05',NULL,14,2,'success'),(15,'1245874545','','','',0,NULL,'','Jl. Merdeka','0215412536','','Komisi Pemberantasan Korupsi','2','Sutopo','','',1,2,1000,NULL,NULL,'2016-02-17 08:46:21',NULL,14,3,'success'),(17,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','',NULL,NULL,'','',1,1,4000,NULL,NULL,'2016-02-22 06:58:54',36,18,2,'success'),(18,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 07:08:42',36,14,2,'success'),(19,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,2,8000,NULL,NULL,'2016-02-22 08:32:14',36,6,2,'success'),(20,NULL,'1','617021121988222565','Gita Aurora',26,2,'2','thjytjjt','0852145223665','PNS','BPS',NULL,NULL,'gita@bps.go.id','',1,1,NULL,NULL,NULL,'2016-02-22 12:04:35',36,17,2,'warning'),(22,'6768686868',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-03-03 02:09:14',18,3,1,'success'),(24,'56755757575',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-03-03 03:34:39',18,7,1,'success');
 /*!40000 ALTER TABLE `simdapel_permohonan_data_nonbps` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -675,4 +675,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-02 16:18:42
+-- Dump completed on 2016-03-03 15:53:10

@@ -32,11 +32,11 @@ class Permohonan_dataController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','umum'),
+				'actions'=>array('create','umum','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','update'),
 				'expression'=>function () {
                                                 if(isset(Yii::app()->user->role_id)):
                                                     if(Yii::app()->user->role_id == '1' || Yii::app()->user->role_id == '4') return true;
@@ -256,7 +256,14 @@ class Permohonan_dataController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+                
+		$model = $this->loadModel($id);
+                $role = Yii::app()->user->role_id;
+                if(($role == '2' || $role=='3') && $model->user_id != Yii::app()->user->id) {
+                    throw new CHttpException('404', 'Not Authorized');
+                }
+                $model->delete();
+                $this->redirect(array('permohonan_data/index'));
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -268,7 +275,11 @@ class Permohonan_dataController extends Controller
 	 */
 	public function actionIndex()
 	{
+            $role = Yii::app()->user->role_id;
                 $criteria = new CDbCriteria;
+                if($role == '2' || $role == '3') {
+                    $criteria->condition = 'user_id='.Yii::app()->user->id;
+                }
                 $criteria->order = 'status DESC';
 		$dataProvider= PermohonanData::model()->findAll($criteria);
 		$this->render('index',array(
@@ -322,13 +333,11 @@ class Permohonan_dataController extends Controller
         
         public function actionUmum() {
             
-            $tab_aktif = '0';
-            
             $role = Yii::app()->user->role_id;
            // print_r($role);exit;
             if($role == '3'):
                 $model_raw = new PermohonanDataRawForm;
-                $model_lainnya = new PermohonanDataLainnyaForm;
+                //$model_lainnya = new PermohonanDataLainnyaForm;
                 if(isset($_POST['PermohonanDataRawForm'])){
                     $model_raw->attributes = $_POST['PermohonanDataRawForm'];
                     if($model_raw->validate()){
@@ -352,29 +361,32 @@ class Permohonan_dataController extends Controller
                         $permohonan_data->status = 'warning';
                         unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
                         $permohonan_data->save(false);
+                        $this->redirect(array('permohonan_data/index'));
                     }
                     $tab_aktif = '0';
                 }
-
+/*
                 if(isset($_POST['PermohonanDataLainnyaForm'])){
                     $model_lainnya->attributes = $_POST['PermohonanDataLainnyaForm'];
                     $model_lainnya->validate();
                     $tab_aktif = '1';
-                }
+                }*/
                 
                 $view = 'umum';
                 
             elseif($role == '2'):
                 $model_raw = new PermohonanDataRawBPSForm;
                 if(isset($_POST['PermohonanDataRawBPSForm'])):
-                    $model_raw->attributes = $_POST['PermohonanDataRawForm'];
+                    $model_raw->attributes = $_POST['PermohonanDataRawBPSForm'];                    
                     if($model_raw->validate()){
                         $permohonan_data = new PermohonanData;
+                        $permohonan_data->attributes = $model_raw->attributes;
                         $permohonan_data->user_id = Yii::app()->user->id;
                         $permohonan_data->flag_user = '1';
                         $permohonan_data->status = 'warning';
                         unset(Yii::app()->request->cookies['mohon_data_inventori_id']);
                         $permohonan_data->save(false);
+                        $this->redirect(array('permohonan_data/index'));
                     }
                 endif;
                 $view = 'bps';
@@ -389,9 +401,12 @@ class Permohonan_dataController extends Controller
                     'umum', 
                     array(
                         'model_raw'=>$model_raw,
-                        'model_lainnya'=>$model_lainnya,
-                        'tab_aktif'=>$tab_aktif,
+                        'role'=>$role,
+                        //'model_lainnya'=>$model_lainnya,
+                        //'tab_aktif'=>$tab_aktif,
                         'data_inventori'=>DataInventori::model()->findByPk((string)Yii::app()->request->cookies['mohon_data_inventori_id']),
                     ));
         }
+        
+        
 }

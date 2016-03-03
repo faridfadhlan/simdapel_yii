@@ -69,14 +69,9 @@
             <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4') {?>
             <li class="treeview <?php echo (Yii::app()->controller->id == 'peminjaman_pl')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-yellow"></i><span>Peminjaman Software</span>', array('peminjaman_pl/index'));?></li>
             <li class="treeview <?php echo (Yii::app()->controller->id == 'instalasi_pl')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Permohonan Instalansi</span>', array('instalasi_pl/index'));?></li>
-            <li class="treeview <?php echo (Yii::app()->controller->id == 'permohonan_data' && Yii::app()->controller->action->id != 'umum')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Permohonan Raw Data</span>', array('permohonan_data/index'));?></li>
             <?php }?>   
-            <?php if(Yii::app()->user->role_id=='2') {?>
-            <li class="treeview <?php echo (Yii::app()->controller->action->id == 'pinjam')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Peminjaman Software</span>', array('peminjaman_pl/create'));?></li>
-            <?php }?>
-            <?php if(Yii::app()->user->role_id!='1' && Yii::app()->user->role_id!='4') {?>
-            <li class="treeview <?php echo (Yii::app()->controller->action->id == 'umum')?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Layanan Raw Data</span>', array('permohonan_data/umum'));?></li>
-            <?php }?>
+            <li class="treeview <?php echo (Yii::app()->controller->id == 'permohonan_data' )?'active':'';?>"><?php echo CHtml::link('<i class="fa fa-table text-aqua"></i><span>Permohonan Raw Data</span>', array('permohonan_data/index'));?></li>
+            
             <?php if(Yii::app()->user->role_id=='1' || Yii::app()->user->role_id=='4') {?>
             <li class="header">REPORT</li>
             <li class="treeview"><?php echo CHtml::link('<i class="fa fa-table text-yellow"></i><span>Laporan</span>', array('peminjaman_pl/index'));?></li>
